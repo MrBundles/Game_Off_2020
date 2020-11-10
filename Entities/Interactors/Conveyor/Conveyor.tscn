@@ -4,6 +4,10 @@
 [ext_resource path="res://Entities/Interactors/Conveyor/ConveyorA.png" type="Texture" id=2]
 [ext_resource path="res://Entities/Interactors/Conveyor/ConveyorB.png" type="Texture" id=3]
 
+[sub_resource type="RectangleShape2D" id=3]
+resource_local_to_scene = true
+extents = Vector2( 32, 16 )
+
 [sub_resource type="AtlasTexture" id=1]
 resource_local_to_scene = true
 flags = 2
@@ -16,13 +20,16 @@ flags = 2
 atlas = ExtResource( 3 )
 region = Rect2( 0, 0, 64, 32 )
 
-[sub_resource type="RectangleShape2D" id=3]
-resource_local_to_scene = true
-extents = Vector2( 32, 16 )
-
 [node name="Conveyor" type="StaticBody2D"]
 input_pickable = true
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 0.000211416
+shape = SubResource( 3 )
 
 [node name="ConveyorSpriteA" type="Sprite" parent="."]
 texture = SubResource( 1 )
@@ -30,9 +37,7 @@ texture = SubResource( 1 )
 [node name="ConveyorSpriteB" type="Sprite" parent="."]
 texture = SubResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-rotation = 0.000211416
-shape = SubResource( 3 )
+[node name="Timer" type="Timer" parent="."]
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

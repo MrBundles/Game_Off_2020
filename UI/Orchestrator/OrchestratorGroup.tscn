@@ -12,15 +12,19 @@ __meta__ = {
 }
 
 [node name="OrchestratorCell" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.607843, 0.607843, 0.607843, 0.392157 )
 
 [node name="OrchestratorCell2" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.607843, 0.607843, 0.607843, 0.392157 )
 margin_left = 36.0
 margin_right = 68.0
 
 [node name="OrchestratorCell3" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.607843, 0.607843, 0.607843, 0.392157 )
 margin_left = 72.0
 margin_right = 104.0
 
 [node name="OrchestratorCell4" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.607843, 0.607843, 0.607843, 0.392157 )
 margin_left = 108.0
 margin_right = 140.0

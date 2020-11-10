@@ -59,10 +59,11 @@ position = Vector2( 608, 480 )
 texture = ExtResource( 4 )
 
 [node name="Conveyor" parent="." instance=ExtResource( 2 )]
-position = Vector2( 672, 576 )
-action_b = 1
+position = Vector2( 1164.56, 718.828 )
+action_a = 2
+action_b = 3
 conveyor_speed = 150
-conveyor_length = 15
+conveyor_length = 13
 
 [node name="Control" type="Control" parent="."]
 anchor_right = 1.0

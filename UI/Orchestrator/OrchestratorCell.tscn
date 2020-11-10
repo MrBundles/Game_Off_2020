@@ -5,7 +5,10 @@
 
 [node name="OrchestratorCell" type="TextureRect"]
 margin_right = 32.0
-margin_bottom = 40.0
+margin_bottom = 32.0
 texture = ExtResource( 2 )
 script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

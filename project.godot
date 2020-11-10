@@ -68,11 +68,11 @@ config/icon="res://icon.png"
 
 [autoload]
 
-GlobalColorManager="*res://Globals/GlobalColorManager.gd"
 GlobalAudioManager="*res://Globals/GlobalAudioManager.gd"
 GlobalSceneManager="*res://Globals/GlobalSceneManager.gd"
-GlobalSyncManager="*res://Globals/GlobalSyncManager.tscn"
 GlobalSignalManager="*res://Globals/GlobalSignalManager.gd"
+GlobalColorManager="*res://Globals/GlobalColorManager.gd"
+GlobalSyncManager="*res://Globals/GlobalSyncManager.tscn"
 
 [display]
 

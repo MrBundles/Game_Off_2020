@@ -3,38 +3,37 @@ extends TextureRect
 class_name orchestrator_cell
 
 #variables
-var enabled = false
-var action = GlobalSyncManager.ACTIONS.disabled
-var temp_action = action
+var enable = false setget _set_enable
+var action = GlobalSyncManager.ACTIONS.disabled setget _set_action
 
 
 func _ready():
-	_on_enable_update()
-
-
-func _process(delta):
-	if not Engine.editor_hint:
-		if temp_action != action:
-			_on_action_update()
-			temp_action = action
+	_set_enable(enable)
 
 
 func _on_mouse_entered():
+	#if left mouse button is down
 	if Input.is_action_pressed("left_click"):
-		enabled = true
-		_on_enable_update()
+		_set_enable(true)
+	
+	#if right mouse button is down
 	elif Input.is_action_pressed("right_click"):
-		enabled = false
-		_on_enable_update()
+		_set_enable(false)
+		
 
 
-func _on_enable_update():
-	modulate = GlobalColorManager.action_color_array[action]
-	if enabled:
-		modulate.a8 = 255
+func _on_mouse_exited():
+	pass
+
+func _set_enable(new_val):
+	enable = new_val
+	
+	if enable:
+		modulate = GlobalColorManager.action_color_array[action]
 	else:
-		modulate.a8 = 100
+		modulate = GlobalColorManager.action_color_array[action]
 
 
-func _on_action_update():	#I know this function is only doing one thing for now...
-	_on_enable_update()
+func _set_action(new_val):
+	action = new_val
+	_set_enable(enable)

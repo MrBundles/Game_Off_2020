@@ -3,18 +3,11 @@ extends HBoxContainer
 class_name orchestrator_group
 
 #exports
-export(GlobalSyncManager.ACTIONS) var action = GlobalSyncManager.ACTIONS.disabled
-
-#variables
-var temp_action = action
+export(GlobalSyncManager.ACTIONS) var action = GlobalSyncManager.ACTIONS.disabled setget _set_action
 
 
-func _process(delta):
-	if temp_action != action:
-		_on_action_update()
-		temp_action = action
-
-
-func _on_action_update():
+func _set_action(new_val):
+	action = new_val
+	
 	for child in get_children():
 		child.action = action
