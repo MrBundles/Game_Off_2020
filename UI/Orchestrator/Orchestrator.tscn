@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI/Orchestrator/Orchestrator.gd" type="Script" id=1]
+
+[node name="Orchestrator" type="VBoxContainer"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -180.0
+grow_vertical = 0
+custom_constants/separation = 5
+alignment = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+group_quantity = 5

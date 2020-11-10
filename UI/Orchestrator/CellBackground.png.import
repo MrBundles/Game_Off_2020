@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CellNormal.png-1e5a50093121135f33937d8907f4f99b.stex"
+path="res://.import/CellBackground.png-ee0f64b0e154b00385052cbafda68a36.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Orchestrator/CellNormal.png"
-dest_files=[ "res://.import/CellNormal.png-1e5a50093121135f33937d8907f4f99b.stex" ]
+source_file="res://UI/Orchestrator/CellBackground.png"
+dest_files=[ "res://.import/CellBackground.png-ee0f64b0e154b00385052cbafda68a36.stex" ]
 
 [params]
 

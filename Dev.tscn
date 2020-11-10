@@ -4,7 +4,7 @@
 [ext_resource path="res://Entities/Interactables/Box/Box.tscn" type="PackedScene" id=3]
 [ext_resource path="res://icon.png" type="Texture" id=4]
 [ext_resource path="res://Dev.gd" type="Script" id=5]
-[ext_resource path="res://UI/Orchestrator/OrchestratorGroup.tscn" type="PackedScene" id=6]
+[ext_resource path="res://UI/Orchestrator/Orchestrator.tscn" type="PackedScene" id=6]
 
 [node name="Dev" type="Node2D"]
 script = ExtResource( 5 )
@@ -48,6 +48,10 @@ margin_right = 64.0
 margin_bottom = 64.0
 texture_normal = ExtResource( 4 )
 
+[node name="Orchestrator" parent="UICanvasLayer" instance=ExtResource( 6 )]
+cell_quantity = 16
+action_array = [ 1, 2, 3, 4, 5 ]
+
 [node name="Box" parent="." instance=ExtResource( 3 )]
 position = Vector2( 896, 256 )
 
@@ -65,14 +69,13 @@ action_b = 3
 conveyor_speed = 150
 conveyor_length = 13
 
-[node name="Control" type="Control" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="Label" type="Label" parent="."]
+margin_left = 354.578
+margin_top = 176.398
+margin_right = 626.578
+margin_bottom = 354.398
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="OrchestratorGroup" parent="Control" instance=ExtResource( 6 )]
-margin_left = -1.41422
-margin_right = 138.586
-action = 2
+[editable path="UICanvasLayer/Orchestrator"]

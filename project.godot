@@ -39,6 +39,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://UI/ActionSliders/UIActionSlider.gd"
 }, {
+"base": "VBoxContainer",
+"class": "orchestrator",
+"language": "GDScript",
+"path": "res://UI/Orchestrator/Orchestrator.gd"
+}, {
 "base": "TextureRect",
 "class": "orchestrator_cell",
 "language": "GDScript",
@@ -56,6 +61,7 @@ _global_script_class_icons={
 "Interactor": "",
 "Piston": "",
 "action_slider": "",
+"orchestrator": "",
 "orchestrator_cell": "",
 "orchestrator_group": ""
 }
@@ -68,10 +74,10 @@ config/icon="res://icon.png"
 
 [autoload]
 
+GlobalColorManager="*res://Globals/GlobalColorManager.gd"
 GlobalAudioManager="*res://Globals/GlobalAudioManager.gd"
 GlobalSceneManager="*res://Globals/GlobalSceneManager.gd"
 GlobalSignalManager="*res://Globals/GlobalSignalManager.gd"
-GlobalColorManager="*res://Globals/GlobalColorManager.gd"
 GlobalSyncManager="*res://Globals/GlobalSyncManager.tscn"
 
 [display]

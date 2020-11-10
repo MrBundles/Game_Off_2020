@@ -7,19 +7,20 @@ export var sync_timer_duration = 10
 
 #variables
 var sync_action_enables = [false, false, false, false, false, false]
-var sync_timer_current_time = 0
-var sync_timer_percent_elapsed : float = 0.0
+var sync_index = 0 setget _set_sync_index
+var cell_quantity = 1
 
 
 func _ready():
 	$SyncTimer.wait_time = sync_timer_duration
 
 
-func _process(delta):
-	sync_timer_duration = $SyncTimer.wait_time
-	sync_timer_current_time = $SyncTimer.wait_time - $SyncTimer.time_left
-	sync_timer_percent_elapsed = sync_timer_current_time / sync_timer_duration
-
+func _set_sync_index(new_val):
+	sync_index = new_val
+	
 
 func _on_SyncTimer_timeout():
-	pass # Replace with function body.
+	if sync_index < cell_quantity - 1:
+		sync_index += 1
+	else:
+		sync_index = 0
