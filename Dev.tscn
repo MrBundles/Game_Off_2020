@@ -1,0 +1,77 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Entities/Interactors/Conveyor/Conveyor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Entities/Interactables/Box/Box.tscn" type="PackedScene" id=3]
+[ext_resource path="res://icon.png" type="Texture" id=4]
+[ext_resource path="res://Dev.gd" type="Script" id=5]
+[ext_resource path="res://UI/Orchestrator/OrchestratorGroup.tscn" type="PackedScene" id=6]
+
+[node name="Dev" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="BGCanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="BGCanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.41418
+margin_right = -1.41418
+mouse_filter = 2
+color = Color( 0.211765, 0.211765, 0.211765, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UICanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UICanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 946.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UICanvasLayer/VBoxContainer"]
+margin_right = 1920.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 0, 64 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UICanvasLayer/VBoxContainer/HBoxContainer"]
+margin_right = 64.0
+margin_bottom = 64.0
+
+[node name="TextureButton" type="TextureButton" parent="UICanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_right = 64.0
+margin_bottom = 64.0
+texture_normal = ExtResource( 4 )
+
+[node name="Box" parent="." instance=ExtResource( 3 )]
+position = Vector2( 896, 256 )
+
+[node name="Box2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1312, 224 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 608, 480 )
+texture = ExtResource( 4 )
+
+[node name="Conveyor" parent="." instance=ExtResource( 2 )]
+position = Vector2( 672, 576 )
+action_b = 1
+conveyor_speed = 150
+conveyor_length = 15
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OrchestratorGroup" parent="Control" instance=ExtResource( 6 )]
+margin_left = -1.41422
+margin_right = 138.586
+action = 2

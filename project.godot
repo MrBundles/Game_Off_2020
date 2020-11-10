@@ -1,0 +1,120 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Interactable",
+"class": "Box",
+"language": "GDScript",
+"path": "res://Entities/Interactables/Box/InteractableBox.gd"
+}, {
+"base": "Interactor",
+"class": "Conveyor",
+"language": "GDScript",
+"path": "res://Entities/Interactors/Conveyor/InteractorConveyor.gd"
+}, {
+"base": "RigidBody2D",
+"class": "Interactable",
+"language": "GDScript",
+"path": "res://Entities/Interactables/Interactable.gd"
+}, {
+"base": "StaticBody2D",
+"class": "Interactor",
+"language": "GDScript",
+"path": "res://Entities/Interactors/Interactor.gd"
+}, {
+"base": "Interactor",
+"class": "Piston",
+"language": "GDScript",
+"path": "res://Entities/Interactors/Piston/InteractorPiston.gd"
+}, {
+"base": "TextureButton",
+"class": "action_slider",
+"language": "GDScript",
+"path": "res://UI/ActionSliders/UIActionSlider.gd"
+}, {
+"base": "TextureRect",
+"class": "orchestrator_cell",
+"language": "GDScript",
+"path": "res://UI/Orchestrator/OrchestratorCell.gd"
+}, {
+"base": "HBoxContainer",
+"class": "orchestrator_group",
+"language": "GDScript",
+"path": "res://UI/Orchestrator/OrchestratorGroup.gd"
+} ]
+_global_script_class_icons={
+"Box": "",
+"Conveyor": "",
+"Interactable": "",
+"Interactor": "",
+"Piston": "",
+"action_slider": "",
+"orchestrator_cell": "",
+"orchestrator_group": ""
+}
+
+[application]
+
+config/name="Game Off Moon Shot"
+run/main_scene="res://Dev.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+GlobalColorManager="*res://Globals/GlobalColorManager.gd"
+GlobalAudioManager="*res://Globals/GlobalAudioManager.gd"
+GlobalSceneManager="*res://Globals/GlobalSceneManager.gd"
+GlobalSyncManager="*res://Globals/GlobalSyncManager.tscn"
+GlobalSignalManager="*res://Globals/GlobalSignalManager.gd"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[input]
+
+left_click={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+right_click={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":2,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+mouse_scroll_up={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":4,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+mouse_scroll_down={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":5,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+
+[layer_names]
+
+2d_render/layer_1="Box"
+2d_render/layer_11="Conveyor"
+2d_render/layer_12="Piston"
+
+[physics]
+
+2d/default_gravity=1000
+
+[rendering]
+
+quality/2d/use_pixel_snap=true
+environment/default_environment="res://default_env.tres"
