@@ -47,5 +47,8 @@ func _conveyor_modulate_update():
 	#modulate conveyors
 	$ConveyorSpriteA.modulate = GlobalColorManager.action_color_array[action_a]
 	$ConveyorSpriteB.modulate = GlobalColorManager.action_color_array[action_b]
+	
+	$ActionAIndicator.modulate = GlobalColorManager.action_color_array[action_a]
+	$ActionBIndicator.modulate = GlobalColorManager.action_color_array[action_b]
 
 

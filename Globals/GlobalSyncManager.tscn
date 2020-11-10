@@ -7,5 +7,4 @@ script = ExtResource( 1 )
 sync_timer_duration = 1
 
 [node name="SyncTimer" type="Timer" parent="."]
-autostart = true
 [connection signal="timeout" from="SyncTimer" to="." method="_on_SyncTimer_timeout"]

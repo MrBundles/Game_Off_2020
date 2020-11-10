@@ -1,20 +1,22 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Entities/Interactors/Conveyor/InteractorConveyor.gd" type="Script" id=1]
 [ext_resource path="res://Entities/Interactors/Conveyor/ConveyorA.png" type="Texture" id=2]
 [ext_resource path="res://Entities/Interactors/Conveyor/ConveyorB.png" type="Texture" id=3]
+[ext_resource path="res://Entities/Interactors/Conveyor/ActionBIndicator.png" type="Texture" id=4]
+[ext_resource path="res://Entities/Interactors/Conveyor/ActionAIndicator.png" type="Texture" id=5]
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=1]
 resource_local_to_scene = true
 extents = Vector2( 32, 16 )
 
-[sub_resource type="AtlasTexture" id=1]
+[sub_resource type="AtlasTexture" id=2]
 resource_local_to_scene = true
 flags = 2
 atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 64, 32 )
 
-[sub_resource type="AtlasTexture" id=2]
+[sub_resource type="AtlasTexture" id=3]
 resource_local_to_scene = true
 flags = 2
 atlas = ExtResource( 3 )
@@ -27,17 +29,28 @@ __meta__ = {
 "_edit_group_": true
 }
 
+[node name="ActionAIndicator" type="Sprite" parent="."]
+position = Vector2( -16, -16 )
+texture = ExtResource( 5 )
+
+[node name="ActionBIndicator" type="Sprite" parent="."]
+position = Vector2( 16, -16 )
+texture = ExtResource( 4 )
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 16 )
 rotation = 0.000211416
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
 [node name="ConveyorSpriteA" type="Sprite" parent="."]
-texture = SubResource( 1 )
-
-[node name="ConveyorSpriteB" type="Sprite" parent="."]
+modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
+position = Vector2( 0, 16 )
 texture = SubResource( 2 )
 
-[node name="Timer" type="Timer" parent="."]
+[node name="ConveyorSpriteB" type="Sprite" parent="."]
+modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
+position = Vector2( 0, 16 )
+texture = SubResource( 3 )
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
