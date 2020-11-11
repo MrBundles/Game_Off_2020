@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Interactor",
+"class": "Arm",
+"language": "GDScript",
+"path": "res://Entities/Interactors/Arm/InteractorArm.gd"
+}, {
 "base": "Interactable",
 "class": "Box",
 "language": "GDScript",
@@ -24,10 +29,15 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Entities/Interactables/Interactable.gd"
 }, {
-"base": "StaticBody2D",
+"base": "RigidBody2D",
 "class": "Interactor",
 "language": "GDScript",
 "path": "res://Entities/Interactors/Interactor.gd"
+}, {
+"base": "VBoxContainer",
+"class": "Orchestrator",
+"language": "GDScript",
+"path": "res://UI/Orchestrator/Orchestrator.gd"
 }, {
 "base": "Interactor",
 "class": "Piston",
@@ -38,11 +48,6 @@ _global_script_classes=[ {
 "class": "action_slider",
 "language": "GDScript",
 "path": "res://UI/ActionSliders/UIActionSlider.gd"
-}, {
-"base": "VBoxContainer",
-"class": "orchestrator",
-"language": "GDScript",
-"path": "res://UI/Orchestrator/Orchestrator.gd"
 }, {
 "base": "TextureRect",
 "class": "orchestrator_cell",
@@ -55,13 +60,14 @@ _global_script_classes=[ {
 "path": "res://UI/Orchestrator/OrchestratorGroup.gd"
 } ]
 _global_script_class_icons={
+"Arm": "",
 "Box": "",
 "Conveyor": "",
 "Interactable": "",
 "Interactor": "",
+"Orchestrator": "",
 "Piston": "",
 "action_slider": "",
-"orchestrator": "",
 "orchestrator_cell": "",
 "orchestrator_group": ""
 }

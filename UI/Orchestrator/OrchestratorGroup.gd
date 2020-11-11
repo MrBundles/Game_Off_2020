@@ -10,7 +10,7 @@ export var cell_quantity = 1 setget _set_cell_quantity
 func _process(delta):
 	var enable_count = 0
 	for i in range(get_child_count()):
-		if GlobalSyncManager.sync_index == i and get_child(i).enable:
+		if GlobalSyncManager.sync_timer_start and GlobalSyncManager.sync_index == i and get_child(i).enable:
 			enable_count += 1
 	
 	GlobalSyncManager.sync_action_enables[action] = enable_count > 0

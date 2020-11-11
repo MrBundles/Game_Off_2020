@@ -4,7 +4,7 @@
 [ext_resource path="res://Entities/Interactables/Box/InteractableBox.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 32, 32 )
+extents = Vector2( 30, 30 )
 
 [node name="Box" type="RigidBody2D"]
 can_sleep = false

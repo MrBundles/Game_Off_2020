@@ -22,12 +22,15 @@ flags = 2
 atlas = ExtResource( 3 )
 region = Rect2( 0, 0, 64, 32 )
 
-[node name="Conveyor" type="StaticBody2D"]
+[node name="Conveyor" type="RigidBody2D"]
 input_pickable = true
+mode = 1
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
+action_a = 2
+action_b = 3
 
 [node name="ActionAIndicator" type="Sprite" parent="."]
 position = Vector2( -16, -16 )

@@ -6,10 +6,12 @@ class_name Conveyor
 export var conveyor_speed = 50
 export var conveyor_length = 1 setget _set_conveyor_length
 
+#constants
+const MIN_CONVEYOR_LENGTH = 1
+const MAX_CONVEYOR_LENGTH = 50
+
 #variables
 var single_conveyor_length = 64
-var min_conveyor_length = 1
-var max_conveyor_length = 50
 
 
 func _ready():
@@ -24,22 +26,22 @@ func _process(delta):
 	if action_a_enable and not action_b_enable:
 		$ConveyorSpriteA.texture.region.position.x += conveyor_speed * delta
 		$ConveyorSpriteB.texture.region.position.x += conveyor_speed * delta
-		constant_linear_velocity = Vector2(-conveyor_speed,0)
+		linear_velocity = Vector2(-conveyor_speed,0)
 		
 	elif action_b_enable and not action_a_enable:
 		$ConveyorSpriteA.texture.region.position.x -= conveyor_speed * delta
 		$ConveyorSpriteB.texture.region.position.x -= conveyor_speed * delta
-		constant_linear_velocity = Vector2(conveyor_speed,0)
+		linear_velocity = Vector2(conveyor_speed,0)
 		
 	else:
-		constant_linear_velocity = Vector2(0,0)
+		linear_velocity = Vector2(0,0)
 
 
 func _set_conveyor_length(new_val):
 	conveyor_length = new_val
 	
-	$ConveyorSpriteA.texture.region.size.x = single_conveyor_length * clamp(conveyor_length, min_conveyor_length, max_conveyor_length)
-	$ConveyorSpriteB.texture.region.size.x = single_conveyor_length * clamp(conveyor_length, min_conveyor_length, max_conveyor_length)
+	$ConveyorSpriteA.texture.region.size.x = single_conveyor_length * clamp(conveyor_length, MIN_CONVEYOR_LENGTH, MAX_CONVEYOR_LENGTH)
+	$ConveyorSpriteB.texture.region.size.x = single_conveyor_length * clamp(conveyor_length, MIN_CONVEYOR_LENGTH, MAX_CONVEYOR_LENGTH)
 	$CollisionShape2D.shape.extents.x = $ConveyorSpriteA.texture.region.size.x / 2
 
 

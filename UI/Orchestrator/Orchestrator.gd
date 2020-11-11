@@ -1,6 +1,6 @@
 tool
 extends VBoxContainer
-class_name orchestrator
+class_name Orchestrator
 
 #constants
 const GROUP_QUANTITY_MIN = 0
@@ -24,19 +24,19 @@ func _set_group_quantity(new_val):
 	group_quantity = clamp(new_val, GROUP_QUANTITY_MIN, GROUP_QUANTITY_MAX)
 	
 	#if there are too many children, cut off the extras
-	if get_child_count() > group_quantity:
-		for i in range(get_child_count()):
+	if $OrchestratorGroups.get_child_count() > group_quantity:
+		for i in range($OrchestratorGroups.get_child_count()):
 			if i >= group_quantity:
-				get_child(i).queue_free()
+				$OrchestratorGroups.get_child(i).queue_free()
 	
 	#if there are not enough children, remove all children and add back in the correct ammount
-	if get_child_count() < group_quantity:
-		for child in get_children():
+	if $OrchestratorGroups.get_child_count() < group_quantity:
+		for child in $OrchestratorGroups.get_children():
 			child.queue_free()
 			
 		for i in range(group_quantity):
 			var group_instance = preload("res://UI/Orchestrator/OrchestratorGroup.tscn").instance()
-			add_child(group_instance)
+			$OrchestratorGroups.add_child(group_instance)
 			group_instance.action = action_array[i]
 
 
@@ -44,11 +44,11 @@ func _set_cell_quantity(new_val):
 	cell_quantity = clamp(new_val, CELL_QUANTITY_MIN, CELL_QUANTITY_MAX)
 	GlobalSyncManager.cell_quantity = cell_quantity
 	
-	for i in range(get_child_count()):
-		get_child(i).cell_quantity = cell_quantity
+	for i in range($OrchestratorGroups.get_child_count()):
+		$OrchestratorGroups.get_child(i).cell_quantity = cell_quantity
 
 
 func _set_action_array(new_vals):
 	action_array = new_vals
-	for i in range(get_child_count()):
-		get_child(i).action = action_array[i]
+	for i in range($OrchestratorGroups.get_child_count()):
+		$OrchestratorGroups.get_child(i).action = action_array[i]
