@@ -1,3 +1,4 @@
+tool
 extends Node
 
 #exports
@@ -10,6 +11,7 @@ export var sync_cell_count = 5 setget _set_sync_cell_count
 var sync_action_enables = [false, false, false, false, false, false]
 var sync_subdiv_current = 0 setget _set_sync_subdiv_current
 
+var sync_subdiv_upper_limit_reached = 0 	#furthest subdiv reached by timer, not by dragging
 var sync_cell_current = 0	#automatically calculated
 
 
@@ -33,7 +35,8 @@ func _process(delta):
 
 
 func _update_timer_wait_time():
-	$SyncTimer.wait_time = float(sync_time_total_duration) / float(sync_subdiv_count)
+	if has_node("SyncTimer"):
+		$SyncTimer.wait_time = float(sync_time_total_duration) / float(sync_subdiv_count)
 
 
 func _update_sync_cell_current():
@@ -78,5 +81,10 @@ func _on_play_scene():
 func _on_SyncTimer_timeout():
 	if sync_subdiv_current < sync_subdiv_count - 1:
 		self.sync_subdiv_current += 1
+		
+		if sync_subdiv_current > sync_subdiv_upper_limit_reached:
+			sync_subdiv_upper_limit_reached = sync_subdiv_current
+		
+		GlobalSignalManager.emit_signal("sync_timer_timeout")
 	else:
 		GlobalSignalManager.emit_signal("reset_scene")

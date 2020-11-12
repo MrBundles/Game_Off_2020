@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://UI/Orchestrator/Orchestrator.gd" type="Script" id=1]
 [ext_resource path="res://UI/Orchestrator/OrchestratorSyncSlider.gd" type="Script" id=2]
+[ext_resource path="res://UI/ActionSliders/ActionSlider.png" type="Texture" id=3]
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0, 1, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 1, 0, 1 )
 
 [node name="Orchestrator" type="VBoxContainer"]
 pause_mode = 2
@@ -22,12 +29,16 @@ group_quantity = 5
 
 [node name="SyncSlider" type="HSlider" parent="."]
 margin_right = 1920.0
-margin_bottom = 16.0
-max_value = 500.0
+margin_bottom = 32.0
+custom_icons/grabber_highlight = ExtResource( 3 )
+custom_icons/grabber = ExtResource( 3 )
+custom_styles/grabber_area_highlight = SubResource( 2 )
+custom_styles/grabber_area = SubResource( 1 )
+max_value = 15.0
 script = ExtResource( 2 )
 
 [node name="OrchestratorGroups" type="VBoxContainer" parent="."]
-margin_top = 20.0
+margin_top = 36.0
 margin_right = 1920.0
-margin_bottom = 196.0
+margin_bottom = 212.0
 [connection signal="value_changed" from="SyncSlider" to="SyncSlider" method="_on_SyncSlider_value_changed"]
