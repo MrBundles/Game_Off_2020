@@ -23,7 +23,7 @@ func _process(delta):
 			_set_enable(false)
 		
 	#if mouse is in cell or cell index is active
-	if get_global_rect().has_point(get_global_mouse_position()) or GlobalSyncManager.sync_index == cell_index:
+	if get_global_rect().has_point(get_global_mouse_position()) or GlobalSyncManager.sync_cell_current == cell_index:
 		if enable:
 			modulate = GlobalColorManager.action_color_array[action].darkened(.25)
 		else:

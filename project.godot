@@ -34,11 +34,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Entities/Interactors/Interactor.gd"
 }, {
-"base": "VBoxContainer",
-"class": "Orchestrator",
-"language": "GDScript",
-"path": "res://UI/Orchestrator/Orchestrator.gd"
-}, {
 "base": "Interactor",
 "class": "Piston",
 "language": "GDScript",
@@ -65,7 +60,6 @@ _global_script_class_icons={
 "Conveyor": "",
 "Interactable": "",
 "Interactor": "",
-"Orchestrator": "",
 "Piston": "",
 "action_slider": "",
 "orchestrator_cell": "",
@@ -85,6 +79,7 @@ GlobalAudioManager="*res://Globals/GlobalAudioManager.gd"
 GlobalSceneManager="*res://Globals/GlobalSceneManager.gd"
 GlobalSignalManager="*res://Globals/GlobalSignalManager.gd"
 GlobalSyncManager="*res://Globals/GlobalSyncManager.tscn"
+UiCanvasLayer="*res://UI/UICanvasLayer.tscn"
 
 [display]
 
@@ -113,6 +108,11 @@ mouse_scroll_up={
 mouse_scroll_down={
 "deadzone": 0.5,
 "events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":5,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+pause={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
  ]
 }
 

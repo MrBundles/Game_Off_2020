@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://UI/Orchestrator/Orchestrator.gd" type="Script" id=1]
+[ext_resource path="res://UI/Orchestrator/OrchestratorSyncSlider.gd" type="Script" id=2]
 
 [node name="Orchestrator" type="VBoxContainer"]
+pause_mode = 2
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
@@ -17,12 +19,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 group_quantity = 5
-cell_quantity = 5
+
+[node name="SyncSlider" type="HSlider" parent="."]
+margin_right = 1920.0
+margin_bottom = 16.0
+max_value = 500.0
+script = ExtResource( 2 )
 
 [node name="OrchestratorGroups" type="VBoxContainer" parent="."]
-margin_top = 88.0
+margin_top = 20.0
 margin_right = 1920.0
-margin_bottom = 88.0
-grow_horizontal = 0
-grow_vertical = 2
-alignment = 1
+margin_bottom = 196.0
+[connection signal="value_changed" from="SyncSlider" to="SyncSlider" method="_on_SyncSlider_value_changed"]

@@ -3,8 +3,11 @@
 [ext_resource path="res://Globals/GlobalSyncManager.gd" type="Script" id=1]
 
 [node name="GlobalSyncManager" type="Node"]
+pause_mode = 2
 script = ExtResource( 1 )
-sync_timer_duration = 1
+sync_subdiv_count = 10
+sync_cell_count = 10
 
 [node name="SyncTimer" type="Timer" parent="."]
+autostart = true
 [connection signal="timeout" from="SyncTimer" to="." method="_on_SyncTimer_timeout"]

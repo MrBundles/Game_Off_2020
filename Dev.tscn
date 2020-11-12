@@ -1,11 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://UI/SyncControls/SyncControls.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Entities/Interactors/Conveyor/Conveyor.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Entities/Interactables/Box/Box.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Entities/Interactors/Arm/Arm.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Dev.gd" type="Script" id=5]
-[ext_resource path="res://UI/Orchestrator/Orchestrator.tscn" type="PackedScene" id=6]
 
 [node name="Dev" type="Node2D"]
 script = ExtResource( 5 )
@@ -25,40 +23,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="UICanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="VBoxContainer" type="VBoxContainer" parent="UICanvasLayer"]
-anchor_top = 1.0
-anchor_bottom = 1.0
-margin_top = -180.0
-margin_right = 1920.0
-mouse_filter = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="HBoxContainer" type="HBoxContainer" parent="UICanvasLayer/VBoxContainer"]
-margin_right = 1920.0
-margin_bottom = 176.0
-rect_min_size = Vector2( 0, 64 )
-
-[node name="SyncControls" parent="UICanvasLayer/VBoxContainer/HBoxContainer" instance=ExtResource( 1 )]
-anchor_top = 0.0
-anchor_bottom = 0.0
-margin_top = 0.0
-margin_bottom = 176.0
-
-[node name="Orchestrator" parent="UICanvasLayer/VBoxContainer/HBoxContainer" instance=ExtResource( 6 )]
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 84.0
-margin_top = 0.0
-margin_right = 1920.0
-margin_bottom = 176.0
-
 [node name="Label" type="Label" parent="."]
-visible = false
 margin_left = 354.578
 margin_top = 176.398
 margin_right = 626.578
@@ -69,9 +34,6 @@ __meta__ = {
 
 [node name="Box" parent="." instance=ExtResource( 3 )]
 position = Vector2( 896, 256 )
-
-[node name="Box2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1312, 224 )
 
 [node name="Conveyor" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1157.43, 725.955 )
