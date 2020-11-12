@@ -1,4 +1,4 @@
-tool
+
 extends TextureRect
 class_name orchestrator_cell
 

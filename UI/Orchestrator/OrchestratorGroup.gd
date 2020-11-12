@@ -1,4 +1,4 @@
-tool
+
 extends HBoxContainer
 class_name orchestrator_group
 
