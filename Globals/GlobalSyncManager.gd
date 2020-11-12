@@ -27,11 +27,13 @@ func _ready():
 
 func _process(delta):
 	#handle pause/play inputs
-	if Input.is_action_just_pressed("pause"):
-		if GlobalSceneManager.state == GlobalSceneManager.STATES.playing:
-			GlobalSignalManager.emit_signal("pause_scene")
-		elif GlobalSceneManager.state == GlobalSceneManager.STATES.paused:
-			GlobalSignalManager.emit_signal("play_scene")
+	if Input.is_action_just_pressed("physics_start_stop"):
+		if GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.running:
+			print(GlobalSceneManager.physics_state)
+			print(GlobalSceneManager.PHYSICS_STATES.stopped)
+			GlobalSignalManager.physics_state = GlobalSceneManager.PHYSICS_STATES.stopped
+		elif GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.stopped:
+			GlobalSignalManager.physics_state = GlobalSceneManager.PHYSICS_STATES.running
 
 
 func _update_timer_wait_time():

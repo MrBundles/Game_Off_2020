@@ -4,10 +4,10 @@
 [ext_resource path="res://UI/Orchestrator/OrchestratorSyncSlider.gd" type="Script" id=2]
 [ext_resource path="res://UI/ActionSliders/ActionSlider.png" type="Texture" id=3]
 
-[sub_resource type="StyleBoxFlat" id=2]
+[sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 1, 0, 1 )
 
-[sub_resource type="StyleBoxFlat" id=1]
+[sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0, 1, 0, 1 )
 
 [node name="Orchestrator" type="VBoxContainer"]
@@ -28,17 +28,18 @@ __meta__ = {
 group_quantity = 5
 
 [node name="SyncSlider" type="HSlider" parent="."]
+margin_top = 70.0
 margin_right = 1920.0
-margin_bottom = 32.0
+margin_bottom = 102.0
 custom_icons/grabber_highlight = ExtResource( 3 )
 custom_icons/grabber = ExtResource( 3 )
-custom_styles/grabber_area_highlight = SubResource( 2 )
-custom_styles/grabber_area = SubResource( 1 )
-max_value = 15.0
+custom_styles/grabber_area_highlight = SubResource( 1 )
+custom_styles/grabber_area = SubResource( 2 )
+max_value = 500.0
 script = ExtResource( 2 )
 
 [node name="OrchestratorGroups" type="VBoxContainer" parent="."]
-margin_top = 36.0
+margin_top = 106.0
 margin_right = 1920.0
-margin_bottom = 212.0
+margin_bottom = 106.0
 [connection signal="value_changed" from="SyncSlider" to="SyncSlider" method="_on_SyncSlider_value_changed"]

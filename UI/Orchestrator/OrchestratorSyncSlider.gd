@@ -10,7 +10,7 @@ func _ready():
 
 
 func _process(delta):
-	if not get_tree().paused:
+	if GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.running:
 		value = GlobalSyncManager.sync_subdiv_current
 
 
@@ -20,7 +20,7 @@ func _set_sync_subdiv_count(new_val):
 
 
 func _on_SyncSlider_value_changed(new_val):
-	if get_tree().paused:
+	if GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.stopped:
 		if new_val > GlobalSyncManager.sync_subdiv_upper_limit_reached:
 			value = GlobalSyncManager.sync_subdiv_upper_limit_reached
 		
