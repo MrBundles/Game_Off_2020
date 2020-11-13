@@ -2,11 +2,9 @@ tool
 extends RigidBody2D
 class_name Interacts
 
-#enums
-enum INTERACT_TYPES {interactable, interactor}
 
 #variables
-var interact_type = INTERACT_TYPES.interactable
+var initial_physics_mode = mode
 var sync_array = []
 
 
@@ -19,7 +17,9 @@ func _ready():
 	
 	for i in range(GlobalSyncManager.sync_subdiv_count):
 		sync_array.append([global_position, rotation_degrees, linear_velocity, angular_velocity])
-
+	
+	initial_physics_mode = mode
+	_on_physics_state_changed(GlobalSceneManager.physics_state)
 
 func _update_interacts_state(sync_subdiv):
 	global_position = sync_array[sync_subdiv][0]
@@ -42,16 +42,10 @@ func _on_physics_state_changed(new_physics_state):
 		_update_interacts_state(GlobalSyncManager.sync_subdiv_current)
 		GlobalSyncManager.sync_subdiv_upper_limit_reached = GlobalSyncManager.sync_subdiv_current
 		
-		if interact_type == INTERACT_TYPES.interactable:
-			mode = RigidBody2D.MODE_RIGID
-		else: 
-			mode = RigidBody2D.MODE_STATIC
+		mode = initial_physics_mode
 	
-	elif new_physics_state == GlobalSceneManager.PHYSICS_STATES.stopped:
-		if interact_type == INTERACT_TYPES.interactable:
-			mode = RigidBody2D.MODE_KINEMATIC
-		else:
-			mode = RigidBody2D.MODE_STATIC
+	else:
+		mode = RigidBody2D.MODE_KINEMATIC
 
 
 func _on_game_state_changed(new_game_state):

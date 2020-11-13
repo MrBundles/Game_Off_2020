@@ -75,17 +75,16 @@ _global_script_class_icons={
 [application]
 
 config/name="Game Off Moon Shot"
-run/main_scene="res://Dev.tscn"
+run/main_scene="res://Scenes/MainScene.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 GlobalColorManager="*res://Globals/GlobalColorManager.gd"
 GlobalAudioManager="*res://Globals/GlobalAudioManager.gd"
-GlobalSceneManager="*res://Globals/GlobalSceneManager.gd"
 GlobalSignalManager="*res://Globals/GlobalSignalManager.gd"
 GlobalSyncManager="*res://Globals/GlobalSyncManager.tscn"
-UiCanvasLayer="*res://UI/UICanvasLayer.tscn"
+GlobalSceneManager="*res://Globals/GlobalSceneManager.tscn"
 
 [display]
 

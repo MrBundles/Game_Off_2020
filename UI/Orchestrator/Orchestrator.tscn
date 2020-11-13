@@ -22,7 +22,7 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -960.0
-margin_top = -296.0
+margin_top = -304.0
 margin_right = 960.0
 grow_horizontal = 0
 grow_vertical = 0
@@ -34,20 +34,21 @@ __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
 }
-group_quantity = 5
+group_quantity = 4
 
 [node name="SyncControls" parent="." instance=ExtResource( 4 )]
 anchor_top = 0.0
 anchor_bottom = 0.0
 margin_left = 0.0
-margin_top = 144.0
+margin_top = 36.0
 margin_right = 1920.0
-margin_bottom = 208.0
+margin_bottom = 100.0
 
 [node name="SyncSlider" type="HSlider" parent="."]
-margin_top = 216.0
+margin_top = 108.0
 margin_right = 1920.0
-margin_bottom = 248.0
+margin_bottom = 156.0
+rect_min_size = Vector2( 0, 48 )
 custom_icons/grabber_highlight = ExtResource( 3 )
 custom_icons/grabber = ExtResource( 3 )
 custom_styles/grabber_area_highlight = SubResource( 1 )
@@ -56,9 +57,9 @@ max_value = 500.0
 script = ExtResource( 2 )
 
 [node name="OrchestratorGroups" type="VBoxContainer" parent="."]
-margin_top = 256.0
+margin_top = 164.0
 margin_right = 1920.0
-margin_bottom = 432.0
+margin_bottom = 304.0
 custom_constants/separation = 4
 [connection signal="gui_input" from="SyncSlider" to="SyncSlider" method="_on_SyncSlider_gui_input"]
 [connection signal="value_changed" from="SyncSlider" to="SyncSlider" method="_on_SyncSlider_value_changed"]

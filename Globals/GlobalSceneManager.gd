@@ -35,7 +35,14 @@ func _on_game_state_changed(new_game_state):
 	if new_game_state == GAME_STATES.menu:
 		pass
 	if new_game_state == GAME_STATES.resetting:
-		get_tree().reload_current_scene()
+		#remove any current game scenes
+		for child in $GameScenes.get_children():
+			child.queue_free()
+		
+		#load new game scene as child
+		var game_scene_instance = load("res://Scenes/GameScenes/GameScene01.tscn").instance()
+		$GameScenes.add_child(game_scene_instance)
+		
 		yield(get_tree(), "idle_frame")
 		self.game_state = GAME_STATES.playing
 

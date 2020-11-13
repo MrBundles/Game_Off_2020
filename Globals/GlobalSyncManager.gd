@@ -10,6 +10,7 @@ export var sync_cell_count = 5 setget _set_sync_cell_count
 #variables
 var sync_action_enables = [false, false, false, false, false, false]
 var sync_subdiv_current = 0 setget _set_sync_subdiv_current
+var sync_cell_enables = []  #for retaining orchestrator cell states between resets
 
 var sync_subdiv_upper_limit_reached = 0 	#furthest subdiv reached by timer, not by dragging
 var sync_cell_current = 0	#automatically calculated

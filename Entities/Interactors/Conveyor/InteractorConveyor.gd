@@ -14,14 +14,14 @@ const MAX_CONVEYOR_LENGTH = 50
 var single_conveyor_length = 64
 
 
-func _ready():
-	#connect signals
-	connect("action_changed", self, "_conveyor_modulate_update")
-	
+func _ready():	
 	_set_conveyor_length(conveyor_length)
 	_conveyor_modulate_update()
 
 func _process(delta):
+	
+	if Engine.editor_hint:
+		_conveyor_modulate_update()
 	
 	if action_a_enable and not action_b_enable and GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.running:
 		$ConveyorSpriteA.texture.region.position.x += conveyor_speed * delta
