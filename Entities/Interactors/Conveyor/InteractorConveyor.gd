@@ -23,12 +23,12 @@ func _ready():
 
 func _process(delta):
 	
-	if action_a_enable and not action_b_enable:
+	if action_a_enable and not action_b_enable and GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.running:
 		$ConveyorSpriteA.texture.region.position.x += conveyor_speed * delta
 		$ConveyorSpriteB.texture.region.position.x += conveyor_speed * delta
 		linear_velocity = Vector2(-conveyor_speed,0)
 		
-	elif action_b_enable and not action_a_enable:
+	elif action_b_enable and not action_a_enable and GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.running:
 		$ConveyorSpriteA.texture.region.position.x -= conveyor_speed * delta
 		$ConveyorSpriteB.texture.region.position.x -= conveyor_speed * delta
 		linear_velocity = Vector2(conveyor_speed,0)

@@ -10,8 +10,7 @@ func _ready():
 
 
 func _process(delta):
-	if GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.running:
-		value = GlobalSyncManager.sync_subdiv_current
+	value = GlobalSyncManager.sync_subdiv_current
 
 
 func _set_sync_subdiv_count(new_val):
@@ -20,9 +19,17 @@ func _set_sync_subdiv_count(new_val):
 
 
 func _on_SyncSlider_value_changed(new_val):
-	if GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.stopped:
+	if GlobalSceneManager.physics_state != GlobalSceneManager.PHYSICS_STATES.running:
 		if new_val > GlobalSyncManager.sync_subdiv_upper_limit_reached:
 			value = GlobalSyncManager.sync_subdiv_upper_limit_reached
 		
 		GlobalSyncManager.sync_subdiv_current = value
 		GlobalSignalManager.emit_signal("sync_slider_moved", value)
+
+
+func _on_SyncSlider_gui_input(event):
+	if event is InputEventMouseButton and GlobalSceneManager.physics_state != GlobalSceneManager.PHYSICS_STATES.running:
+		if event.is_pressed():
+			GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.rewinding
+		else:
+			GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.stopped

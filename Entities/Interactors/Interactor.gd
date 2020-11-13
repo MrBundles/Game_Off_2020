@@ -1,5 +1,5 @@
 tool
-extends RigidBody2D
+extends Interacts
 class_name Interactor
 
 #signals
@@ -13,6 +13,12 @@ export(GlobalSyncManager.ACTIONS) var action_b = GlobalSyncManager.ACTIONS.disab
 var action_a_enable : bool
 var action_b_enable : bool
 var interactor_tooltip_instance : Node
+
+
+func _ready():
+	#set interact type
+	interact_type = INTERACT_TYPES.interactor
+	_on_physics_state_changed(GlobalSceneManager.physics_state)
 
 
 func _process(delta):
@@ -36,7 +42,7 @@ func _on_input_event(viewport, event, shape_idx):
 					action_b = 0
 			
 			emit_signal("action_changed")
-		
+
 
 func _on_mouse_entered():
 	interactor_tooltip_instance = preload("res://Entities/Interactors/InteractorTooltip.tscn").instance()

@@ -17,9 +17,8 @@ var sync_cell_current = 0	#automatically calculated
 
 func _ready():
 	#connect signals
-	GlobalSignalManager.connect("reset_scene", self, "_on_reset_scene")
-	GlobalSignalManager.connect("pause_scene", self, "_on_pause_scene")
-	GlobalSignalManager.connect("play_scene", self, "_on_play_scene")
+	GlobalSignalManager.connect("physics_state_changed", self, "_on_physics_state_changed")
+	GlobalSignalManager.connect("game_state_changed", self, "_on_game_state_changed")
 	
 	_update_timer_wait_time()
 	$SyncTimer.paused = true
@@ -29,11 +28,9 @@ func _process(delta):
 	#handle pause/play inputs
 	if Input.is_action_just_pressed("physics_start_stop"):
 		if GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.running:
-			print(GlobalSceneManager.physics_state)
-			print(GlobalSceneManager.PHYSICS_STATES.stopped)
-			GlobalSignalManager.physics_state = GlobalSceneManager.PHYSICS_STATES.stopped
+			GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.stopped
 		elif GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.stopped:
-			GlobalSignalManager.physics_state = GlobalSceneManager.PHYSICS_STATES.running
+			GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.running
 
 
 func _update_timer_wait_time():
@@ -65,19 +62,19 @@ func _set_sync_cell_count(new_val):
 func _set_sync_subdiv_current(new_val):
 	sync_subdiv_current = new_val
 	_update_sync_cell_current()
-	
 
 
-func _on_reset_scene():
-	self.sync_subdiv_current = 0
+func _on_physics_state_changed(new_physics_state):
+	if new_physics_state == GlobalSceneManager.PHYSICS_STATES.running:
+		$SyncTimer.paused = false
+	elif new_physics_state == GlobalSceneManager.PHYSICS_STATES.stopped:
+		$SyncTimer.paused = true
 
 
-func _on_pause_scene():
-	$SyncTimer.paused = true
-
-
-func _on_play_scene():
-	$SyncTimer.paused = false
+func _on_game_state_changed(new_game_state):
+	if new_game_state == GlobalSceneManager.GAME_STATES.resetting:
+		self.sync_subdiv_current = 0
+		sync_subdiv_upper_limit_reached = 0
 
 
 func _on_SyncTimer_timeout():
@@ -89,4 +86,4 @@ func _on_SyncTimer_timeout():
 		
 		GlobalSignalManager.emit_signal("sync_timer_timeout")
 	else:
-		GlobalSignalManager.emit_signal("reset_scene")
+		GlobalSceneManager.game_state = GlobalSceneManager.GAME_STATES.resetting

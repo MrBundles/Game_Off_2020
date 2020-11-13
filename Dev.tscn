@@ -35,6 +35,7 @@ __meta__ = {
 [node name="Box" parent="." instance=ExtResource( 3 )]
 pause_mode = 2
 position = Vector2( 896, 256 )
+mode = 1
 
 [node name="Conveyor" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1157.43, 725.955 )

@@ -6,6 +6,8 @@
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 1, 0, 1 )
+expand_margin_top = 8.0
+expand_margin_bottom = 8.0
 
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0, 1, 0, 1 )
@@ -42,4 +44,5 @@ script = ExtResource( 2 )
 margin_top = 106.0
 margin_right = 1920.0
 margin_bottom = 106.0
+[connection signal="gui_input" from="SyncSlider" to="SyncSlider" method="_on_SyncSlider_gui_input"]
 [connection signal="value_changed" from="SyncSlider" to="SyncSlider" method="_on_SyncSlider_value_changed"]
