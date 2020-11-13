@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Inkscape.svg-15400d3e6ff98a505dbd29a5fa3dd0ac.stex"
+path="res://.import/Inkscape.svg-180913f3c0baf232a038943b2b8d84db.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources_x/Inkscape.svg"
-dest_files=[ "res://.import/Inkscape.svg-15400d3e6ff98a505dbd29a5fa3dd0ac.stex" ]
+source_file="res://Resources/Inkscape.svg"
+dest_files=[ "res://.import/Inkscape.svg-180913f3c0baf232a038943b2b8d84db.stex" ]
 
 [params]
 

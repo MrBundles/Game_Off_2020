@@ -34,7 +34,22 @@ __meta__ = {
 
 [node name="Box" parent="." instance=ExtResource( 3 )]
 pause_mode = 2
-position = Vector2( 896, 256 )
+position = Vector2( 1120.51, 539.306 )
+mode = 1
+
+[node name="Box2" parent="." instance=ExtResource( 3 )]
+pause_mode = 2
+position = Vector2( 1163.27, 439.525 )
+mode = 1
+
+[node name="Box3" parent="." instance=ExtResource( 3 )]
+pause_mode = 2
+position = Vector2( 1204.25, 337.963 )
+mode = 1
+
+[node name="Box4" parent="." instance=ExtResource( 3 )]
+pause_mode = 2
+position = Vector2( 1075.96, 633.741 )
 mode = 1
 
 [node name="Conveyor" parent="." instance=ExtResource( 2 )]
@@ -43,11 +58,12 @@ conveyor_length = 15
 
 [node name="Arm" parent="." instance=ExtResource( 4 )]
 position = Vector2( 383.086, 757.264 )
+mode = 1
 action_a = 1
 action_b = 4
 
 [node name="Arm2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 518.503, 753.7 )
+position = Vector2( 518.503, 751.918 )
 mode = 1
 
 [node name="Arm3" parent="." instance=ExtResource( 4 )]

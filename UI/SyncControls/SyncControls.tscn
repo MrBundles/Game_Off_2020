@@ -5,28 +5,29 @@
 [ext_resource path="res://UI/SyncControls/SyncControlStop.png" type="Texture" id=3]
 [ext_resource path="res://UI/SyncControls/SyncControlStart.png" type="Texture" id=4]
 
-[node name="SyncControls" type="VBoxContainer"]
+[node name="SyncControls" type="HBoxContainer"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_top = -164.0
-margin_right = 80.0
+margin_left = 16.0
+margin_top = -64.0
+margin_right = 132.0
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="StartButton" type="TextureButton" parent="."]
-margin_right = 80.0
-margin_bottom = 80.0
+margin_right = 64.0
+margin_bottom = 64.0
 focus_mode = 0
 toggle_mode = true
 texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 3 )
 
 [node name="ResetButton" type="TextureButton" parent="."]
-margin_top = 84.0
-margin_right = 80.0
-margin_bottom = 164.0
+margin_left = 68.0
+margin_right = 132.0
+margin_bottom = 64.0
 focus_mode = 0
 texture_normal = ExtResource( 1 )
 [connection signal="toggled" from="StartButton" to="." method="_on_StartButton_toggled"]

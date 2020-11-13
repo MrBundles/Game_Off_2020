@@ -1,38 +1,53 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://UI/Orchestrator/Orchestrator.gd" type="Script" id=1]
 [ext_resource path="res://UI/Orchestrator/OrchestratorSyncSlider.gd" type="Script" id=2]
 [ext_resource path="res://UI/ActionSliders/ActionSlider.png" type="Texture" id=3]
+[ext_resource path="res://UI/SyncControls/SyncControls.tscn" type="PackedScene" id=4]
 
 [sub_resource type="StyleBoxFlat" id=1]
-bg_color = Color( 0, 1, 0, 1 )
+bg_color = Color( 0.541176, 0.788235, 0.14902, 1 )
 expand_margin_top = 8.0
 expand_margin_bottom = 8.0
 
 [sub_resource type="StyleBoxFlat" id=2]
-bg_color = Color( 0, 1, 0, 1 )
+bg_color = Color( 0.541176, 0.788235, 0.14902, 1 )
+expand_margin_top = 8.0
+expand_margin_bottom = 8.0
 
 [node name="Orchestrator" type="VBoxContainer"]
 pause_mode = 2
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-margin_top = -88.0
-margin_bottom = 88.0
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -960.0
+margin_top = -296.0
+margin_right = 960.0
 grow_horizontal = 0
-grow_vertical = 2
+grow_vertical = 0
 size_flags_horizontal = 3
-alignment = 1
+custom_constants/separation = 8
+alignment = 2
 script = ExtResource( 1 )
 __meta__ = {
+"_edit_group_": true,
 "_edit_use_anchors_": false
 }
 group_quantity = 5
 
-[node name="SyncSlider" type="HSlider" parent="."]
-margin_top = 70.0
+[node name="SyncControls" parent="." instance=ExtResource( 4 )]
+anchor_top = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 144.0
 margin_right = 1920.0
-margin_bottom = 102.0
+margin_bottom = 208.0
+
+[node name="SyncSlider" type="HSlider" parent="."]
+margin_top = 216.0
+margin_right = 1920.0
+margin_bottom = 248.0
 custom_icons/grabber_highlight = ExtResource( 3 )
 custom_icons/grabber = ExtResource( 3 )
 custom_styles/grabber_area_highlight = SubResource( 1 )
@@ -41,8 +56,9 @@ max_value = 500.0
 script = ExtResource( 2 )
 
 [node name="OrchestratorGroups" type="VBoxContainer" parent="."]
-margin_top = 106.0
+margin_top = 256.0
 margin_right = 1920.0
-margin_bottom = 106.0
+margin_bottom = 432.0
+custom_constants/separation = 4
 [connection signal="gui_input" from="SyncSlider" to="SyncSlider" method="_on_SyncSlider_gui_input"]
 [connection signal="value_changed" from="SyncSlider" to="SyncSlider" method="_on_SyncSlider_value_changed"]

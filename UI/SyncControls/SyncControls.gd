@@ -1,5 +1,4 @@
-extends VBoxContainer
-
+extends HBoxContainer
 
 
 func _on_StartButton_toggled(button_pressed):

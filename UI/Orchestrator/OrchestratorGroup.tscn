@@ -9,7 +9,7 @@ margin_top = -46.0
 margin_right = 1920.0
 rect_min_size = Vector2( 0, 32 )
 mouse_filter = 2
-custom_constants/separation = 5
+custom_constants/separation = 4
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
