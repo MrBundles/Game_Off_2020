@@ -104,7 +104,11 @@ conveyor_length = 15
 
 [node name="Box" parent="." instance=ExtResource( 4 )]
 pause_mode = 2
-position = Vector2( 1216, 288 )
+position = Vector2( 1568, 480 )
+
+[node name="Box2" parent="." instance=ExtResource( 4 )]
+pause_mode = 2
+position = Vector2( 1344, 480 )
 
 [node name="Conveyor2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 960, 800 )
@@ -139,7 +143,7 @@ tile_data = PoolIntArray( 393247, 0, 0, 393248, 0, 0, 393249, 0, 0, 393250, 0, 0
 [node name="YellowActionTileMap" parent="ActionTileMaps" index="2"]
 modulate = Color( 1, 0.844118, 0.420588, 1 )
 tile_set = SubResource( 4 )
-tile_data = PoolIntArray( 524319, 0, 0, 524320, 0, 0, 524321, 0, 0, 524322, 0, 0 )
+tile_data = PoolIntArray( 524319, 0, 0, 524320, 0, 0, 524321, 0, 0, 524322, 0, 0, 1048616, 0, 0, 1048617, 0, 0, 1048618, 0, 0, 1048619, 0, 0 )
 
 [node name="GreenActionTileMap" parent="ActionTileMaps" index="3"]
 modulate = Color( 0.655882, 0.841177, 0.361765, 1 )

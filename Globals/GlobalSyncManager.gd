@@ -19,7 +19,7 @@ var sync_cell_current = 0	#automatically calculated
 func _ready():
 	#connect signals
 	GlobalSignalManager.connect("physics_state_changed", self, "_on_physics_state_changed")
-	GlobalSignalManager.connect("game_state_changed", self, "_on_game_state_changed")
+	GlobalSignalManager.connect("physics_reset_button_pressed", self, "_on_physics_reset_button_pressed")
 	
 	_update_timer_wait_time()
 	$SyncTimer.paused = true
@@ -72,10 +72,9 @@ func _on_physics_state_changed(new_physics_state):
 		$SyncTimer.paused = true
 
 
-func _on_game_state_changed(new_game_state):
-	if new_game_state == GlobalSceneManager.GAME_STATES.resetting:
-		self.sync_subdiv_current = 0
-		sync_subdiv_upper_limit_reached = 0
+func _on_physics_reset_button_pressed():
+	self.sync_subdiv_current = 0
+	sync_subdiv_upper_limit_reached = 0
 
 
 func _on_SyncTimer_timeout():
@@ -87,4 +86,4 @@ func _on_SyncTimer_timeout():
 		
 		GlobalSignalManager.emit_signal("sync_timer_timeout")
 	else:
-		GlobalSceneManager.game_state = GlobalSceneManager.GAME_STATES.resetting
+		GlobalSignalManager.emit_signal("physics_reset_button_pressed")

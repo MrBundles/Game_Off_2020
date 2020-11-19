@@ -14,4 +14,4 @@ func _on_StartButton_toggled(button_pressed):
 
 
 func _on_ResetButton_pressed():
-	GlobalSceneManager.game_state = GlobalSceneManager.GAME_STATES.resetting
+		GlobalSignalManager.emit_signal("physics_reset_button_pressed")

@@ -1,13 +1,16 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Globals/GlobalSceneManager.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/GameScenes/GameScene01.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Globals/GlobalScenes.gd" type="Script" id=2]
+[ext_resource path="res://Menus/MainMenu/MainMenu.tscn" type="PackedScene" id=3]
 
 [node name="GlobalSceneManager" type="Node"]
 script = ExtResource( 1 )
+main_menu_scene_path = "res://Menus/MainMenu/MainMenu.tscn"
 
 [node name="MenuScenes" type="CanvasLayer" parent="."]
+script = ExtResource( 2 )
+
+[node name="MainMenu" parent="MenuScenes" instance=ExtResource( 3 )]
 
 [node name="GameScenes" type="CanvasLayer" parent="."]
-
-[node name="GameScene" parent="GameScenes" instance=ExtResource( 2 )]

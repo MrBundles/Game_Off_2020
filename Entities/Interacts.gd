@@ -13,7 +13,7 @@ func _ready():
 	GlobalSignalManager.connect("sync_timer_timeout", self, "_on_sync_timer_timeout")
 	GlobalSignalManager.connect("sync_slider_moved", self, "_on_sync_slider_moved")
 	GlobalSignalManager.connect("physics_state_changed", self, "_on_physics_state_changed")
-	GlobalSignalManager.connect("game_state_changed", self, "_on_game_state_changed")
+	GlobalSignalManager.connect("physics_reset_button_pressed", self, "_on_physics_reset_button_pressed")
 	
 	for i in range(GlobalSyncManager.sync_subdiv_count):
 		sync_array.append([global_position, rotation_degrees, linear_velocity, angular_velocity])
@@ -48,6 +48,9 @@ func _on_physics_state_changed(new_physics_state):
 		mode = RigidBody2D.MODE_KINEMATIC
 
 
-func _on_game_state_changed(new_game_state):
-	if new_game_state == GlobalSceneManager.GAME_STATES.resetting:
-		sync_array = []
+func _on_physics_reset_button_pressed():
+	mode = RigidBody2D.MODE_KINEMATIC
+	_update_interacts_state(0)
+	
+	yield(get_tree(), "idle_frame")
+	mode = initial_physics_mode

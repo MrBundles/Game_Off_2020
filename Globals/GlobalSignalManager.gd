@@ -5,4 +5,14 @@ extends Node
 signal sync_timer_timeout
 signal sync_slider_moved
 signal physics_state_changed
-signal game_state_changed
+
+signal play_button_pressed
+signal quit_button_pressed
+signal continue_button_pressed
+signal level_select_button_pressed
+
+signal physics_reset_button_pressed
+
+signal open_scene
+signal reload_current_scene
+signal close_scene
