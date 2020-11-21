@@ -2,29 +2,22 @@ tool
 extends Node
 
 #enums
+enum GAME_STATES {main_menu, settings_menu, credits_menu, level_select_menu, 
+	level_play, level_pause_menu, level_lose_menu, level_win_menu}
 enum PHYSICS_STATES {running, stopped, rewinding}
-enum SCENE_TYPES {menu, game}
 
 #variables
+var game_state = GAME_STATES.main_menu
 var physics_state = PHYSICS_STATES.stopped setget _set_physics_state
-
-#exports
-export var main_menu_scene_path = ""
 
 
 func _ready():
 	#connect signals
 	GlobalSignalManager.connect("physics_state_changed", self, "_on_physics_state_changed")
-	GlobalSignalManager.connect("play_button_pressed", self, "_on_play_button_pressed")
 	GlobalSignalManager.connect("quit_button_pressed", self, "_on_quit_button_pressed")
-	GlobalSignalManager.connect("continue_button_pressed", self, "_on_continue_button_pressed")
-	GlobalSignalManager.connect("level_select_button_pressed", self, "_level_select_button_pressed")
-	
+
 	self.physics_state = PHYSICS_STATES.stopped
-	
-	#initialize main menu when game starts
-	GlobalSignalManager.emit_signal("open_scene", SCENE_TYPES.menu, main_menu_scene_path)
-	
+
 
 func _on_physics_state_changed(new_physics_state):
 	if new_physics_state == PHYSICS_STATES.running:
@@ -35,20 +28,8 @@ func _on_physics_state_changed(new_physics_state):
 		pass
 
 
-func _on_play_button_pressed():
-	pass
-
-
 func _on_quit_button_pressed():
-	pass
-
-
-func _on_continue_button_pressed():
-	pass
-
-
-func _level_select_button_pressed(level_id):
-	pass
+	get_tree().quit()
 
 
 func _set_physics_state(new_val):

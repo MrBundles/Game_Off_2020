@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI/UIButtons/UIButton.tscn" type="PackedScene" id=1]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -184.0
+margin_top = -166.0
+margin_right = 184.0
+margin_bottom = 166.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="NextLevelButton" parent="VBoxContainer" instance=ExtResource( 1 )]
+button_label = "Next"
+transition_signal = "next_level_button_pressed"
+
+[node name="RetryButton" parent="VBoxContainer" instance=ExtResource( 1 )]
+margin_top = 84.0
+margin_bottom = 164.0
+button_label = "Retry"
+transition_signal = "restart_button_pressed"
+
+[node name="LevelSelectButton" parent="VBoxContainer" instance=ExtResource( 1 )]
+margin_top = 168.0
+margin_bottom = 248.0
+button_label = "Level Select"
+transition_signal = "level_select_menu_button_pressed"

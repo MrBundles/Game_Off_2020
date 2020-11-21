@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SettingsButton.png-84d45d69af9faa45addfa4620ea1b5ce.stex"
+path="res://.import/UIButton.png-10b021d44921ca065d8fcbea97787286.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Menus/MainMenu/SettingsButton.png"
-dest_files=[ "res://.import/SettingsButton.png-84d45d69af9faa45addfa4620ea1b5ce.stex" ]
+source_file="res://UI/UIButtons/UIButton.png"
+dest_files=[ "res://.import/UIButton.png-10b021d44921ca065d8fcbea97787286.stex" ]
 
 [params]
 
