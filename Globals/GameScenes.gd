@@ -1,5 +1,7 @@
 extends CanvasLayer
 
+#exports
+export(Array, PackedScene) var game_scene_array
 
 func _ready():
 	#connect signals
@@ -14,7 +16,8 @@ func _ready():
 	GlobalSignalManager.connect("resume_button_pressed", self, "_on_resume_button_pressed")
 	GlobalSignalManager.connect("restart_button_pressed", self, "_on_restart_button_pressed")
 	GlobalSignalManager.connect("next_level_button_pressed", self, "_on_next_level_button_pressed")
-
+	
+	add_child(game_scene_array[0].instance())
 
 func _on_level_select_menu_button_pressed():
 	pass

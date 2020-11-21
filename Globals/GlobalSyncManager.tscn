@@ -9,5 +9,4 @@ sync_cell_count = 10
 
 [node name="SyncTimer" type="Timer" parent="."]
 wait_time = 0.02
-autostart = true
 [connection signal="timeout" from="SyncTimer" to="." method="_on_SyncTimer_timeout"]

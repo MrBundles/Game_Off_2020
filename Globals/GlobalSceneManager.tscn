@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Globals/GlobalSceneManager.gd" type="Script" id=1]
 [ext_resource path="res://Globals/MenuScenes.gd" type="Script" id=2]
@@ -10,11 +10,14 @@
 [ext_resource path="res://Menus/LevelLoseMenu.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Menus/LevelWinMenu.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Menus/SettingsMenu.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/GameScenes/GameScene00.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/GameScenes/GameScene01.tscn" type="PackedScene" id=12]
 
 [node name="GlobalSceneManager" type="Node"]
 script = ExtResource( 1 )
 
 [node name="MenuScenes" type="CanvasLayer" parent="."]
+layer = 5
 script = ExtResource( 2 )
 main_menu = ExtResource( 3 )
 settings_menu = ExtResource( 10 )
@@ -26,3 +29,4 @@ level_win_menu = ExtResource( 9 )
 
 [node name="GameScenes" type="CanvasLayer" parent="."]
 script = ExtResource( 4 )
+game_scene_array = [ ExtResource( 11 ), ExtResource( 12 ), null, null, null ]
