@@ -81,7 +81,6 @@ func _on_physics_reset_button_pressed():
 	
 	sync_subdiv_upper_limit_reached = 0
 	sync_subdiv_current = 0
-	yield(get_tree().create_timer(.5), "timeout")
 	GlobalSceneManager.physics_state = initial_physics_state
 
 

@@ -1,4 +1,4 @@
-tool
+
 extends Interactor
 class_name Conveyor
 
@@ -14,7 +14,9 @@ const MAX_CONVEYOR_LENGTH = 50
 var single_conveyor_length = 64
 
 
-func _ready():	
+func _ready():
+	print("action a: " + str(action_a))
+	print("action b: " + str(action_b))
 	_set_conveyor_length(conveyor_length)
 	_conveyor_modulate_update()
 
@@ -46,11 +48,13 @@ func _set_conveyor_length(new_val):
 
 
 func _conveyor_modulate_update():
-	#modulate conveyors
-	$ConveyorSpriteA.modulate = GlobalColorManager.action_color_array[action_a]
-	$ConveyorSpriteB.modulate = GlobalColorManager.action_color_array[action_b]
-	
-	$ActionAIndicator.modulate = GlobalColorManager.action_color_array[action_a]
-	$ActionBIndicator.modulate = GlobalColorManager.action_color_array[action_b]
+	if has_node("ConveyorSpriteA"):
+		$ConveyorSpriteA.modulate = GlobalColorManager.action_color_array[action_a]
+	if has_node("ConveyorSpriteB"):
+		$ConveyorSpriteB.modulate = GlobalColorManager.action_color_array[action_b]
+	if has_node("ActionAIndicator"):
+		$ActionAIndicator.modulate = GlobalColorManager.action_color_array[action_a]
+	if has_node("ActionBIndicator"):
+		$ActionBIndicator.modulate = GlobalColorManager.action_color_array[action_b]
 
 

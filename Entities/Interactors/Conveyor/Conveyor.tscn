@@ -24,23 +24,21 @@ region = Rect2( 0, 0, 64, 32 )
 
 [node name="Conveyor" type="RigidBody2D"]
 input_pickable = true
-mode = 1
+mode = 3
 sleeping = true
 can_sleep = false
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
-action_a = 2
-action_b = 3
 
 [node name="ActionAIndicator" type="Sprite" parent="."]
-modulate = Color( 1, 0.792157, 0.227451, 1 )
+modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
 position = Vector2( -16, -16 )
 texture = ExtResource( 5 )
 
 [node name="ActionBIndicator" type="Sprite" parent="."]
-modulate = Color( 0.541176, 0.788235, 0.14902, 1 )
+modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
 position = Vector2( 16, -16 )
 texture = ExtResource( 4 )
 
@@ -50,12 +48,12 @@ rotation = 0.000211416
 shape = SubResource( 1 )
 
 [node name="ConveyorSpriteA" type="Sprite" parent="."]
-modulate = Color( 1, 0.792157, 0.227451, 1 )
+modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
 position = Vector2( 0, 16 )
 texture = SubResource( 2 )
 
 [node name="ConveyorSpriteB" type="Sprite" parent="."]
-modulate = Color( 0.541176, 0.788235, 0.14902, 1 )
+modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
 position = Vector2( 0, 16 )
 texture = SubResource( 3 )
 [connection signal="input_event" from="." to="." method="_on_input_event"]

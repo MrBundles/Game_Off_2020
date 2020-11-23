@@ -2,6 +2,9 @@ extends HBoxContainer
 
 
 func _ready():
+	#connect signals
+	GlobalSignalManager.connect("physics_state_changed", self, "_on_physics_state_changed")
+	
 	if GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.running:
 		$StartButton.pressed = true
 
@@ -11,11 +14,19 @@ func _process(delta):
 		_on_ResetButton_pressed()
 
 
-func _on_StartButton_toggled(button_pressed):
-	if button_pressed:
-		GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.running
+func _on_physics_state_changed(new_physics_state):
+	if new_physics_state == GlobalSceneManager.PHYSICS_STATES.rewinding:
+		$StartButton.disabled = true
 	else:
-		GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.stopped
+		$StartButton.disabled = false
+
+
+func _on_StartButton_toggled(button_pressed):
+	if GlobalSceneManager.physics_state != GlobalSceneManager.PHYSICS_STATES.rewinding:
+		if button_pressed:
+			GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.running
+		else:
+			GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.stopped
 
 
 func _on_ResetButton_pressed():
