@@ -29,9 +29,24 @@ func _ready():
 
 func _process(delta):
 	if GlobalSceneManager.game_state == GlobalSceneManager.GAME_STATES.main_menu:
-		pass
-	elif GlobalSceneManager.game_state == GlobalSceneManager.GAME_STATES.main_menu:
-		pass
+		GlobalSyncManager.sync_action_enables[GlobalSyncManager.ACTIONS.blue] = true
+	else:
+		GlobalSyncManager.sync_action_enables[GlobalSyncManager.ACTIONS.blue] = false
+	
+	if GlobalSceneManager.game_state == GlobalSceneManager.GAME_STATES.level_select_menu:
+		GlobalSyncManager.sync_action_enables[GlobalSyncManager.ACTIONS.green] = true
+	else:
+		GlobalSyncManager.sync_action_enables[GlobalSyncManager.ACTIONS.green] = false
+	
+	if GlobalSceneManager.game_state == GlobalSceneManager.GAME_STATES.settings_menu:
+		GlobalSyncManager.sync_action_enables[GlobalSyncManager.ACTIONS.yellow] = true
+	else:
+		GlobalSyncManager.sync_action_enables[GlobalSyncManager.ACTIONS.yellow] = false
+	
+	if GlobalSceneManager.game_state == GlobalSceneManager.GAME_STATES.credits_menu:
+		GlobalSyncManager.sync_action_enables[GlobalSyncManager.ACTIONS.purple] = true
+	else:
+		GlobalSyncManager.sync_action_enables[GlobalSyncManager.ACTIONS.purple] = false
 
 func _clear_children():
 	for child in get_children():

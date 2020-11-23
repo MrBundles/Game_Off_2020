@@ -44,11 +44,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Entities/Interactors/Piston/InteractorPiston.gd"
 }, {
-"base": "TextureButton",
-"class": "action_slider",
-"language": "GDScript",
-"path": "res://UI/ActionSliders/UIActionSlider.gd"
-}, {
 "base": "TextureRect",
 "class": "orchestrator_cell",
 "language": "GDScript",
@@ -67,7 +62,6 @@ _global_script_class_icons={
 "Interactor": "",
 "Interacts": "",
 "Piston": "",
-"action_slider": "",
 "orchestrator_cell": "",
 "orchestrator_group": ""
 }

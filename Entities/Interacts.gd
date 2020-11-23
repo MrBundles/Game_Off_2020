@@ -3,7 +3,7 @@ extends RigidBody2D
 class_name Interacts
 
 #variables
-var initial_physics_mode = mode
+var initial_physics_mode
 var sync_array = []
 var initial_sync_array = []
 var initial_physics_state

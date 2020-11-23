@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ActionSlider.png-5533db2e8b20505e98c0ea6c8489617c.stex"
+path="res://.import/Joint.png-c8f257b1b62693ff4d593829a223b894.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/ActionSliders/ActionSlider.png"
-dest_files=[ "res://.import/ActionSlider.png-5533db2e8b20505e98c0ea6c8489617c.stex" ]
+source_file="res://Entities/Interactors/Arm/Joint.png"
+dest_files=[ "res://.import/Joint.png-c8f257b1b62693ff4d593829a223b894.stex" ]
 
 [params]
 

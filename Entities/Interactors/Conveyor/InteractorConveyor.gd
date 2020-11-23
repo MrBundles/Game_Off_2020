@@ -15,7 +15,6 @@ var single_conveyor_length = 64
 
 
 func _ready():
-	_set_conveyor_length(conveyor_length)
 	_conveyor_modulate_update()
 
 func _process(delta):
@@ -46,13 +45,9 @@ func _set_conveyor_length(new_val):
 
 
 func _conveyor_modulate_update():
-	if has_node("ConveyorSpriteA"):
 		$ConveyorSpriteA.modulate = GlobalColorManager.action_color_array[action_a]
-	if has_node("ConveyorSpriteB"):
 		$ConveyorSpriteB.modulate = GlobalColorManager.action_color_array[action_b]
-	if has_node("ActionAIndicator"):
 		$ActionAIndicator.modulate = GlobalColorManager.action_color_array[action_a]
-	if has_node("ActionBIndicator"):
 		$ActionBIndicator.modulate = GlobalColorManager.action_color_array[action_b]
 
 

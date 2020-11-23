@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Entities/ActionTileMaps/WhiteTile.png" type="Texture" id=1]
 [ext_resource path="res://Entities/ActionTileMaps/ActionTileMaps.tscn" type="PackedScene" id=2]
@@ -61,6 +61,9 @@ resource_local_to_scene = true
 } ]
 0/z_index = 0
 
+[sub_resource type="CircleShape2D" id=5]
+radius = 16.0
+
 [node name="GameScene" type="Node2D"]
 
 [node name="BGCanvasLayer" type="CanvasLayer" parent="."]
@@ -84,47 +87,6 @@ __meta__ = {
 margin_bottom = 304.0
 group_quantity = 5
 action_array = [ 1, 2, 3, 4, 5 ]
-
-[node name="Label" type="Label" parent="."]
-margin_left = 354.578
-margin_top = 176.398
-margin_right = 626.578
-margin_bottom = 354.398
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Conveyor" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1312, 640 )
-action_a = 1
-action_b = 4
-conveyor_speed = 150
-conveyor_length = 15
-
-[node name="Box" parent="." instance=ExtResource( 4 )]
-pause_mode = 2
-position = Vector2( 1568, 480 )
-
-[node name="Box2" parent="." instance=ExtResource( 4 )]
-pause_mode = 2
-position = Vector2( 1344, 480 )
-
-[node name="Conveyor2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 960, 800 )
-action_a = 3
-action_b = 2
-conveyor_speed = 200
-conveyor_length = 30
-
-[node name="Arm" parent="." instance=ExtResource( 5 )]
-position = Vector2( 383.086, 757.264 )
-mode = 3
-action_a = 1
-action_b = 4
-
-[node name="Box3" parent="." instance=ExtResource( 4 )]
-pause_mode = 2
-position = Vector2( 1056, 160 )
 
 [node name="ActionTileMaps" parent="." instance=ExtResource( 2 )]
 
@@ -157,6 +119,80 @@ tile_data = PoolIntArray( 786463, 0, 0, 786464, 0, 0, 786465, 0, 0, 786466, 0, 0
 modulate = Color( 0.561765, 0.473529, 0.682353, 1 )
 tile_set = SubResource( 4 )
 tile_data = PoolIntArray( 917535, 0, 0, 917536, 0, 0, 917537, 0, 0, 917538, 0, 0 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 354.578
+margin_top = 176.398
+margin_right = 626.578
+margin_bottom = 354.398
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Box" parent="." instance=ExtResource( 4 )]
+pause_mode = 2
+position = Vector2( 1568, 480 )
+
+[node name="Box2" parent="." instance=ExtResource( 4 )]
+pause_mode = 2
+position = Vector2( 1344, 480 )
+
+[node name="Box3" parent="." instance=ExtResource( 4 )]
+pause_mode = 2
+position = Vector2( 1056, 160 )
+
+[node name="Conveyor2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 960, 800 )
+action_a = 3
+action_b = 2
+conveyor_speed = 200
+conveyor_length = 30
+
+[node name="Arm" parent="." instance=ExtResource( 5 )]
+position = Vector2( 384, 544 )
+mode = 3
+action_a = 1
+action_b = 4
+arm_length = 5
+
+[node name="Arm2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 704, 544 )
+mode = 3
+action_a = 2
+arm_length = 5
+
+[node name="Arm3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 608, 352 )
+action_a = 2
+arm_type = 0
+arm_length = 5
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 224, 544 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 5 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2( 608, 224 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource( 5 )
+
+[node name="PinJoint2D" type="PinJoint2D" parent="."]
+position = Vector2( 224, 544 )
+node_a = NodePath("../StaticBody2D")
+node_b = NodePath("../Arm")
+
+[node name="PinJoint2D2" type="PinJoint2D" parent="."]
+position = Vector2( 544, 544 )
+node_a = NodePath("../Arm2")
+node_b = NodePath("../Arm")
+
+[node name="GrooveJoint2D" type="GrooveJoint2D" parent="."]
+position = Vector2( 608, 224 )
+node_a = NodePath("../StaticBody2D2")
+node_b = NodePath("../Arm3")
 
 [editable path="UICanvasLayer"]
 

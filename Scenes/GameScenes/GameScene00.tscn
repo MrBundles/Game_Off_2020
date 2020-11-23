@@ -129,7 +129,7 @@ conveyor_length = 30
 
 [node name="Conveyor2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1632, 768 )
-action_a = 1
+action_a = 5
 action_b = 2
 conveyor_speed = 150
 conveyor_length = 6
