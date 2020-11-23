@@ -96,7 +96,6 @@ __meta__ = {
 
 [node name="Conveyor" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1312, 640 )
-mode = 3
 action_a = 1
 action_b = 4
 conveyor_speed = 150
@@ -112,7 +111,6 @@ position = Vector2( 1344, 480 )
 
 [node name="Conveyor2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 960, 800 )
-mode = 3
 action_a = 3
 action_b = 2
 conveyor_speed = 200

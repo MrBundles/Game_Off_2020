@@ -1,4 +1,4 @@
-
+tool
 extends Interactor
 class_name Conveyor
 
@@ -15,8 +15,6 @@ var single_conveyor_length = 64
 
 
 func _ready():
-	print("action a: " + str(action_a))
-	print("action b: " + str(action_b))
 	_set_conveyor_length(conveyor_length)
 	_conveyor_modulate_update()
 

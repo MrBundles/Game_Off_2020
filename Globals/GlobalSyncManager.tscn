@@ -6,7 +6,9 @@
 pause_mode = 2
 script = ExtResource( 1 )
 sync_cell_count = 10
+rewind_speed = 3
 
 [node name="SyncTimer" type="Timer" parent="."]
+pause_mode = 1
 wait_time = 0.02
 [connection signal="timeout" from="SyncTimer" to="." method="_on_SyncTimer_timeout"]

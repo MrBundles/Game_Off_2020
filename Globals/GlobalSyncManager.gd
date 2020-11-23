@@ -6,6 +6,7 @@ enum ACTIONS {disabled, red, yellow, green, blue, purple}
 export var sync_time_total_duration = 10.0 setget _set_sync_time_total_duration
 export var sync_subdiv_count = 500 setget _set_sync_subdiv_count
 export var sync_cell_count = 5 setget _set_sync_cell_count
+export var rewind_speed = 5
 
 #variables
 var sync_action_enables = [false, false, false, false, false, false]
@@ -20,6 +21,7 @@ func _ready():
 	#connect signals
 	GlobalSignalManager.connect("physics_state_changed", self, "_on_physics_state_changed")
 	GlobalSignalManager.connect("physics_reset_button_pressed", self, "_on_physics_reset_button_pressed")
+	GlobalSignalManager.connect("restart_button_pressed", self, "_on_restart_button_pressed")
 	
 	_update_timer_wait_time(sync_time_total_duration, sync_subdiv_count)
  
@@ -75,13 +77,20 @@ func _on_physics_reset_button_pressed():
 	var initial_physics_state = GlobalSceneManager.physics_state
 	GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.rewinding
 	
-	while sync_subdiv_current > 5:
-		sync_subdiv_current -= 5
+	while sync_subdiv_current > rewind_speed:
+		sync_subdiv_current -= rewind_speed
 		yield(get_tree().create_timer(.001), "timeout")
 	
 	sync_subdiv_upper_limit_reached = 0
 	sync_subdiv_current = 0
+	
+	yield(get_tree().create_timer(.25), "timeout")
 	GlobalSceneManager.physics_state = initial_physics_state
+
+
+func _on_restart_button_pressed():
+	sync_subdiv_upper_limit_reached = 0
+	self.sync_subdiv_current = 0
 
 
 func _on_SyncTimer_timeout():

@@ -1,12 +1,16 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://UI/SyncControls/SyncControlReset.png" type="Texture" id=1]
 [ext_resource path="res://UI/SyncControls/SyncControls.gd" type="Script" id=2]
 [ext_resource path="res://UI/SyncControls/SyncControlStop.png" type="Texture" id=3]
 [ext_resource path="res://UI/SyncControls/SyncControlStart.png" type="Texture" id=4]
 [ext_resource path="res://UI/SyncControls/SyncControlDisabled.png" type="Texture" id=5]
+[ext_resource path="res://UI/SyncControls/SyncControlResetDisabled.png" type="Texture" id=6]
+[ext_resource path="res://UI/SyncControls/SyncControlPause.png" type="Texture" id=7]
+[ext_resource path="res://UI/SyncControls/SyncControlPlay.png" type="Texture" id=8]
 
 [node name="SyncControls" type="HBoxContainer"]
+pause_mode = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_left = 16.0
@@ -17,20 +21,33 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="StartButton" type="TextureButton" parent="."]
+[node name="PauseButton" type="TextureButton" parent="."]
 margin_right = 64.0
+margin_bottom = 64.0
+focus_mode = 0
+toggle_mode = true
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 8 )
+
+[node name="ResetButton" type="TextureButton" parent="."]
+pause_mode = 1
+margin_left = 68.0
+margin_right = 132.0
+margin_bottom = 64.0
+focus_mode = 0
+texture_normal = ExtResource( 1 )
+texture_disabled = ExtResource( 6 )
+
+[node name="StartButton" type="TextureButton" parent="."]
+pause_mode = 1
+margin_left = 136.0
+margin_right = 200.0
 margin_bottom = 64.0
 focus_mode = 0
 toggle_mode = true
 texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 3 )
 texture_disabled = ExtResource( 5 )
-
-[node name="ResetButton" type="TextureButton" parent="."]
-margin_left = 68.0
-margin_right = 132.0
-margin_bottom = 64.0
-focus_mode = 0
-texture_normal = ExtResource( 1 )
-[connection signal="toggled" from="StartButton" to="." method="_on_StartButton_toggled"]
+[connection signal="pressed" from="PauseButton" to="." method="_on_PauseButton_pressed"]
 [connection signal="pressed" from="ResetButton" to="." method="_on_ResetButton_pressed"]
+[connection signal="toggled" from="StartButton" to="." method="_on_StartButton_toggled"]

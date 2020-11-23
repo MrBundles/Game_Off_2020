@@ -21,6 +21,7 @@ export(Array, GlobalSyncManager.ACTIONS) var action_array = [
 
 func _ready():
 	_set_group_quantity(group_quantity)
+	GlobalSyncManager.sync_cell_count = cell_quantity
 
 
 func _set_group_quantity(new_val):

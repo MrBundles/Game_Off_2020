@@ -27,6 +27,12 @@ func _ready():
 	add_child(main_menu.instance())
 
 
+func _process(delta):
+	if GlobalSceneManager.game_state == GlobalSceneManager.GAME_STATES.main_menu:
+		pass
+	elif GlobalSceneManager.game_state == GlobalSceneManager.GAME_STATES.main_menu:
+		pass
+
 func _clear_children():
 	for child in get_children():
 		child.queue_free()
@@ -35,46 +41,56 @@ func _clear_children():
 func _on_level_select_menu_button_pressed():
 	_clear_children()
 	add_child(level_select_menu.instance())
+	GlobalSceneManager.game_state = GlobalSceneManager.GAME_STATES.level_select_menu
 
 
 func _on_credits_button_pressed():
 	_clear_children()
 	add_child(credits_menu.instance())
+	GlobalSceneManager.game_state = GlobalSceneManager.GAME_STATES.credits_menu
 
 
 func _on_settings_button_pressed():
 	_clear_children()
 	add_child(settings_menu.instance())
+	GlobalSceneManager.game_state = GlobalSceneManager.GAME_STATES.settings_menu
 
 
 func _on_back_button_pressed():
 	_clear_children()
 	add_child(main_menu.instance())
+	GlobalSceneManager.game_state = GlobalSceneManager.GAME_STATES.main_menu
 
 
-func _on_level_select_button_pressed():
-	pass
+func _on_level_select_button_pressed(level_number):
+	_clear_children()
 
 
 func _on_pause_button_pressed():
-	pass
+	_clear_children()
+	add_child(level_pause_menu.instance())
+	GlobalSceneManager.game_state = GlobalSceneManager.GAME_STATES.level_pause_menu
 
 
 func _on_level_lose():
-	pass
+	_clear_children()
+	add_child(level_lose_menu.instance())
+	GlobalSceneManager.game_state = GlobalSceneManager.GAME_STATES.level_lose_menu
 
 
 func _on_level_win():
-	pass
+	_clear_children()
+	add_child(level_win_menu.instance())
+	GlobalSceneManager.game_state = GlobalSceneManager.GAME_STATES.level_win_menu
 
 
 func _on_resume_button_pressed():
-	pass
+	_clear_children()
 
 
 func _on_restart_button_pressed():
-	pass
+	_clear_children()
 
 
 func _on_next_level_button_pressed():
-	pass
+	_clear_children()

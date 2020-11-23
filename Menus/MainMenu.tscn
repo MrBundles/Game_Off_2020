@@ -25,23 +25,31 @@ __meta__ = {
 }
 
 [node name="PlayButton" parent="VBoxContainer" instance=ExtResource( 1 )]
+self_modulate = Color( 0.541176, 0.788235, 0.14902, 1 )
 button_label = "Play"
 transition_signal = "level_select_menu_button_pressed"
+action = 3
 
 [node name="SettingsButton" parent="VBoxContainer" instance=ExtResource( 1 )]
+self_modulate = Color( 1, 0.792157, 0.227451, 1 )
 margin_top = 84.0
 margin_bottom = 164.0
 button_label = "Settings"
 transition_signal = "settings_button_pressed"
+action = 2
 
 [node name="CreditsButton" parent="VBoxContainer" instance=ExtResource( 1 )]
+self_modulate = Color( 0.415686, 0.298039, 0.576471, 1 )
 margin_top = 168.0
 margin_bottom = 248.0
 button_label = "Credits"
 transition_signal = "credits_button_pressed"
+action = 5
 
 [node name="QuitButton" parent="VBoxContainer" instance=ExtResource( 1 )]
+self_modulate = Color( 1, 0.34902, 0.368627, 1 )
 margin_top = 252.0
 margin_bottom = 332.0
 button_label = "Quit"
 transition_signal = "quit_button_pressed"
+action = 1
