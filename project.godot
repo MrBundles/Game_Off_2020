@@ -24,6 +24,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Entities/Interactors/Conveyor/InteractorConveyor.gd"
 }, {
+"base": "Interactor",
+"class": "Grabber",
+"language": "GDScript",
+"path": "res://Entities/Interactors/Grabber/InteractorGrabber.gd"
+}, {
 "base": "Interacts",
 "class": "Interactable",
 "language": "GDScript",
@@ -58,6 +63,7 @@ _global_script_class_icons={
 "Arm": "",
 "Box": "",
 "Conveyor": "",
+"Grabber": "",
 "Interactable": "",
 "Interactor": "",
 "Interacts": "",

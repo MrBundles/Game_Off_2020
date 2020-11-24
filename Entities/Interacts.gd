@@ -2,6 +2,10 @@ tool
 extends RigidBody2D
 class_name Interacts
 
+#enums
+enum INTERACT_MODES {mode_rigid, mode_static, mode_character, mode_kinematic}
+
+
 #variables
 var initial_physics_mode
 var sync_array = []
@@ -19,16 +23,17 @@ func _ready():
 		sync_array.append([global_position, rotation_degrees, linear_velocity, angular_velocity])
 		initial_sync_array.append([global_position, rotation_degrees, linear_velocity, angular_velocity])
 	
-	initial_physics_mode = mode
 	initial_physics_state = Physics2DServer.body_get_state(get_rid(), Physics2DServer.BODY_STATE_TRANSFORM)
 	_on_physics_state_changed(GlobalSceneManager.physics_state)
 
 
 func _on_physics_state_changed(new_physics_state):
 	if new_physics_state == GlobalSceneManager.PHYSICS_STATES.running:
+		if GlobalSyncManager.sync_subdiv_current == 0:
+			_reset_sync_array(GlobalSyncManager.sync_subdiv_current)
+		
 		_update_interacts_state(GlobalSyncManager.sync_subdiv_current)
 		GlobalSyncManager.sync_subdiv_upper_limit_reached = GlobalSyncManager.sync_subdiv_current
-		_reset_sync_array(GlobalSyncManager.sync_subdiv_current)
 		
 		mode = initial_physics_mode
 	

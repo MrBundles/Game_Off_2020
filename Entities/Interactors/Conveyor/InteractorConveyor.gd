@@ -15,6 +15,7 @@ var single_conveyor_length = 64
 
 
 func _ready():
+	initial_physics_mode = INTERACT_MODES.mode_kinematic
 	_conveyor_modulate_update()
 
 func _process(delta):

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Entities/ActionTileMaps/WhiteTile.png" type="Texture" id=1]
 [ext_resource path="res://Entities/ActionTileMaps/ActionTileMaps.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Entities/Interactables/Box/Box.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Entities/Interactors/Arm/Arm.tscn" type="PackedScene" id=5]
 [ext_resource path="res://UI/UICanvasLayer.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Entities/Interactors/Grabber/Grabber.tscn" type="PackedScene" id=7]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -121,10 +122,8 @@ tile_set = SubResource( 4 )
 tile_data = PoolIntArray( 917535, 0, 0, 917536, 0, 0, 917537, 0, 0, 917538, 0, 0 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 354.578
-margin_top = 176.398
-margin_right = 626.578
-margin_bottom = 354.398
+margin_right = 272.0
+margin_bottom = 178.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -135,16 +134,14 @@ position = Vector2( 1568, 480 )
 
 [node name="Box2" parent="." instance=ExtResource( 4 )]
 pause_mode = 2
-position = Vector2( 1344, 480 )
+position = Vector2( 928, 768 )
 
 [node name="Box3" parent="." instance=ExtResource( 4 )]
 pause_mode = 2
-position = Vector2( 1056, 160 )
+position = Vector2( 1728, 480 )
 
 [node name="Conveyor2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 960, 800 )
-action_a = 3
-action_b = 2
 conveyor_speed = 200
 conveyor_length = 30
 
@@ -154,6 +151,7 @@ mode = 3
 action_a = 1
 action_b = 4
 arm_length = 5
+arm_rotate_mult = 45000
 
 [node name="Arm2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 704, 544 )
@@ -162,37 +160,49 @@ action_a = 2
 arm_length = 5
 
 [node name="Arm3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 608, 352 )
+position = Vector2( 576, 128 )
+mode = 3
 action_a = 2
 arm_type = 0
 arm_length = 5
+arm_slide_vector = Vector2( 0, -64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2( 224, 544 )
+position = Vector2( 384, 544 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource( 5 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
-position = Vector2( 608, 224 )
+position = Vector2( 352, 192 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 shape = SubResource( 5 )
 
 [node name="PinJoint2D" type="PinJoint2D" parent="."]
-position = Vector2( 224, 544 )
+position = Vector2( 384, 544 )
 node_a = NodePath("../StaticBody2D")
 node_b = NodePath("../Arm")
 
 [node name="PinJoint2D2" type="PinJoint2D" parent="."]
-position = Vector2( 544, 544 )
+position = Vector2( 704, 544 )
 node_a = NodePath("../Arm2")
 node_b = NodePath("../Arm")
 
-[node name="GrooveJoint2D" type="GrooveJoint2D" parent="."]
-position = Vector2( 608, 224 )
-node_a = NodePath("../StaticBody2D2")
-node_b = NodePath("../Arm3")
+[node name="PinJoint2D3" type="PinJoint2D" parent="."]
+position = Vector2( 1024, 544 )
+node_a = NodePath("../Arm2")
+node_b = NodePath("../Grabber")
+
+[node name="Grabber" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1024, 544 )
+mode = 3
 
 [editable path="UICanvasLayer"]
 

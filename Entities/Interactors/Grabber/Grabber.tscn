@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Entities/Interactors/Grabber/InteractorGrabber.gd" type="Script" id=1]
+[ext_resource path="res://Entities/Interactors/Grabber/GrabberCenter.png" type="Texture" id=2]
+[ext_resource path="res://Entities/Interactors/Grabber/Grabber.png" type="Texture" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 16.0
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 24.0
+
+[node name="Grabber" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource( 1 )
+action_a = 1
+interactor_parent = null
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 2 )
+
+[node name="GrabberSprite" type="Sprite" parent="."]
+modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
+texture = ExtResource( 3 )
+
+[node name="GrabberCenterSprite" type="Sprite" parent="."]
+modulate = Color( 1, 0.34902, 0.368627, 1 )
+texture = ExtResource( 2 )
+
+[node name="PinJoints" type="Node2D" parent="."]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

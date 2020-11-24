@@ -7,55 +7,55 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:export-ydpi="48"
-   inkscape:export-xdpi="48"
-   inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\Joint.png"
-   sodipodi:docname="Inkscape.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 210 297"
+   width="210mm"
    height="297mm"
-   width="210mm">
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="Inkscape.svg"
+   inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\Joint.png"
+   inkscape:export-xdpi="48"
+   inkscape:export-ydpi="48">
   <defs
      id="defs2" />
   <sodipodi:namedview
-     showborder="false"
-     inkscape:snap-center="false"
-     inkscape:object-paths="true"
-     inkscape:snap-grids="true"
-     inkscape:snap-bbox-midpoints="false"
-     inkscape:snap-midpoints="false"
-     inkscape:snap-bbox-edge-midpoints="false"
-     inkscape:snap-global="true"
-     inkscape:snap-intersection-paths="false"
-     inkscape:bbox-nodes="true"
-     inkscape:object-nodes="false"
-     inkscape:snap-nodes="true"
-     inkscape:snap-bbox="true"
-     inkscape:window-maximized="1"
-     inkscape:window-y="339"
-     inkscape:window-x="2391"
-     inkscape:window-height="1001"
-     inkscape:window-width="1920"
-     showgrid="true"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
-     inkscape:document-units="mm"
-     inkscape:cy="289.00193"
-     inkscape:cx="545.85015"
-     inkscape:zoom="1.979899"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
+     id="base"
      pagecolor="#ffffff"
-     id="base">
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="656.96693"
+     inkscape:cy="150.61103"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="2391"
+     inkscape:window-y="215"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true"
+     inkscape:snap-nodes="true"
+     inkscape:object-nodes="false"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-intersection-paths="false"
+     inkscape:snap-global="true"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:snap-midpoints="false"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:snap-grids="true"
+     inkscape:object-paths="true"
+     inkscape:snap-center="false"
+     showborder="false">
     <inkscape:grid
-       spacingy="8.4666667"
-       spacingx="8.4666667"
+       type="xygrid"
        id="grid833"
-       type="xygrid" />
+       spacingx="8.4666667"
+       spacingy="8.4666667" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -70,871 +70,881 @@
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1"
+     inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     id="layer1">
     <ellipse
-       ry="16.933332"
-       rx="16.933334"
-       style="fill:#ffffff;fill-opacity:0.5;stroke-width:2.64583;stroke-linecap:square"
-       id="ellipse910"
-       cx="59.266666"
-       cy="16.933334"
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
        inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlStart.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
+       cy="16.933334"
+       cx="59.266666"
+       id="ellipse910"
+       style="fill:#ffffff;fill-opacity:0.5;stroke-width:2.64583;stroke-linecap:square"
+       rx="16.933334"
+       ry="16.933332" />
     <rect
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\Conveyor.png"
-       y="135.46667"
-       x="67.733337"
-       height="16.933327"
-       width="16.933331"
+       style="fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:1.37064;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="rect835"
-       style="fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:1.37064;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.18109;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="rect835-9"
-       width="32.68557"
-       height="32.68557"
-       x="68.323875"
-       y="85.25721"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Box\Box.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <circle
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Box\Box.png"
-       r="8.5526247"
-       cy="101.59999"
-       cx="84.666656"
-       id="path856"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.1811;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
-    <rect
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\Conveyor.png"
-       y="135.91917"
-       x="68.185837"
-       height="7.561667"
-       width="7.5616603"
-       id="rect858"
-       style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:0.905;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
-    <rect
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\Conveyor.png"
-       style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:0.905001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="rect860"
-       width="7.561667"
-       height="7.5616636"
-       x="76.652496"
-       y="135.91917" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458333;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-       d="m 143.58339,110.76656 -16.93333,8.46667 16.93333,8.46667"
-       id="path880" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       id="path963"
-       style="fill:none;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="M 118.53333,152.4 101.6,143.93333 V 152.4 Z" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       id="path965"
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="M 118.53333,135.46666 101.6,143.93333 118.53333,152.4 Z" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       id="path967"
-       style="fill:none;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="m 101.6,135.46666 v 8.46667 l 16.93333,-8.46667 z" />
-    <path
-       id="path969"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="m 101.6,135.46667 v 1.47898 l 2.95848,-1.47898 z m 0,15.45436 V 152.4 h 2.95796 z"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       id="path971"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="M 115.57537,135.46666 101.6,142.45435 v 2.95796 L 115.57485,152.4 h 2.95848 v -1.47898 l -13.97486,-6.98769 13.97486,-6.98769 v -1.47898 z"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       d="m 118.53333,142.45435 -2.95744,1.47898 2.95744,1.47898 z"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
-       id="path977" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       d="m 135.46666,152.4 -16.93333,-8.46667 V 152.4 Z"
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path1007" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       d="m 135.46666,135.46666 -16.93333,8.46667 16.93333,8.46667 z"
-       style="fill:none;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path1009" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       d="m 118.53333,135.46666 v 8.46667 l 16.93333,-8.46667 z"
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path1011" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       d="m 118.53333,135.46667 v 1.47898 l 2.95848,-1.47898 z m 0,15.45436 V 152.4 h 2.95796 z"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path1013" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       d="m 132.5087,135.46666 -13.97537,6.98769 v 2.95796 L 132.50818,152.4 h 2.95848 v -1.47898 l -13.97486,-6.98769 13.97486,-6.98769 v -1.47898 z"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path1015" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       id="path1017"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
-       d="m 135.46666,142.45435 -2.95744,1.47898 2.95744,1.47898 z" />
-    <path
-       d="M 118.53333,169.33333 101.6,160.86666 v 8.46667 z"
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path1019"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       d="m 118.53333,152.39999 -16.93333,8.46667 16.93333,8.46667 z"
-       style="fill:none;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path1021"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       d="m 101.6,152.39999 v 8.46667 l 16.93333,-8.46667 z"
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path1023"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       d="m 101.6,152.4 v 1.47898 L 104.55848,152.4 Z m 0,15.45436 v 1.47897 h 2.95796 z"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path1025" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       d="M 115.57537,152.39999 101.6,159.38768 v 2.95796 l 13.97485,6.98769 h 2.95848 v -1.47898 l -13.97486,-6.98769 13.97486,-6.98769 v -1.47898 z"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path1027" />
-    <path
-       id="path1029"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
-       d="m 118.53333,159.38768 -2.95744,1.47898 2.95744,1.47898 z"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       id="path1031"
-       style="fill:none;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="m 135.46666,169.33333 -16.93333,-8.46667 v 8.46667 z"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       id="path1033"
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="m 135.46666,152.39999 -16.93333,8.46667 16.93333,8.46667 z"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       id="path1035"
-       style="fill:none;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="m 118.53333,152.39999 v 8.46667 l 16.93333,-8.46667 z"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       id="path1037"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="m 118.53333,152.4 v 1.47898 L 121.49181,152.4 Z m 0,15.45436 v 1.47897 h 2.95796 z"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       id="path1039"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="m 132.5087,152.39999 -13.97537,6.98769 v 2.95796 l 13.97485,6.98769 h 2.95848 v -1.47898 l -13.97486,-6.98769 13.97486,-6.98769 v -1.47898 z"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       d="m 135.46666,159.38768 -2.95744,1.47898 2.95744,1.47898 z"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
-       id="path1041"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <rect
-       style="fill:#000000;stroke-width:0.62363;stroke-linecap:square"
-       id="rect905"
-       width="2.1166663"
+       width="16.933331"
        height="16.933327"
-       x="37.041668"
+       x="67.733337"
        y="135.46667"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ActionSliders\SyncTimerPointer.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <rect
-       style="fill:#f2f2f2;stroke-width:2.64583;stroke-linecap:square"
-       id="rect907"
-       width="16.933332"
-       height="16.933332"
-       x="16.933334"
-       y="135.46667"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ActionSliders\ActionSlider.png"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\Conveyor.png"
        inkscape:export-xdpi="48"
        inkscape:export-ydpi="48" />
     <rect
        inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Box\Box.png"
+       y="85.25721"
+       x="68.323875"
+       height="32.68557"
+       width="32.68557"
+       id="rect835-9"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.18109;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.1811;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path856"
+       cx="84.666656"
+       cy="101.59999"
+       r="8.5526247"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Box\Box.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <rect
+       style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:0.905;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect858"
+       width="7.5616603"
+       height="7.561667"
+       x="68.185837"
+       y="135.91917"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\Conveyor.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <rect
+       y="135.91917"
+       x="76.652496"
+       height="7.5616636"
+       width="7.561667"
+       id="rect860"
+       style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:0.905001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\Conveyor.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       id="path880"
+       d="m 143.58339,110.76656 -16.93333,8.46667 16.93333,8.46667"
+       style="fill:none;stroke:#000000;stroke-width:0.26458333;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+    <path
+       d="M 118.53333,152.4 101.6,143.93333 V 152.4 Z"
+       style="fill:none;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path963"
        inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       y="177.8"
-       x="101.6"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       d="M 118.53333,135.46666 101.6,143.93333 118.53333,152.4 Z"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path965"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       d="m 101.6,135.46666 v 8.46667 l 16.93333,-8.46667 z"
+       style="fill:none;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path967"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
+       d="m 101.6,135.46667 v 1.47898 l 2.95848,-1.47898 z m 0,15.45436 V 152.4 h 2.95796 z"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path969" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
+       d="M 115.57537,135.46666 101.6,142.45435 v 2.95796 L 115.57485,152.4 h 2.95848 v -1.47898 l -13.97486,-6.98769 13.97486,-6.98769 v -1.47898 z"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path971" />
+    <path
+       id="path977"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+       d="m 118.53333,142.45435 -2.95744,1.47898 2.95744,1.47898 z"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       id="path1007"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 135.46666,152.4 -16.93333,-8.46667 V 152.4 Z"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       id="path1009"
+       style="fill:none;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 135.46666,135.46666 -16.93333,8.46667 16.93333,8.46667 z"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       id="path1011"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 118.53333,135.46666 v 8.46667 l 16.93333,-8.46667 z"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       id="path1013"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 118.53333,135.46667 v 1.47898 l 2.95848,-1.47898 z m 0,15.45436 V 152.4 h 2.95796 z"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       id="path1015"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 132.5087,135.46666 -13.97537,6.98769 v 2.95796 L 132.50818,152.4 h 2.95848 v -1.47898 l -13.97486,-6.98769 13.97486,-6.98769 v -1.47898 z"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       d="m 135.46666,142.45435 -2.95744,1.47898 2.95744,1.47898 z"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+       id="path1017"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       id="path1019"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="M 118.53333,169.33333 101.6,160.86666 v 8.46667 z" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       id="path1021"
+       style="fill:none;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 118.53333,152.39999 -16.93333,8.46667 16.93333,8.46667 z" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       id="path1023"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 101.6,152.39999 v 8.46667 l 16.93333,-8.46667 z" />
+    <path
+       id="path1025"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 101.6,152.4 v 1.47898 L 104.55848,152.4 Z m 0,15.45436 v 1.47897 h 2.95796 z"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       id="path1027"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="M 115.57537,152.39999 101.6,159.38768 v 2.95796 l 13.97485,6.98769 h 2.95848 v -1.47898 l -13.97486,-6.98769 13.97486,-6.98769 v -1.47898 z"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       d="m 118.53333,159.38768 -2.95744,1.47898 2.95744,1.47898 z"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+       id="path1029" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       d="m 135.46666,169.33333 -16.93333,-8.46667 v 8.46667 z"
+       style="fill:none;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path1031" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       d="m 135.46666,152.39999 -16.93333,8.46667 16.93333,8.46667 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path1033" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       d="m 118.53333,152.39999 v 8.46667 l 16.93333,-8.46667 z"
+       style="fill:none;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path1035" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       d="m 118.53333,152.4 v 1.47898 L 121.49181,152.4 Z m 0,15.45436 v 1.47897 h 2.95796 z"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path1037" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       d="m 132.5087,152.39999 -13.97537,6.98769 v 2.95796 l 13.97485,6.98769 h 2.95848 v -1.47898 l -13.97486,-6.98769 13.97486,-6.98769 v -1.47898 z"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path1039" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       id="path1041"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+       d="m 135.46666,159.38768 -2.95744,1.47898 2.95744,1.47898 z" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ActionSliders\SyncTimerPointer.png"
+       y="135.46667"
+       x="37.041668"
+       height="16.933327"
+       width="2.1166663"
+       id="rect905"
+       style="fill:#000000;stroke-width:0.62363;stroke-linecap:square" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ActionSliders\ActionSlider.png"
+       y="135.46667"
+       x="16.933334"
        height="16.933332"
-       width="33.866665"
-       id="rect909"
-       style="fill:none;stroke-width:3.74177;stroke-linecap:square" />
-    <path
-       id="path917"
-       style="fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="M 115.57537,177.8 101.6,184.78769 v 2.95796 l 13.97485,6.98769 h 2.95848 v -1.47898 l -13.97486,-6.98769 13.97486,-6.98769 V 177.8 Z"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       id="path935"
-       style="fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:4.79244;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="M 500.82031 672 L 480 682.41016 L 491.17969 688 L 512 677.58984 L 512 672 L 500.82031 672 z M 468.82031 688 L 448 698.41016 L 448 709.58984 L 468.82031 720 L 480 714.41016 L 459.18164 704 L 480 693.58984 L 468.82031 688 z M 491.17969 720 L 480 725.58984 L 500.81836 736 L 512 736 L 512 730.41016 L 491.17969 720 z "
-       transform="scale(0.26458333)"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
+       width="16.933332"
+       id="rect907"
+       style="fill:#f2f2f2;stroke-width:2.64583;stroke-linecap:square" />
     <rect
        style="fill:none;stroke-width:3.74177;stroke-linecap:square"
-       id="rect939"
+       id="rect909"
        width="33.866665"
        height="16.933332"
        x="101.6"
-       y="194.73334"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       y="177.8"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
        inkscape:export-xdpi="48"
        inkscape:export-ydpi="48" />
     <path
-       id="path945"
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
+       d="M 115.57537,177.8 101.6,184.78769 v 2.95796 l 13.97485,6.98769 h 2.95848 v -1.47898 l -13.97486,-6.98769 13.97486,-6.98769 V 177.8 Z"
        style="fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="m 121.49129,194.73333 13.97537,6.98769 v 2.95796 l -13.97485,6.98769 h -2.95848 v -1.47898 L 132.50819,203.2 118.53333,196.21231 v -1.47898 z"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
+       id="path917" />
     <path
-       id="path949"
-       style="fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:4.79244;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="M 384 736 L 384 741.58984 L 404.82031 752 L 416 746.41016 L 395.17969 736 L 384 736 z M 427.17969 752 L 416 757.58984 L 436.81836 768 L 416 778.41016 L 427.17969 784 L 448 773.58984 L 448 762.41016 L 427.17969 752 z M 404.82031 784 L 384 794.41016 L 384 800 L 395.18164 800 L 416 789.58984 L 404.82031 784 z "
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
        transform="scale(0.26458333)"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       id="path959"
-       style="fill:#f2f2f2;stroke-width:3.97103;stroke-linecap:square"
-       d="m 29.589098,220.13332 a 12.714746,12.699988 0 0 0 -12.655765,12.69999 12.714746,12.699988 0 0 0 12.714745,12.69998 v -25.39997 a 12.714746,12.699988 0 0 0 -0.05898,0 z"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\TooltipA.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       d="m 29.677569,220.13336 a 12.714746,12.699988 0 0 1 12.655764,12.69998 12.714746,12.699988 0 0 1 -12.714745,12.69999 v -25.39997 a 12.714746,12.699988 0 0 1 0.05898,0 z"
-       style="fill:#f2f2f2;stroke-width:3.97103;stroke-linecap:square"
-       id="path966"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\TooltipB.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       id="path922"
-       d="m 143.93333,177.8 -8.46667,8.46666 v 8.46667 h 8.46667 L 152.4,186.26666 V 177.8 Z"
-       style="fill:#f2f2f2;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 160.86667,177.8 152.4,186.26666 V 177.8 Z"
-       id="path934" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
-       style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 160.86667,194.73333 8.46667,-8.46667 v 8.46667 z"
-       id="path938" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 143.93334,194.73333 -8.46667,8.46666 v -8.46666 z"
-       id="path940" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 143.93334,211.66666 8.46667,-8.46667 v 8.46667 z"
-       id="path944" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
-       id="path948"
-       d="m 160.86668,194.73333 -8.46667,8.46666 v 8.46667 h 8.46667 l 8.46667,-8.46667 v -8.46666 z"
-       style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       d="M 500.82031 672 L 480 682.41016 L 491.17969 688 L 512 677.58984 L 512 672 L 500.82031 672 z M 468.82031 688 L 448 698.41016 L 448 709.58984 L 468.82031 720 L 480 714.41016 L 459.18164 704 L 480 693.58984 L 468.82031 688 z M 491.17969 720 L 480 725.58984 L 500.81836 736 L 512 736 L 512 730.41016 L 491.17969 720 z "
+       style="fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:4.79244;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path935" />
     <rect
        inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ActionSliders\AddSliderButton.png"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       y="194.73334"
+       x="101.6"
+       height="16.933332"
+       width="33.866665"
+       id="rect939"
+       style="fill:none;stroke-width:3.74177;stroke-linecap:square" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       d="m 121.49129,194.73333 13.97537,6.98769 v 2.95796 l -13.97485,6.98769 h -2.95848 v -1.47898 L 132.50819,203.2 118.53333,196.21231 v -1.47898 z"
+       style="fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1.268;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path945" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       transform="scale(0.26458333)"
+       d="M 384 736 L 384 741.58984 L 404.82031 752 L 416 746.41016 L 395.17969 736 L 384 736 z M 427.17969 752 L 416 757.58984 L 436.81836 768 L 416 778.41016 L 427.17969 784 L 448 773.58984 L 448 762.41016 L 427.17969 752 z M 404.82031 784 L 384 794.41016 L 384 800 L 395.18164 800 L 416 789.58984 L 404.82031 784 z "
+       style="fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:4.79244;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path949" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\TooltipA.png"
+       d="m 29.589098,220.13332 a 12.714746,12.699988 0 0 0 -12.655765,12.69999 12.714746,12.699988 0 0 0 12.714745,12.69998 v -25.39997 a 12.714746,12.699988 0 0 0 -0.05898,0 z"
+       style="fill:#f2f2f2;stroke-width:3.97103;stroke-linecap:square"
+       id="path959" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\TooltipB.png"
+       id="path966"
+       style="fill:#f2f2f2;stroke-width:3.97103;stroke-linecap:square"
+       d="m 29.677569,220.13336 a 12.714746,12.699988 0 0 1 12.655764,12.69998 12.714746,12.699988 0 0 1 -12.714745,12.69999 v -25.39997 a 12.714746,12.699988 0 0 1 0.05898,0 z" />
+    <path
+       style="fill:#f2f2f2;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 143.93333,177.8 -8.46667,8.46666 v 8.46667 h 8.46667 L 152.4,186.26666 V 177.8 Z"
+       id="path922"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       id="path934"
+       d="M 160.86667,177.8 152.4,186.26666 V 177.8 Z"
+       style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       id="path938"
+       d="m 160.86667,194.73333 8.46667,-8.46667 v 8.46667 z"
+       style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorA.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       id="path940"
+       d="m 143.93334,194.73333 -8.46667,8.46666 v -8.46666 z"
+       style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       id="path944"
+       d="m 143.93334,211.66666 8.46667,-8.46667 v 8.46667 z"
+       style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 160.86668,194.73333 -8.46667,8.46666 v 8.46667 h 8.46667 l 8.46667,-8.46667 v -8.46666 z"
+       id="path948"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ConveyorB.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <rect
+       style="fill:#f2f2f2;stroke-width:2.64583;stroke-linecap:square"
+       id="rect887"
+       width="16.933332"
+       height="16.933332"
+       x="16.933334"
        y="152.39999"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ActionSliders\AddSliderButton.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <text
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ActionSliders\AddSliderButton.png"
+       id="text891"
+       y="167.05957"
+       x="17.123503"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.7556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.7556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         y="167.05957"
+         x="17.123503"
+         id="tspan889"
+         sodipodi:role="line">+</tspan></text>
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ActionSliders\RemoveSliderButton.png"
+       y="169.33333"
        x="16.933334"
        height="16.933332"
        width="16.933332"
-       id="rect887"
+       id="rect893"
        style="fill:#f2f2f2;stroke-width:2.64583;stroke-linecap:square" />
     <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.7556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="17.123503"
-       y="167.05957"
-       id="text891"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ActionSliders\AddSliderButton.png"
+       inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48"><tspan
-         sodipodi:role="line"
-         id="tspan889"
-         x="17.123503"
-         y="167.05957"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.7556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">+</tspan></text>
-    <rect
-       style="fill:#f2f2f2;stroke-width:2.64583;stroke-linecap:square"
-       id="rect893"
-       width="16.933332"
-       height="16.933332"
-       x="16.933334"
-       y="169.33333"
        inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ActionSliders\RemoveSliderButton.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <text
-       id="text897"
-       y="246.3912"
-       x="13.41011"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.5284px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.35529"
-       xml:space="preserve"
        transform="scale(1.3428303,0.74469573)"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ActionSliders\RemoveSliderButton.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.5284px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.35529"
-         y="246.3912"
-         x="13.41011"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.5284px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.35529"
+       x="13.41011"
+       y="246.3912"
+       id="text897"><tspan
+         sodipodi:role="line"
          id="tspan895"
-         sodipodi:role="line">-</tspan></text>
-    <rect
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\Orchestrator\CellHover.png"
-       y="118.53333"
-       x="16.933334"
-       height="16.933332"
-       width="16.933332"
-       id="rect899"
-       style="fill:#ffffff;stroke-width:2.64583;stroke-linecap:square" />
-    <rect
-       style="fill:#f2f2f2;stroke-width:2.64583;stroke-linecap:square"
-       id="rect901"
-       width="16.933332"
-       height="16.933332"
-       x="16.933334"
-       y="101.6"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\Orchestrator\CellNormal.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <rect
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\Orchestrator\CellPressed.png"
-       y="84.666664"
-       x="16.933334"
-       height="16.933332"
-       width="16.933332"
-       id="rect903"
-       style="fill:#cccccc;stroke-width:2.64583;stroke-linecap:square" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ActionBIndicator.png"
-       d="M 33.866666,67.733334 V 71.31141 H 25.4 v 9.777181 h 8.466666 v 3.578076 L 38.1,80.433335 42.333334,76.2 38.1,71.966666 Z"
-       style="fill:#f9f9f9;stroke-width:2.84312;stroke-linecap:square"
-       id="rect896" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ActionAIndicator.png"
-       id="path903"
-       style="fill:#f9f9f9;stroke-width:2.84312;stroke-linecap:square"
-       d="m 16.933332,67.733334 v 3.578078 H 25.4 v 9.777177 h -8.466668 v 3.578078 L 12.700001,80.433333 8.4666667,76.200001 12.700001,71.966668 Z" />
-    <rect
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlStart.png"
-       y="1.4382324e-06"
-       x="42.333332"
-       height="33.866665"
-       width="33.866669"
-       id="rect906"
-       style="fill:none;stroke-width:2.64583;stroke-linecap:square" />
-    <ellipse
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlStart.png"
-       cy="16.933334"
-       cx="59.266666"
-       id="path908"
-       style="fill:#8ac926;fill-opacity:1;stroke-width:2.64583;stroke-linecap:square"
-       rx="13.546667"
-       ry="13.546666" />
-    <rect
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlStop.png"
-       style="fill:none;stroke-width:2.64583;stroke-linecap:square"
-       id="rect920"
-       width="33.866669"
-       height="33.866669"
-       x="84.666664"
-       y="0" />
-    <ellipse
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlStop.png"
-       cy="16.933332"
-       cx="101.6"
-       id="ellipse914"
-       style="fill:#ffffff;fill-opacity:0.5;stroke-width:2.64583;stroke-linecap:square"
-       rx="16.933334"
-       ry="16.933332" />
-    <ellipse
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlStop.png"
-       style="fill:#ff595e;fill-opacity:1;stroke-width:2.64583;stroke-linecap:square"
-       id="circle922"
-       cx="101.60001"
-       cy="16.933332"
-       rx="13.546668"
-       ry="13.546666" />
-    <rect
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlReset.png"
-       y="0"
-       x="127"
-       height="33.866669"
-       width="33.866669"
-       id="rect924"
-       style="fill:none;stroke-width:2.64583;stroke-linecap:square" />
-    <ellipse
-       ry="16.933332"
-       rx="16.933334"
-       style="fill:#ffffff;fill-opacity:0.5;stroke-width:2.64583;stroke-linecap:square"
-       id="ellipse916"
-       cx="143.93333"
-       cy="16.933332"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlReset.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlReset.png"
-       d="M 143.93334,0.52381964 V 3.3875213 c -7.4501,2.12e-4 -13.54668,6.0948703 -13.54668,13.5450127 v 8e-4 8e-4 c 0,3.727685 1.52644,7.115929 3.98488,9.571302 l 3.82571,-3.615698 c -1.55503,-1.497332 -2.51809,-3.604068 -2.51809,-5.955604 v -8e-4 -8e-4 c 0,-4.590312 3.66391,-8.2543673 8.25418,-8.2545857 v 2.8785837 l 5.83695,-5.5165626 z m 9.56179,6.83741146 -3.82571,3.6156989 c 1.55502,1.49737 2.51809,3.604067 2.51809,5.955604 v 8e-4 8e-4 c 0,4.590312 -3.66391,8.254367 -8.25417,8.254585 v -2.878584 l -5.83696,5.516563 5.83696,5.51615 V 30.479201 C 151.38343,30.478989 157.48,24.384331 157.48,16.934189 v -8e-4 -8e-4 c 0,-3.727685 -1.52643,-7.1159286 -3.98487,-9.5713027 z"
-       inkscape:transform-center-y="-1.4318517"
-       inkscape:transform-center-x="3.8548605"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#1982c4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
-       id="path955" />
-    <path
-       id="path972"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.505714;fill-rule:nonzero;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
-       d="m 116.09902,51.516884 c -9.31261,2.81e-4 -16.933334,7.618587 -16.933334,16.931264 v 10e-4 h 6.615614 c 0,-3.47e-4 0,-6.88e-4 0,-10e-4 0,-5.737889 4.57989,-10.317959 10.31772,-10.318231 z" />
-    <rect
-       y="68.449181"
-       x="99.165688"
-       height="16.933334"
-       width="16.933332"
-       id="rect974"
-       style="fill:#ff0000;fill-opacity:0.48;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <path
-       id="path976"
-       style="fill:#ff0000;fill-opacity:0.48;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 123.39546,54.832702 116.099,61.728254 V 47.937151 Z"
-       sodipodi:nodetypes="cccc" />
-    <path
-       id="path978"
-       style="fill:#000000;fill-opacity:0.505714;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 116.09902,51.516884 c -0.20285,5e-6 -0.40395,0.0083 -0.60513,0.0155 v 6.616134 c 0.20032,-0.01137 0.40174,-0.01859 0.60513,-0.0186 z" />
+         x="13.41011"
+         y="246.3912"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.5284px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.35529">-</tspan></text>
     <rect
        style="fill:#ffffff;stroke-width:2.64583;stroke-linecap:square"
-       id="rect908"
+       id="rect899"
        width="16.933332"
        height="16.933332"
        x="16.933334"
-       y="203.2"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\ActionTileMaps\WhiteTile.png"
+       y="118.53333"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\Orchestrator\CellHover.png"
        inkscape:export-xdpi="48"
        inkscape:export-ydpi="48" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#1982c4;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="226.88583"
-       y="-96.934532"
-       id="text922-6"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Menus\Title.png"
+    <rect
+       inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48"><tspan
-         sodipodi:role="line"
-         id="tspan920-45"
-         x="226.88583"
-         y="-96.934532"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:211.667px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#1982c4;fill-opacity:1;stroke-width:0.264583;">PACK</tspan></text>
-    <rect
-       style="fill:#8ac926;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square"
-       id="rect968"
-       width="25.4"
-       height="25.4"
-       x="42.333332"
-       y="-84.666664"
-       ry="0" />
-    <rect
-       ry="0"
-       y="-84.666664"
-       x="67.733337"
-       height="25.4"
-       width="25.4"
-       id="rect970"
-       style="fill:#1982c4;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square" />
-    <rect
-       style="fill:#6a4c93;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square"
-       id="rect972"
-       width="25.4"
-       height="25.4"
-       x="93.133331"
-       y="-84.666664"
-       ry="0" />
-    <rect
-       ry="0"
-       y="-84.666664"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\Orchestrator\CellNormal.png"
+       y="101.6"
        x="16.933334"
-       height="25.4"
-       width="25.4"
-       id="rect975"
-       style="fill:#ffca3a;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square" />
+       height="16.933332"
+       width="16.933332"
+       id="rect901"
+       style="fill:#f2f2f2;stroke-width:2.64583;stroke-linecap:square" />
     <rect
-       style="fill:#ff595e;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square"
-       id="rect977"
-       width="25.4"
-       height="25.4"
-       x="-8.4666672"
-       y="-84.666664"
-       ry="0" />
-    <rect
-       ry="0"
-       y="-84.666664"
-       x="118.53333"
-       height="25.4"
-       width="25.4"
-       id="rect978"
-       style="fill:#9b9b9b;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square" />
-    <g
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#1982c4;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       id="text991"
-       aria-label="PACK">
-      <path
-         inkscape:export-ydpi="48"
-         inkscape:export-xdpi="48"
-         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Title\P.png"
-         id="path995"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:211.667px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#1982c4;fill-opacity:1;stroke-width:0.264583"
-         d="m 360.21124,-398.31163 q 0,25.01144 -13.12583,40.51439 -14.05601,16.43313 -38.75739,16.43313 -4.13412,0 -12.50571,-0.41341 -8.26825,-0.51676 -12.40237,-0.51676 -4.44418,0 -4.44418,3.82406 0,4.75424 0.93018,14.15936 0.93018,9.40513 0.93018,14.05602 0,2.37711 -2.17042,2.37711 -6.30453,0 -18.9136,-0.41341 -12.60907,-0.31006 -18.91361,-0.31006 -2.99723,0 -2.99723,-2.99723 0,-11.47219 0.31005,-34.41656 0.41342,-23.04773 0.41342,-34.51992 0,-32.45285 -2.79054,-68.213 l -0.10335,-1.44694 q -0.2067,-1.96371 3.10059,-2.37712 8.06154,-1.03353 35.55344,-1.03353 16.22643,0 31.10927,0.41341 24.49467,0.72347 39.48086,15.3996 15.29624,15.08955 15.29624,39.48086 z m -41.23786,1.65365 q 0,-24.08125 -23.46113,-24.08125 -16.53649,0 -17.36331,1.86035 -0.72347,1.34359 -0.72347,23.87455 0,3.20394 0.2067,9.50848 0.31006,6.20118 0.31006,9.40512 0,2.06707 18.60355,2.06707 22.4276,0 22.4276,-22.63432 z" />
-      <path
-         inkscape:export-ydpi="48"
-         inkscape:export-xdpi="48"
-         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Title\A.png"
-         id="path997"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:211.667px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#1982c4;fill-opacity:1;stroke-width:0.264583"
-         d="m 510.79661,-311.18502 q 0,1.86035 -2.58382,2.58382 -3.1006,0.82683 -19.22367,0.82683 -14.77948,0 -19.01696,-0.82683 -3.514,-0.72347 -4.44418,-4.65088 -3.514,-14.88284 -5.47771,-15.91637 -1.65365,-0.72347 -27.69861,-0.72347 -17.57001,0 -18.7069,0.93018 -1.757,1.65365 -3.92741,11.05877 -1.96371,8.5783 -4.75424,9.30177 -3.51401,0.82683 -23.56449,0.82683 -15.81302,0 -15.81302,-2.99724 0,-2.68718 23.35779,-66.04259 25.32149,-68.52306 27.4919,-75.34436 1.24024,-3.92741 2.89389,-3.92741 2.79053,0 8.5783,0.51676 5.89112,0.51677 8.78501,0.51677 2.79053,0 8.16489,-0.31006 5.47771,-0.41341 8.16489,-0.41341 1.9637,0 3.61735,3.41065 5.0643,10.85207 29.55897,74.41418 24.59802,63.97553 24.59802,66.76606 z m -73.2773,-94.15461 q -2.17041,4.54753 -7.33806,19.74043 -5.58107,16.12307 -5.58107,18.9136 0,1.86035 6.20119,2.06706 3.20394,0.20671 10.542,0.20671 6.8213,0 7.54478,-1.65365 0.2067,-0.51677 0.2067,-1.44694 0,-3.41065 -4.75424,-18.81026 -4.65088,-14.88283 -6.8213,-19.01695 z" />
-      <path
-         inkscape:export-ydpi="48"
-         inkscape:export-xdpi="48"
-         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Title\C.png"
-         id="path999"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:211.667px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#1982c4;fill-opacity:1;stroke-width:0.264583"
-         d="m 641.9516,-331.95898 q 0,1.65365 -2.17042,4.34083 -19.01696,22.63431 -50.53963,22.63431 -32.24615,0 -52.29663,-22.0142 -19.53373,-21.29072 -19.53373,-53.74357 0,-31.41932 19.12031,-53.33017 19.94714,-22.94437 50.74634,-22.94437 33.48638,0 52.50334,20.56725 2.06706,2.27377 2.06706,4.03077 0,1.96371 -7.23471,14.57278 -7.13136,12.60907 -8.99171,14.15937 -0.82683,0.82682 -2.06706,0.82682 -0.51677,0 -5.16766,-4.13412 -5.58106,-4.96095 -10.95542,-7.75148 -8.16489,-4.13412 -16.94989,-4.13412 -15.1929,0 -24.28797,11.36883 -8.37159,10.54201 -8.37159,26.04497 0,15.70966 8.37159,26.35502 9.09507,11.57554 24.28797,11.57554 8.99171,0 17.05325,-3.92742 5.271,-2.58382 10.74871,-7.23471 4.54753,-3.92741 5.0643,-3.92741 1.03353,0 2.06706,1.13688 1.65365,1.86035 8.99171,12.91913 7.54478,11.47219 7.54478,12.60907 z" />
-      <path
-         inkscape:export-ydpi="48"
-         inkscape:export-xdpi="48"
-         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Title\K.png"
-         id="path1001"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:211.667px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#1982c4;fill-opacity:1;stroke-width:0.264583"
-         d="m 780.34132,-314.38897 q 0,4.44418 -3.82407,5.78777 -3.10059,1.03353 -16.32978,1.03353 -12.71242,0 -18.60354,-1.03353 -2.79053,-0.51676 -3.72071,-1.03353 -0.82682,-0.62011 -2.17041,-2.99723 -7.54478,-13.84931 -14.98619,-27.69862 -12.29901,-22.32425 -14.67613,-24.59802 -11.16213,4.03077 -11.16213,5.78777 0,7.75148 0.62012,23.46114 0.62011,15.60631 0.62011,23.46114 0,3.20394 -2.79053,3.61735 -5.37435,0.82683 -19.43037,0.82683 -13.43589,0 -17.77672,-0.82683 -2.99724,-0.62011 -2.99724,-3.20394 0,-11.16213 1.03353,-33.69309 1.13689,-22.53096 1.13689,-33.79644 0,-11.98895 -1.03353,-35.96685 -1.03353,-24.08126 -1.03353,-36.07021 0,-2.27377 2.17041,-2.27377 3.20394,0 9.61183,0.31006 6.51124,0.31006 9.71519,0.31006 3.30729,0 9.81854,-0.31006 6.51124,-0.31006 9.71518,-0.31006 1.757,0 1.757,1.86036 0,7.64812 -0.82682,23.15107 -0.72347,15.39961 -0.72347,23.04773 0,8.88836 4.85759,8.88836 12.29901,0 19.12031,-6.71795 5.0643,-4.96094 10.23195,-18.08678 3.3073,-10.02524 10.85207,-29.55896 1.13688,-2.58383 4.65088,-2.58383 2.68718,0 8.06154,0.31006 5.47771,0.31006 8.16489,0.31006 2.79053,0 8.26824,-0.20671 5.58107,-0.2067 8.26825,-0.2067 2.48047,0 2.48047,2.37712 0,3.41065 -4.34083,16.63984 -12.81578,39.06744 -29.45561,48.78263 -3.41065,1.9637 -3.41065,3.20394 0,-0.10335 19.01695,31.00591 19.12032,31.10926 19.12032,37.00038 z" />
-    </g>
-    <rect
-       inkscape:export-ydpi="48"
+       style="fill:#cccccc;stroke-width:2.64583;stroke-linecap:square"
+       id="rect903"
+       width="16.933332"
+       height="16.933332"
+       x="16.933334"
+       y="84.666664"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\Orchestrator\CellPressed.png"
        inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\UIButtons\UIButton.png"
-       ry="12.700002"
-       y="211.66666"
-       x="254"
-       height="42.33334"
-       width="194.73332"
-       id="rect993"
-       style="fill:#e6e6e6;fill-opacity:1;stroke-width:6.61457;stroke-linecap:square" />
-    <ellipse
-       inkscape:export-ydpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       id="rect896"
+       style="fill:#f9f9f9;stroke-width:2.84312;stroke-linecap:square"
+       d="M 33.866666,67.733334 V 71.31141 H 25.4 v 9.777181 h 8.466666 v 3.578076 L 38.1,80.433335 42.333334,76.2 38.1,71.966666 Z"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ActionBIndicator.png"
        inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlDisabled.png"
-       cy="16.933334"
-       cx="16.933334"
-       id="ellipse1015"
-       style="fill:#ffffff;fill-opacity:0.5;stroke-width:2.64583;stroke-linecap:square"
-       rx="16.933334"
-       ry="16.933332" />
+       inkscape:export-ydpi="48" />
+    <path
+       d="m 16.933332,67.733334 v 3.578078 H 25.4 v 9.777177 h -8.466668 v 3.578078 L 12.700001,80.433333 8.4666667,76.200001 12.700001,71.966668 Z"
+       style="fill:#f9f9f9;stroke-width:2.84312;stroke-linecap:square"
+       id="path903"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Conveyor\ActionAIndicator.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
     <rect
        style="fill:none;stroke-width:2.64583;stroke-linecap:square"
-       id="rect1017"
+       id="rect906"
        width="33.866669"
        height="33.866665"
-       x="-9.5058601e-07"
-       y="9.5676273e-07"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlDisabled.png"
+       x="42.333332"
+       y="1.4382324e-06"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlStart.png"
        inkscape:export-xdpi="48"
        inkscape:export-ydpi="48" />
     <ellipse
        ry="13.546666"
        rx="13.546667"
-       style="fill:#9b9b9b;fill-opacity:1;stroke-width:2.64583;stroke-linecap:square"
-       id="ellipse1019"
+       style="fill:#8ac926;fill-opacity:1;stroke-width:2.64583;stroke-linecap:square"
+       id="path908"
+       cx="59.266666"
+       cy="16.933334"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlStart.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <rect
+       y="0"
+       x="84.666664"
+       height="33.866669"
+       width="33.866669"
+       id="rect920"
+       style="fill:none;stroke-width:2.64583;stroke-linecap:square"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlStop.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <ellipse
+       ry="16.933332"
+       rx="16.933334"
+       style="fill:#ffffff;fill-opacity:0.5;stroke-width:2.64583;stroke-linecap:square"
+       id="ellipse914"
+       cx="101.6"
+       cy="16.933332"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlStop.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <ellipse
+       ry="13.546666"
+       rx="13.546668"
+       cy="16.933332"
+       cx="101.60001"
+       id="circle922"
+       style="fill:#ff595e;fill-opacity:1;stroke-width:2.64583;stroke-linecap:square"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlStop.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <rect
+       style="fill:none;stroke-width:2.64583;stroke-linecap:square"
+       id="rect924"
+       width="33.866669"
+       height="33.866669"
+       x="127"
+       y="0"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlReset.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <ellipse
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlReset.png"
+       cy="16.933332"
+       cx="143.93333"
+       id="ellipse916"
+       style="fill:#ffffff;fill-opacity:0.5;stroke-width:2.64583;stroke-linecap:square"
+       rx="16.933334"
+       ry="16.933332" />
+    <path
+       id="path955"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#1982c4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+       inkscape:transform-center-x="3.8548605"
+       inkscape:transform-center-y="-1.4318517"
+       d="M 143.93334,0.52381964 V 3.3875213 c -7.4501,2.12e-4 -13.54668,6.0948703 -13.54668,13.5450127 v 8e-4 8e-4 c 0,3.727685 1.52644,7.115929 3.98488,9.571302 l 3.82571,-3.615698 c -1.55503,-1.497332 -2.51809,-3.604068 -2.51809,-5.955604 v -8e-4 -8e-4 c 0,-4.590312 3.66391,-8.2543673 8.25418,-8.2545857 v 2.8785837 l 5.83695,-5.5165626 z m 9.56179,6.83741146 -3.82571,3.6156989 c 1.55502,1.49737 2.51809,3.604067 2.51809,5.955604 v 8e-4 8e-4 c 0,4.590312 -3.66391,8.254367 -8.25417,8.254585 v -2.878584 l -5.83696,5.516563 5.83696,5.51615 V 30.479201 C 151.38343,30.478989 157.48,24.384331 157.48,16.934189 v -8e-4 -8e-4 c 0,-3.727685 -1.52643,-7.1159286 -3.98487,-9.5713027 z"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlReset.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       d="m 116.09902,51.516884 c -9.31261,2.81e-4 -16.933334,7.618587 -16.933334,16.931264 v 10e-4 h 6.615614 c 0,-3.47e-4 0,-6.88e-4 0,-10e-4 0,-5.737889 4.57989,-10.317959 10.31772,-10.318231 z"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.505714;fill-rule:nonzero;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+       id="path972" />
+    <rect
+       style="fill:#ff0000;fill-opacity:0.48;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect974"
+       width="16.933332"
+       height="16.933334"
+       x="99.165688"
+       y="68.449181" />
+    <path
+       sodipodi:nodetypes="cccc"
+       d="M 123.39546,54.832702 116.099,61.728254 V 47.937151 Z"
+       style="fill:#ff0000;fill-opacity:0.48;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path976" />
+    <path
+       d="m 116.09902,51.516884 c -0.20285,5e-6 -0.40395,0.0083 -0.60513,0.0155 v 6.616134 c 0.20032,-0.01137 0.40174,-0.01859 0.60513,-0.0186 z"
+       style="fill:#000000;fill-opacity:0.505714;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path978" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\ActionTileMaps\WhiteTile.png"
+       y="203.2"
+       x="16.933334"
+       height="16.933332"
+       width="16.933332"
+       id="rect908"
+       style="fill:#ffffff;stroke-width:2.64583;stroke-linecap:square" />
+    <text
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Menus\Title.png"
+       id="text922-6"
+       y="-96.934532"
+       x="226.88583"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#1982c4;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:211.667px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#1982c4;fill-opacity:1;stroke-width:0.264583;"
+         y="-96.934532"
+         x="226.88583"
+         id="tspan920-45"
+         sodipodi:role="line">PACK</tspan></text>
+    <rect
+       ry="0"
+       y="-84.666664"
+       x="42.333332"
+       height="25.4"
+       width="25.4"
+       id="rect968"
+       style="fill:#8ac926;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square" />
+    <rect
+       style="fill:#1982c4;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square"
+       id="rect970"
+       width="25.4"
+       height="25.4"
+       x="67.733337"
+       y="-84.666664"
+       ry="0" />
+    <rect
+       ry="0"
+       y="-84.666664"
+       x="93.133331"
+       height="25.4"
+       width="25.4"
+       id="rect972"
+       style="fill:#6a4c93;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square" />
+    <rect
+       style="fill:#ffca3a;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square"
+       id="rect975"
+       width="25.4"
+       height="25.4"
+       x="16.933334"
+       y="-84.666664"
+       ry="0" />
+    <rect
+       ry="0"
+       y="-84.666664"
+       x="-8.4666672"
+       height="25.4"
+       width="25.4"
+       id="rect977"
+       style="fill:#ff595e;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square" />
+    <rect
+       style="fill:#9b9b9b;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square"
+       id="rect978"
+       width="25.4"
+       height="25.4"
+       x="118.53333"
+       y="-84.666664"
+       ry="0" />
+    <g
+       aria-label="PACK"
+       id="text991"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#1982c4;fill-opacity:1;stroke:none;stroke-width:0.264583">
+      <path
+         d="m 360.21124,-398.31163 q 0,25.01144 -13.12583,40.51439 -14.05601,16.43313 -38.75739,16.43313 -4.13412,0 -12.50571,-0.41341 -8.26825,-0.51676 -12.40237,-0.51676 -4.44418,0 -4.44418,3.82406 0,4.75424 0.93018,14.15936 0.93018,9.40513 0.93018,14.05602 0,2.37711 -2.17042,2.37711 -6.30453,0 -18.9136,-0.41341 -12.60907,-0.31006 -18.91361,-0.31006 -2.99723,0 -2.99723,-2.99723 0,-11.47219 0.31005,-34.41656 0.41342,-23.04773 0.41342,-34.51992 0,-32.45285 -2.79054,-68.213 l -0.10335,-1.44694 q -0.2067,-1.96371 3.10059,-2.37712 8.06154,-1.03353 35.55344,-1.03353 16.22643,0 31.10927,0.41341 24.49467,0.72347 39.48086,15.3996 15.29624,15.08955 15.29624,39.48086 z m -41.23786,1.65365 q 0,-24.08125 -23.46113,-24.08125 -16.53649,0 -17.36331,1.86035 -0.72347,1.34359 -0.72347,23.87455 0,3.20394 0.2067,9.50848 0.31006,6.20118 0.31006,9.40512 0,2.06707 18.60355,2.06707 22.4276,0 22.4276,-22.63432 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:211.667px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#1982c4;fill-opacity:1;stroke-width:0.264583"
+         id="path995"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Title\P.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48" />
+      <path
+         d="m 510.79661,-311.18502 q 0,1.86035 -2.58382,2.58382 -3.1006,0.82683 -19.22367,0.82683 -14.77948,0 -19.01696,-0.82683 -3.514,-0.72347 -4.44418,-4.65088 -3.514,-14.88284 -5.47771,-15.91637 -1.65365,-0.72347 -27.69861,-0.72347 -17.57001,0 -18.7069,0.93018 -1.757,1.65365 -3.92741,11.05877 -1.96371,8.5783 -4.75424,9.30177 -3.51401,0.82683 -23.56449,0.82683 -15.81302,0 -15.81302,-2.99724 0,-2.68718 23.35779,-66.04259 25.32149,-68.52306 27.4919,-75.34436 1.24024,-3.92741 2.89389,-3.92741 2.79053,0 8.5783,0.51676 5.89112,0.51677 8.78501,0.51677 2.79053,0 8.16489,-0.31006 5.47771,-0.41341 8.16489,-0.41341 1.9637,0 3.61735,3.41065 5.0643,10.85207 29.55897,74.41418 24.59802,63.97553 24.59802,66.76606 z m -73.2773,-94.15461 q -2.17041,4.54753 -7.33806,19.74043 -5.58107,16.12307 -5.58107,18.9136 0,1.86035 6.20119,2.06706 3.20394,0.20671 10.542,0.20671 6.8213,0 7.54478,-1.65365 0.2067,-0.51677 0.2067,-1.44694 0,-3.41065 -4.75424,-18.81026 -4.65088,-14.88283 -6.8213,-19.01695 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:211.667px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#1982c4;fill-opacity:1;stroke-width:0.264583"
+         id="path997"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Title\A.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48" />
+      <path
+         d="m 641.9516,-331.95898 q 0,1.65365 -2.17042,4.34083 -19.01696,22.63431 -50.53963,22.63431 -32.24615,0 -52.29663,-22.0142 -19.53373,-21.29072 -19.53373,-53.74357 0,-31.41932 19.12031,-53.33017 19.94714,-22.94437 50.74634,-22.94437 33.48638,0 52.50334,20.56725 2.06706,2.27377 2.06706,4.03077 0,1.96371 -7.23471,14.57278 -7.13136,12.60907 -8.99171,14.15937 -0.82683,0.82682 -2.06706,0.82682 -0.51677,0 -5.16766,-4.13412 -5.58106,-4.96095 -10.95542,-7.75148 -8.16489,-4.13412 -16.94989,-4.13412 -15.1929,0 -24.28797,11.36883 -8.37159,10.54201 -8.37159,26.04497 0,15.70966 8.37159,26.35502 9.09507,11.57554 24.28797,11.57554 8.99171,0 17.05325,-3.92742 5.271,-2.58382 10.74871,-7.23471 4.54753,-3.92741 5.0643,-3.92741 1.03353,0 2.06706,1.13688 1.65365,1.86035 8.99171,12.91913 7.54478,11.47219 7.54478,12.60907 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:211.667px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#1982c4;fill-opacity:1;stroke-width:0.264583"
+         id="path999"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Title\C.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48" />
+      <path
+         d="m 780.34132,-314.38897 q 0,4.44418 -3.82407,5.78777 -3.10059,1.03353 -16.32978,1.03353 -12.71242,0 -18.60354,-1.03353 -2.79053,-0.51676 -3.72071,-1.03353 -0.82682,-0.62011 -2.17041,-2.99723 -7.54478,-13.84931 -14.98619,-27.69862 -12.29901,-22.32425 -14.67613,-24.59802 -11.16213,4.03077 -11.16213,5.78777 0,7.75148 0.62012,23.46114 0.62011,15.60631 0.62011,23.46114 0,3.20394 -2.79053,3.61735 -5.37435,0.82683 -19.43037,0.82683 -13.43589,0 -17.77672,-0.82683 -2.99724,-0.62011 -2.99724,-3.20394 0,-11.16213 1.03353,-33.69309 1.13689,-22.53096 1.13689,-33.79644 0,-11.98895 -1.03353,-35.96685 -1.03353,-24.08126 -1.03353,-36.07021 0,-2.27377 2.17041,-2.27377 3.20394,0 9.61183,0.31006 6.51124,0.31006 9.71519,0.31006 3.30729,0 9.81854,-0.31006 6.51124,-0.31006 9.71518,-0.31006 1.757,0 1.757,1.86036 0,7.64812 -0.82682,23.15107 -0.72347,15.39961 -0.72347,23.04773 0,8.88836 4.85759,8.88836 12.29901,0 19.12031,-6.71795 5.0643,-4.96094 10.23195,-18.08678 3.3073,-10.02524 10.85207,-29.55896 1.13688,-2.58383 4.65088,-2.58383 2.68718,0 8.06154,0.31006 5.47771,0.31006 8.16489,0.31006 2.79053,0 8.26824,-0.20671 5.58107,-0.2067 8.26825,-0.2067 2.48047,0 2.48047,2.37712 0,3.41065 -4.34083,16.63984 -12.81578,39.06744 -29.45561,48.78263 -3.41065,1.9637 -3.41065,3.20394 0,-0.10335 19.01695,31.00591 19.12032,31.10926 19.12032,37.00038 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:211.667px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#1982c4;fill-opacity:1;stroke-width:0.264583"
+         id="path1001"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Title\K.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48" />
+    </g>
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke-width:6.61457;stroke-linecap:square"
+       id="rect993"
+       width="194.73332"
+       height="42.33334"
+       x="254"
+       y="211.66666"
+       ry="12.700002"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\UIButtons\UIButton.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <ellipse
+       ry="16.933332"
+       rx="16.933334"
+       style="fill:#ffffff;fill-opacity:0.5;stroke-width:2.64583;stroke-linecap:square"
+       id="ellipse1015"
        cx="16.933334"
        cy="16.933334"
        inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlDisabled.png"
        inkscape:export-xdpi="48"
        inkscape:export-ydpi="48" />
     <rect
-       style="fill:none;stroke-width:2.64583;stroke-linecap:square"
-       id="rect963"
-       width="33.866669"
-       height="33.866669"
-       x="169.33333"
-       y="4.7992552e-07"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlResetDisabled.png"
+       inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlDisabled.png"
+       y="9.5676273e-07"
+       x="-9.5058601e-07"
+       height="33.866665"
+       width="33.866669"
+       id="rect1017"
+       style="fill:none;stroke-width:2.64583;stroke-linecap:square" />
     <ellipse
        inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlResetDisabled.png"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlDisabled.png"
        cy="16.933334"
-       cx="186.26666"
-       id="ellipse965"
-       style="fill:#ffffff;fill-opacity:0.5;stroke-width:2.64583;stroke-linecap:square"
-       rx="16.933334"
-       ry="16.933332" />
-    <path
-       id="path968"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#9b9b9b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
-       inkscape:transform-center-x="3.8548605"
-       inkscape:transform-center-y="-1.4318517"
-       d="M 186.26668,0.52381991 V 3.3875216 C 178.81658,3.3877336 172.72,9.4823915 172.72,16.932534 v 8e-4 8e-4 c 0,3.727685 1.52644,7.115929 3.98488,9.571302 l 3.82571,-3.615698 c -1.55503,-1.497332 -2.51809,-3.604068 -2.51809,-5.955604 v -8e-4 -8e-4 c 0,-4.590312 3.66391,-8.2543675 8.25418,-8.2545855 v 2.8785835 l 5.83695,-5.5165625 z m 9.56179,6.83741159 -3.82571,3.6156985 c 1.55502,1.49737 2.51809,3.604067 2.51809,5.955604 v 8e-4 8e-4 c 0,4.590312 -3.66391,8.254367 -8.25417,8.254585 v -2.878584 l -5.83696,5.516563 5.83696,5.51615 v -2.863647 c 7.45009,-2.12e-4 13.54666,-6.09487 13.54666,-13.545012 v -8e-4 -8e-4 c 0,-3.727685 -1.52643,-7.1159285 -3.98487,-9.5713025 z"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlResetDisabled.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <rect
-       style="fill:#999999;fill-opacity:1;stroke-width:6.61457;stroke-linecap:square"
-       id="rect973"
-       width="194.73332"
-       height="42.33334"
-       x="254"
-       y="254"
-       ry="12.700002"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\UIButtons\UIButtonHover.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <rect
-       style="fill:#e6e6e6;fill-opacity:1;stroke-width:6.61455;stroke-linecap:square"
-       id="rect976"
-       width="42.333351"
-       height="42.333344"
-       x="253.99998"
-       y="127"
-       ry="12.700003"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\UIButtons\LevelSelectButton.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
+       cx="16.933334"
+       id="ellipse1019"
+       style="fill:#9b9b9b;fill-opacity:1;stroke-width:2.64583;stroke-linecap:square"
+       rx="13.546667"
+       ry="13.546666" />
     <rect
        inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\UIButtons\LevelSelectButtonHover.png"
-       ry="12.700003"
-       y="169.33333"
-       x="254"
-       height="42.333344"
-       width="42.333351"
-       id="rect979"
-       style="fill:#999999;fill-opacity:1;stroke-width:6.61455;stroke-linecap:square" />
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlResetDisabled.png"
+       y="4.7992552e-07"
+       x="169.33333"
+       height="33.866669"
+       width="33.866669"
+       id="rect963"
+       style="fill:none;stroke-width:2.64583;stroke-linecap:square" />
     <ellipse
        ry="16.933332"
        rx="16.933334"
        style="fill:#ffffff;fill-opacity:0.5;stroke-width:2.64583;stroke-linecap:square"
-       id="ellipse981"
-       cx="228.60001"
+       id="ellipse965"
+       cx="186.26666"
        cy="16.933334"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlPause.png"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlResetDisabled.png"
        inkscape:export-xdpi="48"
        inkscape:export-ydpi="48" />
-    <rect
-       style="fill:#1982c4;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:square"
-       id="rect983"
-       width="5.6885166"
-       height="25.4"
-       x="231.24586"
-       y="4.1671886"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlPause.png"
+    <path
+       inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlResetDisabled.png"
+       d="M 186.26668,0.52381991 V 3.3875216 C 178.81658,3.3877336 172.72,9.4823915 172.72,16.932534 v 8e-4 8e-4 c 0,3.727685 1.52644,7.115929 3.98488,9.571302 l 3.82571,-3.615698 c -1.55503,-1.497332 -2.51809,-3.604068 -2.51809,-5.955604 v -8e-4 -8e-4 c 0,-4.590312 3.66391,-8.2543675 8.25418,-8.2545855 v 2.8785835 l 5.83695,-5.5165625 z m 9.56179,6.83741159 -3.82571,3.6156985 c 1.55502,1.49737 2.51809,3.604067 2.51809,5.955604 v 8e-4 8e-4 c 0,4.590312 -3.66391,8.254367 -8.25417,8.254585 v -2.878584 l -5.83696,5.516563 5.83696,5.51615 v -2.863647 c 7.45009,-2.12e-4 13.54666,-6.09487 13.54666,-13.545012 v -8e-4 -8e-4 c 0,-3.727685 -1.52643,-7.1159285 -3.98487,-9.5713025 z"
+       inkscape:transform-center-y="-1.4318517"
+       inkscape:transform-center-x="3.8548605"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#9b9b9b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+       id="path968" />
     <rect
-       y="4.2994804"
-       x="220.26564"
-       height="25.4"
-       width="5.6885166"
-       id="rect991"
-       style="fill:#1982c4;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:square"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlPause.png"
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\UIButtons\UIButtonHover.png"
+       ry="12.700002"
+       y="254"
+       x="254"
+       height="42.33334"
+       width="194.73332"
+       id="rect973"
+       style="fill:#999999;fill-opacity:1;stroke-width:6.61457;stroke-linecap:square" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\UIButtons\LevelSelectButton.png"
+       ry="12.700003"
+       y="127"
+       x="253.99998"
+       height="42.333344"
+       width="42.333351"
+       id="rect976"
+       style="fill:#e6e6e6;fill-opacity:1;stroke-width:6.61455;stroke-linecap:square" />
+    <rect
+       style="fill:#999999;fill-opacity:1;stroke-width:6.61455;stroke-linecap:square"
+       id="rect979"
+       width="42.333351"
+       height="42.333344"
+       x="254"
+       y="169.33333"
+       ry="12.700003"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\UIButtons\LevelSelectButtonHover.png"
        inkscape:export-xdpi="48"
        inkscape:export-ydpi="48" />
     <ellipse
        inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlPlay.png"
-       cy="16.933332"
-       cx="270.93335"
-       id="ellipse997"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlPause.png"
+       cy="16.933334"
+       cx="228.60001"
+       id="ellipse981"
        style="fill:#ffffff;fill-opacity:0.5;stroke-width:2.64583;stroke-linecap:square"
        rx="16.933334"
        ry="16.933332" />
-    <path
-       sodipodi:nodetypes="cccc"
-       d="m 279.40002,16.933333 -16.93334,12.7 V 4.2333323 Z"
-       style="fill:#1982c4;fill-opacity:1;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path1005"
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlPause.png"
+       y="4.1671886"
+       x="231.24586"
+       height="25.4"
+       width="5.6885166"
+       id="rect983"
+       style="fill:#1982c4;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:square" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlPause.png"
+       style="fill:#1982c4;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:square"
+       id="rect991"
+       width="5.6885166"
+       height="25.4"
+       x="220.26564"
+       y="4.2994804" />
+    <ellipse
+       ry="16.933332"
+       rx="16.933334"
+       style="fill:#ffffff;fill-opacity:0.5;stroke-width:2.64583;stroke-linecap:square"
+       id="ellipse997"
+       cx="270.93335"
+       cy="16.933332"
        inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlPlay.png"
        inkscape:export-xdpi="48"
        inkscape:export-ydpi="48" />
     <path
-       id="path939"
-       style="fill:#f9f9f9;stroke-width:2.84312;stroke-linecap:square"
-       d="M 25.4,59.266666 H 21.821924 V 50.8 h -9.777181 v 8.466666 H 8.4666671 L 12.699999,63.5 16.933334,67.733334 21.166668,63.5 Z"
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\SyncControls\SyncControlPlay.png"
+       id="path1005"
+       style="fill:#1982c4;fill-opacity:1;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 279.40002,16.933333 -16.93334,12.7 V 4.2333323 Z"
+       sodipodi:nodetypes="cccc" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
        inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\ActionBIndicator.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
-    <path
-       d="M 25.4,42.333332 H 21.821922 V 50.8 H 12.044745 V 42.333332 H 8.4666671 l 4.2333339,-4.233331 4.233332,-4.233334 4.233333,4.233334 z"
+       d="M 25.4,59.266666 H 21.821924 V 50.8 h -9.777181 v 8.466666 H 8.4666671 L 12.699999,63.5 16.933334,67.733334 21.166668,63.5 Z"
        style="fill:#f9f9f9;stroke-width:2.84312;stroke-linecap:square"
-       id="path941"
+       id="path939" />
+    <path
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
        inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\ActionAIndicator.png"
+       id="path941"
+       style="fill:#f9f9f9;stroke-width:2.84312;stroke-linecap:square"
+       d="M 25.4,42.333332 H 21.821922 V 50.8 H 12.044745 V 42.333332 H 8.4666671 l 4.2333339,-4.233331 4.233332,-4.233334 4.233333,4.233334 z" />
+    <rect
+       style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+       id="rect943"
+       width="33.866665"
+       height="8.4666777"
+       x="135.46666"
+       y="211.66666"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\Arm.png"
        inkscape:export-xdpi="48"
        inkscape:export-ydpi="48" />
-    <rect
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\Arm.png"
-       y="211.66666"
-       x="135.46666"
-       height="8.4666777"
-       width="33.866665"
-       id="rect943"
-       style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
     <path
-       inkscape:export-ydpi="48"
-       inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointActionAIndicator.png"
+       id="path964"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
        d="m 169.33333,43.642847 v 3.57963 c -9.31261,2.8e-4 -16.93334,7.61859 -16.93334,16.93127 v 0.001 h 6.61562 v -0.001 c 0,-5.73789 4.57989,-10.31796 10.31772,-10.31824 v 3.59824 l 7.29671,-6.89571 z"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
-       id="path964" />
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointActionAIndicator.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
     <path
+       d="m 169.33332,84.666667 v -3.57962 c -9.31261,-2.8e-4 -16.93333,-7.61859 -16.93333,-16.93127 v -0.001 h 6.61562 v 0.001 c 0,5.73789 4.57988,10.31796 10.31771,10.31823 v -3.59823 l 7.29672,6.89571 z"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+       id="path973"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointActionBIndicator.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <ellipse
+       style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+       id="path975"
+       cx="186.26668"
+       cy="59.266666"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\Joint.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48"
+       rx="8.46667"
+       ry="8.4666672" />
+    <ellipse
+       ry="4.2333317"
+       rx="4.2333298"
        inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointActionBIndicator.png"
-       id="path973"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.61458;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
-       d="m 169.33332,84.666667 v -3.57962 c -9.31261,-2.8e-4 -16.93333,-7.61859 -16.93333,-16.93127 v -0.001 h 6.61562 v 0.001 c 0,5.73789 4.57988,10.31796 10.31771,10.31823 v -3.59823 l 7.29672,6.89571 z" />
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+       cy="71.966667"
+       cx="182.03334"
+       id="ellipse977"
+       style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
     <ellipse
-       ry="8.4666672"
-       rx="8.46667"
+       ry="12.700001"
+       rx="12.700004"
        inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
        inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\Joint.png"
-       cy="59.266666"
-       cx="186.26668"
-       id="path975"
+       cy="55.033333"
+       cx="207.43332"
+       id="ellipse945"
        style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
-    <ellipse
-       style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
-       id="ellipse977"
-       cx="182.03334"
-       cy="71.966667"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48"
-       rx="4.2333298"
-       ry="4.2333317" />
   </g>
 </svg>
