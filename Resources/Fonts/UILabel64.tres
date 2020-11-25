@@ -1,0 +1,8 @@
+[gd_resource type="DynamicFont" load_steps=2 format=2]
+
+[ext_resource path="res://Resources/Fonts/BRLNSDB.TTF" type="DynamicFontData" id=1]
+
+[resource]
+resource_local_to_scene = true
+size = 64
+font_data = ExtResource( 1 )

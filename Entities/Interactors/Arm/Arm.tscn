@@ -106,9 +106,9 @@ __meta__ = {
 }
 
 [node name="PID_Controller" parent="." instance=ExtResource( 9 )]
-_Kp = 50000.0
+_Kp = 40000.0
 _Ki = 0.0
-_dt = 0.05
+_dt = 0.01
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

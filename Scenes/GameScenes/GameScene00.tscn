@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Entities/ActionTileMaps/WhiteTile.png" type="Texture" id=1]
 [ext_resource path="res://Entities/ActionTileMaps/ActionTileMaps.tscn" type="PackedScene" id=2]
@@ -11,6 +11,12 @@
 [ext_resource path="res://Entities/Interactables/Title/A.png" type="Texture" id=9]
 [ext_resource path="res://Entities/Interactables/Title/C.png" type="Texture" id=10]
 [ext_resource path="res://Entities/Interactables/Title/K.png" type="Texture" id=11]
+[ext_resource path="res://UI/UILabel/UILabel.tscn" type="PackedScene" id=12]
+
+[sub_resource type="DynamicFont" id=6]
+resource_local_to_scene = true
+size = 32
+font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 3 )
@@ -93,6 +99,18 @@ __meta__ = {
 margin_bottom = 164.0
 group_quantity = 0
 action_array = [ 1, 2, 3 ]
+
+[node name="UILabel" type="Label" parent="UICanvasLayer" instance=ExtResource( 12 )]
+margin_left = 64.0
+margin_top = 896.0
+margin_right = 160.0
+margin_bottom = 933.0
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0.541176, 0.788235, 0.14902, 1 )
+text = "Try Me"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label" type="Label" parent="."]
 visible = false

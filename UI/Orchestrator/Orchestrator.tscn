@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://UI/Orchestrator/Orchestrator.gd" type="Script" id=1]
 [ext_resource path="res://UI/Orchestrator/OrchestratorSyncSlider.gd" type="Script" id=2]
 [ext_resource path="res://UI/Orchestrator/CellBackground.png" type="Texture" id=3]
 [ext_resource path="res://UI/SyncControls/SyncControls.tscn" type="PackedScene" id=4]
+[ext_resource path="res://UI/Orchestrator/CellHighlight.png" type="Texture" id=5]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.541176, 0.788235, 0.14902, 1 )
@@ -41,16 +42,16 @@ action_array = [ 1, 2, 3, 4, 5 ]
 anchor_top = 0.0
 anchor_bottom = 0.0
 margin_left = 0.0
-margin_top = 144.0
+margin_top = 0.0
 margin_right = 1920.0
-margin_bottom = 208.0
+margin_bottom = 64.0
 
 [node name="SyncSlider" type="HSlider" parent="."]
-margin_top = 216.0
+margin_top = 72.0
 margin_right = 1920.0
-margin_bottom = 264.0
+margin_bottom = 120.0
 rect_min_size = Vector2( 0, 48 )
-custom_icons/grabber_highlight = ExtResource( 3 )
+custom_icons/grabber_highlight = ExtResource( 5 )
 custom_icons/grabber = ExtResource( 3 )
 custom_styles/grabber_area_highlight = SubResource( 1 )
 custom_styles/grabber_area = SubResource( 2 )
@@ -58,9 +59,9 @@ max_value = 500.0
 script = ExtResource( 2 )
 
 [node name="OrchestratorGroups" type="VBoxContainer" parent="."]
-margin_top = 272.0
+margin_top = 128.0
 margin_right = 1920.0
-margin_bottom = 448.0
+margin_bottom = 304.0
 custom_constants/separation = 4
 [connection signal="gui_input" from="SyncSlider" to="SyncSlider" method="_on_SyncSlider_gui_input"]
 [connection signal="value_changed" from="SyncSlider" to="SyncSlider" method="_on_SyncSlider_value_changed"]

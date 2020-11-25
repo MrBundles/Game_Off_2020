@@ -1,42 +1,84 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://UI/UIButtons/UIButton.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Resources/Fonts/MenuHeading.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Resources/Fonts/BRLNSDB.TTF" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+resource_local_to_scene = true
+size = 32
+font_data = ExtResource( 3 )
 
 [node name="MainMenu" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-mouse_filter = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -184.0
-margin_top = -166.0
-margin_right = 184.0
-margin_bottom = 166.0
+margin_left = -496.0
+margin_top = -188.0
+margin_right = 496.0
+margin_bottom = 240.0
+mouse_filter = 2
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
 }
 
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 1, 1, 1, 0.243137 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Label" type="Label" parent="VBoxContainer"]
-margin_right = 368.0
+margin_right = 992.0
 margin_bottom = 74.0
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0.415686, 0.298039, 0.576471, 1 )
 text = "Credits"
 align = 1
 
-[node name="BackButton" parent="VBoxContainer" instance=ExtResource( 1 )]
-self_modulate = Color( 0.415686, 0.298039, 0.576471, 1 )
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
 margin_top = 78.0
-margin_bottom = 158.0
+margin_right = 992.0
+margin_bottom = 344.0
+size_flags_vertical = 3
+scroll_horizontal_enabled = false
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer"]
+margin_right = 963.0
+margin_bottom = 317.0
+size_flags_vertical = 0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.415686, 0.298039, 0.576471, 1 )
+text = "Programming: GDScript
+     -All Programming completed during Jam Period
+     -PID Controller: https://github.com/DarkEngineer/Godot_PID.git
+     -Rigidbody Tutorials: https://kidscancode.org/godot_recipes/
+
+Graphics: Done with Inkscape
+     -All artwork created during Jam Period
+     -Font: Berlin Sans FB Demi Bold from dafontfree.net"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 348.0
+margin_right = 992.0
+margin_bottom = 428.0
+alignment = 1
+
+[node name="BackButton" parent="VBoxContainer/HBoxContainer" instance=ExtResource( 1 )]
+self_modulate = Color( 0.415686, 0.298039, 0.576471, 1 )
+margin_left = 312.0
+margin_right = 680.0
 button_label = "Back"
 transition_signal = "back_button_pressed"
 action = 5

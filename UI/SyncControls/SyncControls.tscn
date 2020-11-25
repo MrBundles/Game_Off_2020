@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://UI/SyncControls/SyncControlReset.png" type="Texture" id=1]
 [ext_resource path="res://UI/SyncControls/SyncControls.gd" type="Script" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://UI/SyncControls/SyncControlDisabled.png" type="Texture" id=5]
 [ext_resource path="res://UI/SyncControls/SyncControlResetDisabled.png" type="Texture" id=6]
 [ext_resource path="res://UI/SyncControls/SyncControlPause.png" type="Texture" id=7]
-[ext_resource path="res://UI/SyncControls/SyncControlPlay.png" type="Texture" id=8]
 
 [node name="SyncControls" type="HBoxContainer"]
 pause_mode = 2
@@ -27,7 +26,7 @@ margin_bottom = 64.0
 focus_mode = 0
 toggle_mode = true
 texture_normal = ExtResource( 7 )
-texture_pressed = ExtResource( 8 )
+texture_pressed = ExtResource( 7 )
 
 [node name="ResetButton" type="TextureButton" parent="."]
 pause_mode = 1

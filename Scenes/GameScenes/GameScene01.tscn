@@ -76,7 +76,6 @@ anchor_bottom = 1.0
 margin_left = -1.41418
 margin_right = -1.41418
 mouse_filter = 2
-color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
@@ -122,8 +121,10 @@ tile_set = SubResource( 4 )
 tile_data = PoolIntArray( 917535, 0, 0, 917536, 0, 0, 917537, 0, 0, 917538, 0, 0 )
 
 [node name="Label" type="Label" parent="."]
-margin_right = 272.0
-margin_bottom = 178.0
+margin_left = 256.0
+margin_top = 96.0
+margin_right = 528.0
+margin_bottom = 274.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -150,20 +151,20 @@ position = Vector2( 384, 544 )
 action_a = 1
 action_b = 4
 arm_length = 5
-arm_speed = 15
+arm_speed = 20
 
 [node name="Arm2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 704, 544 )
 action_a = 2
 arm_length = 5
-arm_speed = 15
+arm_speed = 10
 
 [node name="Arm3" parent="." instance=ExtResource( 5 )]
 position = Vector2( 512, 256 )
 action_a = 1
 action_b = 4
-arm_length = 2
-arm_speed = 30
+arm_length = 5
+arm_speed = 10
 arm_slide_vector = Vector2( 0, -64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -201,7 +202,6 @@ node_b = NodePath("../Grabber")
 
 [node name="Grabber" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1024, 544 )
-mode = 3
 action_a = 5
 
 [editable path="UICanvasLayer"]
