@@ -64,13 +64,14 @@ func _integrate_forces(state):
 func _on_iteration_timer_timeout():
 	#calculate pid_pv
 	var deg_per_sec = (float(global_rotation_degrees) - float(rotation_previous)) / $PID_Controller/IterationTimer.wait_time
-	var rev_per_min = deg_per_sec * (1.0/60.0)# / (1.0/360.0)
+	var rev_per_min = deg_per_sec * (1.0/360.0) / (1.0/60.0)
 	var pid_pv = rev_per_min
 	$PVLabel.text = str(pid_pv)
 	
 	rotation_previous = global_rotation_degrees
-	print("sp: " + str(pid_sp) + "     pv: " + str(pid_pv) + "     out: " + str(pid_out))
-	pid_out = $PID_Controller.calculate(pid_sp, pid_pv)
+	if name == "Arm3":
+		print("deg per sec: " + str(deg_per_sec) + "     sp: " + str(pid_sp) + "     pv: " + str(pid_pv) + "     out: " + str(pid_out))
+	pid_out = clamp($PID_Controller.calculate(pid_sp, pid_pv), -5000000, 5000000)
 	$PID_Controller._on_start_timer()
 
 

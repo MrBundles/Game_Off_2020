@@ -17,7 +17,7 @@ func _process(delta):
 	if Engine.editor_hint:
 		_grabber_modulate_update()
 	
-	if action_a_enable and not action_b_enable or action_b_enable and not action_a_enable:
+	if action_a_enable:
 		$GrabberSprite.modulate = GlobalColorManager.action_color_array[action_a]
 		
 		for body in body_entered_array:

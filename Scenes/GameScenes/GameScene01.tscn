@@ -86,8 +86,6 @@ __meta__ = {
 
 [node name="Orchestrator" parent="UICanvasLayer/MarginContainer" index="0"]
 margin_bottom = 304.0
-group_quantity = 5
-cell_quantity = 5
 time_total_duration = 30
 action_array = [ 1, 2, 3, 4, 5 ]
 
@@ -149,19 +147,23 @@ conveyor_length = 30
 
 [node name="Arm" parent="." instance=ExtResource( 5 )]
 position = Vector2( 384, 544 )
-action_a = 2
+action_a = 1
+action_b = 4
 arm_length = 5
+arm_speed = 15
 
 [node name="Arm2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 704, 544 )
 action_a = 2
 arm_length = 5
+arm_speed = 15
 
 [node name="Arm3" parent="." instance=ExtResource( 5 )]
 position = Vector2( 512, 256 )
 action_a = 1
 action_b = 4
 arm_length = 2
+arm_speed = 30
 arm_slide_vector = Vector2( 0, -64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -174,7 +176,7 @@ __meta__ = {
 shape = SubResource( 5 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
-position = Vector2( 352, 192 )
+position = Vector2( 352, 288 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -200,6 +202,7 @@ node_b = NodePath("../Grabber")
 [node name="Grabber" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1024, 544 )
 mode = 3
+action_a = 5
 
 [editable path="UICanvasLayer"]
 

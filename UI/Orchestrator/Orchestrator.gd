@@ -22,7 +22,8 @@ export(Array, GlobalSyncManager.ACTIONS) var action_array = [
 
 func _ready():
 	_set_group_quantity(group_quantity)
-	GlobalSyncManager.sync_cell_count = cell_quantity
+	
+	_set_cell_quantity(cell_quantity)
 	GlobalSyncManager.sync_time_total_duration = time_total_duration
 
 
