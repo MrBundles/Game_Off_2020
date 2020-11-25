@@ -6,7 +6,7 @@ enum ACTIONS {disabled, red, yellow, green, blue, purple}
 export var sync_time_total_duration = 10.0 setget _set_sync_time_total_duration
 export var sync_subdiv_count = 500 setget _set_sync_subdiv_count
 export var sync_cell_count = 5 setget _set_sync_cell_count
-export var rewind_speed = 5
+export var rewind_speed = 25
 
 #variables
 var sync_action_enables = [false, false, false, false, false, false]

@@ -10,6 +10,7 @@ const CELL_QUANTITY_MAX = 100
 #exports
 export var group_quantity = 0 setget _set_group_quantity
 export var cell_quantity = GlobalSyncManager.sync_cell_count setget _set_cell_quantity
+export var time_total_duration = 5
 export(Array, GlobalSyncManager.ACTIONS) var action_array = [
 	GlobalSyncManager.ACTIONS.disabled,
 	GlobalSyncManager.ACTIONS.disabled,
@@ -22,6 +23,7 @@ export(Array, GlobalSyncManager.ACTIONS) var action_array = [
 func _ready():
 	_set_group_quantity(group_quantity)
 	GlobalSyncManager.sync_cell_count = cell_quantity
+	GlobalSyncManager.sync_time_total_duration = time_total_duration
 
 
 func _set_group_quantity(new_val):

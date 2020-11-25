@@ -11,7 +11,6 @@ export var arm_length = 1
 export var arm_speed = 50
 export var arm_slide_mult = 100
 export var arm_slide_vector = Vector2.ZERO
-export var arm_rotate_mult = 500
 
 
 #constants
@@ -22,8 +21,20 @@ const MAX_ARM_LENGTH = 50
 var single_arm_length = 64
 var arm_initial_position = global_position
 
+#pid variables
+var pid_sp = 0 #setpoint
+var pid_pv = 0 #process value in RPM
+var pid_out = 0 #output
+
+var rotation_previous : float = global_rotation_degrees
+
 
 func _ready():
+	#connect signals
+	$PID_Controller/IterationTimer.connect("timeout", self, "_on_iteration_timer_timeout")
+	
+	$PID_Controller._on_start_timer()
+	
 	_arm_length_update()
 	_arm_type_update()
 	_conveyor_modulate_update()
@@ -36,26 +47,31 @@ func _process(delta):
 		_conveyor_modulate_update()
 
 
-func _physics_process(delta):
-	if arm_type == ARM_TYPES.slide:
-		if action_a_enable and not action_b_enable:
-			apply_central_impulse(Vector2(0, -arm_speed * arm_slide_mult))
-			
-		if action_b_enable and not action_a_enable:
-			apply_central_impulse(Vector2(0, arm_speed * arm_slide_mult))
-
-
 func _integrate_forces(state):
 	if arm_type == ARM_TYPES.rotate:
 		if action_a_enable and not action_b_enable:
-			apply_torque_impulse(arm_speed * arm_rotate_mult)
+			pid_sp = arm_speed
 			
-		if action_b_enable and not action_a_enable:
-			apply_torque_impulse(-arm_speed * arm_rotate_mult)
+		elif action_b_enable and not action_a_enable:
+			pid_sp = -arm_speed
+			
+		else:
+			pid_sp = 0
+		
+		apply_torque_impulse(pid_out)
 
-func _draw():
-	if arm_type == ARM_TYPES.slide:
-		draw_line(Vector2(single_arm_length * clamp(arm_length, MIN_ARM_LENGTH, MAX_ARM_LENGTH) / 2, 0), arm_initial_position + arm_slide_vector, Color(0,0,0,1), 16.0)
+
+func _on_iteration_timer_timeout():
+	#calculate pid_pv
+	var deg_per_sec = (float(global_rotation_degrees) - float(rotation_previous)) / $PID_Controller/IterationTimer.wait_time
+	var rev_per_min = deg_per_sec * (1.0/60.0)# / (1.0/360.0)
+	var pid_pv = rev_per_min
+	$PVLabel.text = str(pid_pv)
+	
+	rotation_previous = global_rotation_degrees
+	print("sp: " + str(pid_sp) + "     pv: " + str(pid_pv) + "     out: " + str(pid_out))
+	pid_out = $PID_Controller.calculate(pid_sp, pid_pv)
+	$PID_Controller._on_start_timer()
 
 
 func _arm_length_update():

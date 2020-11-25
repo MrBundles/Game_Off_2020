@@ -76,7 +76,7 @@ anchor_bottom = 1.0
 margin_left = -1.41418
 margin_right = -1.41418
 mouse_filter = 2
-color = Color( 0.882353, 0.882353, 0.882353, 1 )
+color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
@@ -87,6 +87,8 @@ __meta__ = {
 [node name="Orchestrator" parent="UICanvasLayer/MarginContainer" index="0"]
 margin_bottom = 304.0
 group_quantity = 5
+cell_quantity = 5
+time_total_duration = 30
 action_array = [ 1, 2, 3, 4, 5 ]
 
 [node name="ActionTileMaps" parent="." instance=ExtResource( 2 )]
@@ -147,24 +149,19 @@ conveyor_length = 30
 
 [node name="Arm" parent="." instance=ExtResource( 5 )]
 position = Vector2( 384, 544 )
-mode = 3
-action_a = 1
-action_b = 4
+action_a = 2
 arm_length = 5
-arm_rotate_mult = 45000
 
 [node name="Arm2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 704, 544 )
-mode = 3
 action_a = 2
 arm_length = 5
 
 [node name="Arm3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 576, 128 )
-mode = 3
-action_a = 2
-arm_type = 0
-arm_length = 5
+position = Vector2( 512, 256 )
+action_a = 1
+action_b = 4
+arm_length = 2
 arm_slide_vector = Vector2( 0, -64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]

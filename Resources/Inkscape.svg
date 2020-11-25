@@ -941,10 +941,20 @@
        rx="12.700004"
        inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\Joint.png"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Grabber\Grabber.png"
        cy="55.033333"
        cx="207.43332"
        id="ellipse945"
+       style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+    <ellipse
+       ry="8.4666672"
+       rx="8.46667"
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Grabber\GrabberCenter.png"
+       cy="50.799999"
+       cx="228.60001"
+       id="ellipse947"
        style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
   </g>
 </svg>

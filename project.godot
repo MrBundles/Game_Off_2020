@@ -44,6 +44,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Entities/Interacts.gd"
 }, {
+"base": "Node",
+"class": "PID_Controller",
+"language": "GDScript",
+"path": "res://Resources/PID_Controller/PID_Controller.gd"
+}, {
 "base": "Interactor",
 "class": "Piston",
 "language": "GDScript",
@@ -67,6 +72,7 @@ _global_script_class_icons={
 "Interactable": "",
 "Interactor": "",
 "Interacts": "",
+"PID_Controller": "",
 "Piston": "",
 "orchestrator_cell": "",
 "orchestrator_group": ""

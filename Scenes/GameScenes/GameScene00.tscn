@@ -124,7 +124,6 @@ __meta__ = {
 position = Vector2( 960, 960 )
 action_a = 2
 action_b = 3
-interactor_parent = null
 conveyor_speed = 150
 conveyor_length = 30
 
@@ -132,7 +131,6 @@ conveyor_length = 30
 position = Vector2( 1632, 768 )
 action_a = 5
 action_b = 2
-interactor_parent = null
 conveyor_speed = 150
 conveyor_length = 6
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Entities/Interactors/Arm/ActionBIndicator.png" type="Texture" id=1]
 [ext_resource path="res://Entities/Interactors/Arm/InteractorArm.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Entities/Interactors/Arm/JointCenter.png" type="Texture" id=6]
 [ext_resource path="res://Entities/Interactors/Arm/JointActionAIndicator.png" type="Texture" id=7]
 [ext_resource path="res://Entities/Interactors/Arm/JointActionBIndicator.png" type="Texture" id=8]
+[ext_resource path="res://Resources/PID_Controller/PID_Controller.tscn" type="PackedScene" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 resource_local_to_scene = true
@@ -27,6 +28,7 @@ region = Rect2( 0, 0, 64, 16 )
 
 [node name="Arm" type="RigidBody2D"]
 input_pickable = true
+mode = 3
 mass = 10.0
 gravity_scale = 0.0
 can_sleep = false
@@ -35,7 +37,6 @@ angular_damp = 50.0
 script = ExtResource( 2 )
 action_b = 3
 interactor_parent = null
-arm_rotate_mult = 25000
 
 [node name="ActionAIndicator" type="Sprite" parent="."]
 visible = false
@@ -83,6 +84,31 @@ texture = ExtResource( 5 )
 modulate = Color( 0.541176, 0.788235, 0.14902, 1 )
 position = Vector2( 1, -0.5 )
 texture = ExtResource( 6 )
+
+[node name="SPLabel" type="Label" parent="."]
+margin_left = 24.0
+margin_top = -32.0
+margin_right = 64.0
+margin_bottom = -18.0
+text = "SP: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PVLabel" type="Label" parent="."]
+margin_left = 24.0
+margin_top = 24.0
+margin_right = 64.0
+margin_bottom = 38.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PID_Controller" parent="." instance=ExtResource( 9 )]
+_Kp = 1000.0
+_Ki = 1.0
+_dt = 0.1
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
