@@ -69,8 +69,8 @@ func _on_iteration_timer_timeout():
 	$PVLabel.text = str(pid_pv)
 	
 	rotation_previous = global_rotation_degrees
-	if name == "Arm2":
-		print("deg per sec: " + str(deg_per_sec) + "     sp: " + str(pid_sp) + "     pv: " + str(pid_pv) + "     out: " + str(pid_out))
+#	if name == "Arm2":
+#		print("deg per sec: " + str(deg_per_sec) + "     sp: " + str(pid_sp) + "     pv: " + str(pid_pv) + "     out: " + str(pid_out))
 	pid_out = clamp($PID_Controller.calculate(pid_sp, pid_pv), -5000000, 5000000)
 	$PID_Controller._on_start_timer()
 

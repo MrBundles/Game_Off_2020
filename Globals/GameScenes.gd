@@ -35,10 +35,11 @@ func _clear_children():
 
 func _on_level_select_menu_button_pressed():
 	get_tree().paused = false
-	_clear_children()
-	add_child(game_scene_array[0].instance())
-	current_level = 0
-	_reset_game_data()
+#	if not game_scene_array[0].instance() in get_children():
+#		_clear_children()
+#		add_child(game_scene_array[0].instance())
+#		current_level = 0
+#		_reset_game_data()
 
 
 func _on_credits_button_pressed():

@@ -85,6 +85,7 @@ __meta__ = {
 
 [node name="Orchestrator" parent="UICanvasLayer/MarginContainer" index="0"]
 margin_bottom = 304.0
+cell_quantity = 5
 time_total_duration = 30
 action_array = [ 1, 2, 3, 4, 5 ]
 

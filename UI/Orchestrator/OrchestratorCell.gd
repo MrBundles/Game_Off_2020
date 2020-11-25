@@ -18,9 +18,11 @@ func _process(delta):
 	if get_global_rect().has_point(get_global_mouse_position()) and GlobalSceneManager.physics_state != GlobalSceneManager.PHYSICS_STATES.rewinding:
 		if Input.is_action_pressed("left_click"):
 			_set_enable(true)
+			_emit_signal_physics_rewind_to_cell()
 		
 		if Input.is_action_pressed("right_click"):
 			_set_enable(false)
+			_emit_signal_physics_rewind_to_cell()
 		
 	#if mouse is in cell or cell index is active
 	if get_global_rect().has_point(get_global_mouse_position()) or GlobalSyncManager.sync_cell_current == cell_index:
@@ -36,6 +38,10 @@ func _process(delta):
 		else:
 			modulate = GlobalColorManager.action_color_array[action].lightened(.75)
 
+
+func _emit_signal_physics_rewind_to_cell():
+	if cell_index <= GlobalSyncManager.sync_cell_current:
+		GlobalSignalManager.emit_signal("physics_rewind_to_cell", cell_index)
 
 func _set_enable(new_val):
 	enable = new_val

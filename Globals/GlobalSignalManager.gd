@@ -6,6 +6,8 @@ signal sync_timer_timeout
 signal sync_slider_moved
 signal physics_state_changed
 signal physics_reset_button_pressed
+signal physics_rewind_to_cell
+signal new_sync_cell_reached
 
 
 #transition signals

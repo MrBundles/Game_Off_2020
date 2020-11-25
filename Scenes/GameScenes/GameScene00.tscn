@@ -100,7 +100,7 @@ margin_bottom = 164.0
 group_quantity = 0
 action_array = [ 1, 2, 3 ]
 
-[node name="UILabel" type="Label" parent="UICanvasLayer" instance=ExtResource( 12 )]
+[node name="UILabel" parent="UICanvasLayer" instance=ExtResource( 12 )]
 margin_left = 64.0
 margin_top = 896.0
 margin_right = 160.0
@@ -108,9 +108,6 @@ margin_bottom = 933.0
 custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 0.541176, 0.788235, 0.14902, 1 )
 text = "Try Me"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Label" type="Label" parent="."]
 visible = false

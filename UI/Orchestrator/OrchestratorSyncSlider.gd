@@ -3,7 +3,7 @@ extends HSlider
 
 #variables
 var sync_subdiv_count = GlobalSyncManager.sync_subdiv_count setget _set_sync_subdiv_count
-
+var subdiv_per_cell = GlobalSyncManager.sync_subdiv_count / GlobalSyncManager.sync_cell_count
 
 func _ready():
 	_set_sync_subdiv_count(sync_subdiv_count)
@@ -25,6 +25,9 @@ func _on_SyncSlider_value_changed(new_val):
 		
 		GlobalSyncManager.sync_subdiv_current = value
 		GlobalSignalManager.emit_signal("sync_slider_moved", value)
+		
+	if int(new_val) % int(subdiv_per_cell) == 0:
+		GlobalSignalManager.emit_signal("new_sync_cell_reached", new_val / subdiv_per_cell)
 
 
 func _on_SyncSlider_gui_input(event):
