@@ -14,6 +14,7 @@ func _ready():
 	
 	initial_physics_mode = INTERACT_MODES.mode_rigid
 	collision_layer = 0b11
+	collision_mask = 0b11
 
 
 func _process(delta):
@@ -22,15 +23,14 @@ func _process(delta):
 	if has_node("Collider"):
 		sync_data = [global_position, rotation_degrees, linear_velocity, angular_velocity,
 		visible,
-		collision_layer
+		collision_layer,
+		collision_mask
 		]
 
 
 func _on_body_entered(body):
 	if "ConsumeTileMap" in body.name:
 		queue_free()
-#	if ("Triangle" in body.name or "Circle" in body.name or "Box" in body.name) and collision_layer == 0b0:
-#		body.collision_layer = 0b10
 
 
 func _on_load_sync_data(sync_subdiv):
@@ -40,3 +40,4 @@ func _on_load_sync_data(sync_subdiv):
 	angular_velocity = sync_array[sync_subdiv][3]
 	visible = sync_array[sync_subdiv][4]
 	collision_layer = sync_array[sync_subdiv][5]
+	collision_mask = sync_array[sync_subdiv][6]

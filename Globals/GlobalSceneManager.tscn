@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Globals/GlobalSceneManager.gd" type="Script" id=1]
 [ext_resource path="res://Globals/MenuScenes.gd" type="Script" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://Scenes/GameScenes/GameScene01.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Scenes/GameScenes/GameScene02.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scenes/GameScenes/GameScene03.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/GameScenes/GameScene04.tscn" type="PackedScene" id=15]
 
 [node name="GlobalSceneManager" type="Node"]
 pause_mode = 2
@@ -34,4 +35,4 @@ level_win_menu = ExtResource( 9 )
 [node name="GameScenes" type="CanvasLayer" parent="."]
 pause_mode = 1
 script = ExtResource( 4 )
-game_scene_array = [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ]
+game_scene_array = [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ) ]

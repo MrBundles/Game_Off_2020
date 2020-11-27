@@ -3,9 +3,23 @@
 [ext_resource path="res://UI/UIButtons/UIButton.tscn" type="PackedScene" id=1]
 
 [node name="MainMenu" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -208.0
+margin_top = -188.0
+margin_right = 208.0
+margin_bottom = 188.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-mouse_filter = 2
+color = Color( 1, 1, 1, 0.243137 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

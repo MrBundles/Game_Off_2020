@@ -18,13 +18,11 @@ func _ready():
 	$InteractableIcon.texture = interactable_type.instance().icon
 
 
-
 func _process(delta):
 	sync_data = [global_position, rotation_degrees, linear_velocity, angular_velocity,
 	required_qty,
 	consumed_interactable_array.duplicate()
 	]
-	print(consumed_interactable_array)
 	
 	$InteractableIcon.modulate = GlobalColorManager.action_color_array[action_a]
 	$Label.text = "x " + str(required_qty)
@@ -49,6 +47,7 @@ func _on_load_sync_data(sync_subdiv):
 func _on_Area2D_body_entered(body):
 	if not "Hatch" in body.name and body is Interactable and not body in consumed_interactable_array:
 		body.hide()
+		body.collision_mask = 0b0
 		body.collision_layer = 0b0
 		
 		if body.action == action_a:

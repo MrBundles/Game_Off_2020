@@ -114,11 +114,18 @@ conveyor_speed = 150
 conveyor_length = 30
 
 [node name="Conveyor2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1632, 768 )
+position = Vector2( 1408, 384 )
 action_a = 5
-action_b = 4
+action_b = 3
 conveyor_speed = 150
 conveyor_length = 6
+
+[node name="Conveyor3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 672, 544 )
+action_a = 4
+action_b = 2
+conveyor_speed = 150
+conveyor_length = 10
 
 [node name="ActionTileMaps" parent="." instance=ExtResource( 2 )]
 
@@ -153,6 +160,8 @@ format = 1
 [node name="TitleP" type="RigidBody2D" parent="."]
 modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
 position = Vector2( 564, 178 )
+collision_layer = 3
+collision_mask = 3
 mode = 3
 can_sleep = false
 script = ExtResource( 6 )
@@ -169,6 +178,8 @@ polygon = PoolVector2Array( -112.758, 134.563, -118.704, -135.982, 20.433, -137.
 [node name="TitleA" type="RigidBody2D" parent="."]
 modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
 position = Vector2( 824.142, 178 )
+collision_layer = 3
+collision_mask = 3
 mode = 3
 can_sleep = false
 script = ExtResource( 6 )
@@ -185,6 +196,8 @@ polygon = PoolVector2Array( -140.744, 139.48, -38.1101, -140.704, 29.3137, -139.
 [node name="TitleC" type="RigidBody2D" parent="."]
 modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
 position = Vector2( 1105.7, 178 )
+collision_layer = 3
+collision_mask = 3
 mode = 3
 can_sleep = false
 script = ExtResource( 6 )
@@ -201,6 +214,8 @@ polygon = PoolVector2Array( 83.1066, 39.6395, 117.568, 96.5752, 80.11, 127.29, 3
 [node name="TitleK" type="RigidBody2D" parent="."]
 modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
 position = Vector2( 1401.35, 178 )
+collision_layer = 3
+collision_mask = 3
 mode = 3
 can_sleep = false
 script = ExtResource( 6 )
