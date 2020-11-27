@@ -35,7 +35,7 @@ func _ready():
 func _on_physics_state_changed(new_physics_state):
 	if new_physics_state == GlobalSceneManager.PHYSICS_STATES.running:
 		if int(GlobalSyncManager.sync_subdiv_current) % int(GlobalSyncManager.subdiv_per_cell) == 0:
-			Physics2DServer.body_set_state(get_rid(), Physics2DServer.BODY_STATE_TRANSFORM, physics_state_array[GlobalSyncManager.sync_cell_current+1])
+			Physics2DServer.body_set_state(get_rid(), Physics2DServer.BODY_STATE_TRANSFORM, physics_state_array[GlobalSyncManager.sync_cell_current])
 
 		_reset_sync_array(GlobalSyncManager.sync_subdiv_current)
 		emit_signal("load_sync_data", GlobalSyncManager.sync_subdiv_current)
@@ -48,11 +48,13 @@ func _on_physics_state_changed(new_physics_state):
 
 
 func _on_new_sync_cell_reached(cell_index):
-	physics_state_array[cell_index] = Physics2DServer.body_get_state(get_rid(), Physics2DServer.BODY_STATE_TRANSFORM)
+	physics_state_array[cell_index-1] = Physics2DServer.body_get_state(get_rid(), Physics2DServer.BODY_STATE_TRANSFORM)
 
 
 func _reset_sync_array(current_subdiv):
-	for i in range(current_subdiv, sync_array.size()):
+	if sync_array[0] == []:
+		sync_array[0] = sync_data
+	for i in range(current_subdiv+1, sync_array.size()):
 		sync_array[i] = sync_data
 
 

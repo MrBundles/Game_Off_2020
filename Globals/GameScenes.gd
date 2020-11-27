@@ -5,6 +5,7 @@ export(Array, PackedScene) var game_scene_array
 
 #variables
 var current_level = 0
+var highest_unlocked_level = 12
 
 
 func _ready():
@@ -38,9 +39,11 @@ func _on_level_select_menu_button_pressed():
 	get_tree().paused = false
 	if GlobalSceneManager.previous_game_state in [GlobalSceneManager.GAME_STATES.level_pause_menu, GlobalSceneManager.GAME_STATES.level_win_menu, GlobalSceneManager.GAME_STATES.level_lose_menu]:
 		_clear_children()
-		_reset_game_data()
 		add_child(game_scene_array[0].instance())
 		current_level = 0
+		GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.stopped
+		GlobalSyncManager.sync_subdiv_upper_limit_reached = 0
+		GlobalSyncManager.sync_subdiv_current = 0
 
 
 func _on_credits_button_pressed():
@@ -73,7 +76,8 @@ func _on_level_lose():
 
 
 func _on_level_win():
-	pass
+	if current_level == highest_unlocked_level:
+		highest_unlocked_level += 1
 
 
 func _on_resume_button_pressed():

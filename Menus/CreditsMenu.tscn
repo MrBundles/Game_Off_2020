@@ -27,7 +27,7 @@ __meta__ = {
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color( 1, 1, 1, 0.243137 )
+color = Color( 0.607843, 0.607843, 0.607843, 0.882353 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -56,7 +56,7 @@ scroll_horizontal_enabled = false
 
 [node name="Label" type="Label" parent="VBoxContainer/ScrollContainer"]
 margin_right = 963.0
-margin_bottom = 317.0
+margin_bottom = 557.0
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.415686, 0.298039, 0.576471, 1 )
@@ -67,7 +67,13 @@ text = "Programming: GDScript
 
 Graphics: Done with Inkscape
      -All artwork created during Jam Period
-     -Font: Berlin Sans FB Demi Bold from dafontfree.net"
+     -Font: Berlin Sans FB Demi Bold from dafontfree.net
+
+Music:
+
+SFX:
+
+"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 348.0

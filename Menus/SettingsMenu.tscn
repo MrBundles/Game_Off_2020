@@ -1,12 +1,27 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://UI/UIButtons/UIButton.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Resources/Fonts/MenuHeading.tres" type="DynamicFont" id=2]
+[ext_resource path="res://UI/VolumeSlider/VolumeSlider.tscn" type="PackedScene" id=3]
 
 [node name="MainMenu" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -432.0
+margin_top = -188.0
+margin_right = 432.0
+margin_bottom = 100.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-mouse_filter = 2
+color = Color( 0.607843, 0.607843, 0.607843, 0.882353 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -16,27 +31,46 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -184.0
-margin_top = -166.0
-margin_right = 184.0
-margin_bottom = 166.0
+margin_left = -408.0
+margin_top = -139.0
+margin_right = 408.0
+margin_bottom = 139.0
 __meta__ = {
-"_edit_group_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="VBoxContainer"]
-margin_right = 368.0
+margin_right = 816.0
 margin_bottom = 74.0
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 1, 0.792157, 0.227451, 1 )
 text = "Settings"
 align = 1
 
-[node name="BackButton" parent="VBoxContainer" instance=ExtResource( 1 )]
-self_modulate = Color( 1, 0.792157, 0.227451, 1 )
+[node name="MusicVolumeSlider" parent="VBoxContainer" instance=ExtResource( 3 )]
 margin_top = 78.0
-margin_bottom = 158.0
+margin_right = 816.0
+margin_bottom = 121.0
+audio_bus = 1
+label = "Music Volume"
+
+[node name="EffectsVolumeSlider" parent="VBoxContainer" instance=ExtResource( 3 )]
+margin_top = 125.0
+margin_right = 816.0
+margin_bottom = 168.0
+audio_bus = 2
+label = "Effects Volume"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 172.0
+margin_right = 816.0
+margin_bottom = 252.0
+alignment = 1
+
+[node name="BackButton" parent="VBoxContainer/HBoxContainer" instance=ExtResource( 1 )]
+self_modulate = Color( 1, 0.792157, 0.227451, 1 )
+margin_left = 224.0
+margin_right = 592.0
 button_label = "Back"
 transition_signal = "back_button_pressed"
 action = 2

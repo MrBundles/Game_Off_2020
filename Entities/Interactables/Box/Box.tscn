@@ -4,20 +4,17 @@
 [ext_resource path="res://Entities/Interactables/Interactable.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
+resource_local_to_scene = true
 extents = Vector2( 32, 32 )
 
 [node name="Box" type="RigidBody2D"]
 modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
-collision_layer = 2147483649
 mode = 3
-contacts_reported = 10
-contact_monitor = true
-can_sleep = false
 script = ExtResource( 2 )
 icon = ExtResource( 1 )
 
 [node name="Collider" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
 
-[node name="BoxSprite" type="Sprite" parent="."]
+[node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

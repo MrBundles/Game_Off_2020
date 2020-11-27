@@ -13,6 +13,7 @@ func _ready():
 	connect("load_sync_data", self, "_on_load_sync_data")
 	
 	initial_physics_mode = INTERACT_MODES.mode_rigid
+	collision_layer = 0b11
 
 
 func _process(delta):
@@ -28,8 +29,8 @@ func _process(delta):
 func _on_body_entered(body):
 	if "ConsumeTileMap" in body.name:
 		queue_free()
-	if ("Triangle" in body.name or "Circle" in body.name or "Box" in body.name) and collision_layer == 0b0:
-		body.collision_layer = 0b0
+#	if ("Triangle" in body.name or "Circle" in body.name or "Box" in body.name) and collision_layer == 0b0:
+#		body.collision_layer = 0b10
 
 
 func _on_load_sync_data(sync_subdiv):

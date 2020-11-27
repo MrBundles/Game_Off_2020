@@ -48,6 +48,7 @@ func _process(delta):
 	else:
 		GlobalSyncManager.sync_action_enables[GlobalSyncManager.ACTIONS.purple] = false
 
+
 func _clear_children():
 	for child in get_children():
 		child.queue_free()

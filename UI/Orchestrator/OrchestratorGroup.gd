@@ -7,6 +7,11 @@ export(GlobalSyncManager.ACTIONS) var action = GlobalSyncManager.ACTIONS.disable
 export var cell_quantity = 1 setget _set_cell_quantity
 
 
+func _ready():
+	_set_cell_quantity(cell_quantity)
+	_set_action(action)
+
+
 func _process(delta):
 	var enable_count = 0
 	for i in range(get_child_count()):

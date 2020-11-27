@@ -22,9 +22,14 @@ export(Array, GlobalSyncManager.ACTIONS) var action_array = [
 
 func _ready():
 	_set_group_quantity(group_quantity)
-	
 	_set_cell_quantity(cell_quantity)
 	GlobalSyncManager.sync_time_total_duration = time_total_duration
+
+
+func _process(delta):
+	for i in range(get_node("OrchestratorGroups").get_child_count()):
+		if get_node("OrchestratorGroups").get_child(i).action != action_array[i]:
+			get_node("OrchestratorGroups").get_child(i).action = action_array[i]
 
 
 func _set_group_quantity(new_val):
@@ -38,7 +43,7 @@ func _set_group_quantity(new_val):
 
 			for i in range(group_quantity):
 				var group_instance = preload("res://UI/Orchestrator/OrchestratorGroup.tscn").instance()
-				group_instance.action = action_array[i]
+				group_instance.cell_quantity = cell_quantity
 				get_node("OrchestratorGroups").add_child(group_instance)
 
 

@@ -7,11 +7,14 @@
 radius = 32.0
 
 [node name="Circle" type="RigidBody2D"]
+modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
+mode = 3
 script = ExtResource( 2 )
+icon = ExtResource( 1 )
+
+[node name="Collider" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 1, 0 )
 texture = ExtResource( 1 )
-
-[node name="Collider" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )

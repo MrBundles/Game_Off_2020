@@ -57,9 +57,7 @@ func _grabber_modulate_update():
 func _on_Area2D_body_entered(body):
 	if body is Interactable and not body in body_entered_array:
 		body_entered_array.append(body)
-		print(body_entered_array)
 
 
 func _on_Area2D_body_exited(body):
 	body_entered_array.remove(body_entered_array.find(body))
-	print(body_entered_array)

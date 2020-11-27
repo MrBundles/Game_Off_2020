@@ -6,26 +6,25 @@
 [ext_resource path="res://Entities/Interactables/Box/Box.png" type="Texture" id=4]
 [ext_resource path="res://Resources/Fonts/BRLNSDB.TTF" type="DynamicFontData" id=5]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 48, 24 )
-
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 size = 48
 font_data = ExtResource( 5 )
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 64, 24 )
+
 [node name="Hatch" type="RigidBody2D"]
 z_index = 3
+collision_mask = 3
 mode = 3
 script = ExtResource( 1 )
 interactor_parent = null
 interactable_type = ExtResource( 3 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2( 0, -8 )
-polygon = PoolVector2Array( -64, -72, -48, -72, -48, 56, 48, 56, 48, -72, 64, -72, 64, 72, -64, 72 )
+polygon = PoolVector2Array( -80, -80, -64, -80, -64, 64, 64, 64, 64, -80, 80, -80, 80, 80, -80, 80 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 0, -8 )
 texture = ExtResource( 2 )
 
 [node name="InteractableIcon" type="Sprite" parent="."]
@@ -34,22 +33,22 @@ position = Vector2( 0, -24 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 4 )
 
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 0, 24 )
-shape = SubResource( 1 )
-
 [node name="Label" type="Label" parent="."]
 margin_left = -48.0
 margin_top = -16.0
 margin_right = 48.0
 margin_bottom = 39.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 text = "x 10"
 align = 1
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0, 40 )
+shape = SubResource( 2 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

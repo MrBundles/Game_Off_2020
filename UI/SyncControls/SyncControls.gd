@@ -17,7 +17,7 @@ func _process(delta):
 		$PauseButton.pressed = !$PauseButton.pressed
 		_on_PauseButton_pressed()
 	
-	if GlobalSceneManager.game_state == GlobalSceneManager.GAME_STATES.level_play or GlobalSceneManager.game_state == GlobalSceneManager.GAME_STATES.level_pause_menu:
+	if GlobalSceneManager.game_state == GlobalSceneManager.GAME_STATES.level_play or GlobalSceneManager.game_state == GlobalSceneManager.GAME_STATES.level_pause_menu or GlobalSceneManager.game_state == GlobalSceneManager.GAME_STATES.level_win_menu:
 		$PauseButton.show()
 	else:
 		$PauseButton.hide()

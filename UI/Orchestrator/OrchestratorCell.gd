@@ -15,7 +15,7 @@ func _ready():
 
 func _process(delta):
 	#if mouse is in cell
-	if get_global_rect().has_point(get_global_mouse_position()) and GlobalSceneManager.game_state != GlobalSceneManager.GAME_STATES.level_win_menu:
+	if get_global_rect().has_point(get_global_mouse_position()) and GlobalSceneManager.physics_state != GlobalSceneManager.PHYSICS_STATES.rewinding and GlobalSceneManager.game_state != GlobalSceneManager.GAME_STATES.level_win_menu:
 		if Input.is_action_pressed("left_click") and not enable:
 			_set_enable(true)
 			_emit_signal_physics_rewind_to_cell()

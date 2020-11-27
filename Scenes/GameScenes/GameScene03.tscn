@@ -1,0 +1,189 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://UI/UILabel/UILabel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Resources/Fonts/BRLNSDB.TTF" type="DynamicFontData" id=3]
+[ext_resource path="res://Entities/ActionTileMaps/WhiteTile.png" type="Texture" id=4]
+[ext_resource path="res://UI/UICanvasLayer.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Entities/Interactors/Conveyor/Conveyor.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Entities/ActionTileMaps/ActionTileMaps.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Entities/Interactors/Hatch/Hatches.gd" type="Script" id=8]
+[ext_resource path="res://UI/ForegroundTilemap/ForegroundTileset.tres" type="TileSet" id=9]
+[ext_resource path="res://Entities/Interactors/Hatch/Hatch.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Entities/Interactables/Circle/Circle.tscn" type="PackedScene" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+resource_local_to_scene = true
+size = 64
+font_data = ExtResource( 3 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
+
+[sub_resource type="TileSet" id=3]
+resource_local_to_scene = true
+0/name = "WhiteTile.png 0"
+0/texture = ExtResource( 4 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 2 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
+
+[sub_resource type="TileSet" id=5]
+resource_local_to_scene = true
+0/name = "WhiteTile.png 0"
+0/texture = ExtResource( 4 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 4 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+
+[node name="GameScene" type="Node2D"]
+
+[node name="BGCanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="BGCanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.41418
+margin_right = -1.41418
+mouse_filter = 2
+color = Color( 0.137255, 0.137255, 0.137255, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="UICanvasLayer" parent="." instance=ExtResource( 5 )]
+
+[node name="Orchestrator" parent="UICanvasLayer/MarginContainer" index="0"]
+margin_bottom = 164.0
+group_quantity = 1
+cell_quantity = 4
+time_total_duration = 12
+action_array = [ 1, 5, 3, 4, 5 ]
+
+[node name="UILabel" parent="UICanvasLayer" instance=ExtResource( 1 )]
+margin_left = 416.0
+margin_top = 160.0
+margin_right = 1465.0
+margin_bottom = 234.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "There is often more than one solution"
+
+[node name="ForegroundTileMap" type="TileMap" parent="."]
+z_index = 1
+tile_set = ExtResource( 9 )
+cell_size = Vector2( 32, 32 )
+format = 1
+
+[node name="ActionTileMaps" parent="." instance=ExtResource( 7 )]
+
+[node name="DisabledActionTileMap" parent="ActionTileMaps" index="0"]
+modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
+tile_set = SubResource( 3 )
+tile_data = PoolIntArray( -1, 0, 0, -65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 0, 0, -65527, 0, 0, -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0, -65521, 0, 0, -65520, 0, 0, -65519, 0, 0, -65518, 0, 0, -65517, 0, 0, -65516, 0, 0, -65515, 0, 0, -65514, 0, 0, -65513, 0, 0, -65512, 0, 0, -65511, 0, 0, -65510, 0, 0, -65509, 0, 0, -65508, 0, 0, -65507, 0, 0, -65506, 0, 0, -65505, 0, 0, -65504, 0, 0, -65503, 0, 0, -65502, 0, 0, -65501, 0, 0, -65500, 0, 0, -65499, 0, 0, -65498, 0, 0, -65497, 0, 0, -65496, 0, 0, -65495, 0, 0, -65494, 0, 0, -65493, 0, 0, -65492, 0, 0, -65491, 0, 0, -65490, 0, 0, -65489, 0, 0, -65488, 0, 0, -65487, 0, 0, -65486, 0, 0, -65485, 0, 0, -65484, 0, 0, -65483, 0, 0, -65482, 0, 0, -65481, 0, 0, -65480, 0, 0, -65479, 0, 0, -65478, 0, 0, -65477, 0, 0, -65476, 0, 0, 65535, 0, 0, 60, 0, 0, 131071, 0, 0, 65596, 0, 0, 196607, 0, 0, 131132, 0, 0, 262143, 0, 0, 196668, 0, 0, 327679, 0, 0, 262204, 0, 0, 393215, 0, 0, 327740, 0, 0, 458751, 0, 0, 393276, 0, 0, 524287, 0, 0, 458812, 0, 0, 589823, 0, 0, 524348, 0, 0, 655359, 0, 0, 589884, 0, 0, 720895, 0, 0, 655420, 0, 0, 786431, 0, 0, 720956, 0, 0, 851967, 0, 0, 786492, 0, 0, 917503, 0, 0, 852028, 0, 0, 983039, 0, 0, 917564, 0, 0, 1048575, 0, 0, 983100, 0, 0, 1114111, 0, 0, 1048636, 0, 0, 1179647, 0, 0, 1114172, 0, 0, 1245183, 0, 0, 1179708, 0, 0, 1310719, 0, 0, 1245244, 0, 0, 1376255, 0, 0, 1310780, 0, 0, 1441791, 0, 0, 1376316, 0, 0, 1507327, 0, 0, 1441852, 0, 0, 1572863, 0, 0, 1507388, 0, 0, 1638399, 0, 0, 1572924, 0, 0, 1703935, 0, 0, 1638460, 0, 0, 1769471, 0, 0, 1703996, 0, 0, 1835007, 0, 0, 1769532, 0, 0, 1900543, 0, 0, 1835068, 0, 0, 1966079, 0, 0, 1900604, 0, 0, 2031615, 0, 0, 1966080, 0, 0, 1966081, 0, 0, 1966082, 0, 0, 1966083, 0, 0, 1966084, 0, 0, 1966085, 0, 0, 1966086, 0, 0, 1966087, 0, 0, 1966088, 0, 0, 1966089, 0, 0, 1966090, 0, 0, 1966091, 0, 0, 1966092, 0, 0, 1966093, 0, 0, 1966094, 0, 0, 1966095, 0, 0, 1966096, -1073741824, 0, 1966097, -1073741824, 0, 1966098, -1073741824, 0, 1966099, -1073741824, 0, 1966100, -1073741824, 0, 1966101, -1073741824, 0, 1966102, 0, 0, 1966103, 0, 0, 1966104, 0, 0, 1966105, 0, 0, 1966106, 0, 0, 1966107, 0, 0, 1966108, 0, 0, 1966109, 0, 0, 1966110, 0, 0, 1966111, 0, 0, 1966112, 0, 0, 1966113, 0, 0, 1966114, 0, 0, 1966115, 0, 0, 1966116, 0, 0, 1966117, 0, 0, 1966118, 0, 0, 1966119, 0, 0, 1966120, 0, 0, 1966121, 0, 0, 1966122, 0, 0, 1966123, 0, 0, 1966124, 0, 0, 1966125, 0, 0, 1966126, 0, 0, 1966127, 0, 0, 1966128, 0, 0, 1966129, 0, 0, 1966130, 0, 0, 1966131, 0, 0, 1966132, 0, 0, 1966133, 0, 0, 1966134, 0, 0, 1966135, 0, 0, 1966136, 0, 0, 1966137, 0, 0, 1966138, 0, 0, 1966139, 0, 0, 1966140, 0, 0, 2097151, 0, 0, 2031616, 0, 0, 2031617, 0, 0, 2031618, 0, 0, 2031619, 0, 0, 2031620, 0, 0, 2031621, 0, 0, 2031622, 0, 0, 2031623, 0, 0, 2031624, 0, 0, 2031625, 0, 0, 2031626, 0, 0, 2031627, 0, 0, 2031628, 0, 0, 2031629, 0, 0, 2031630, 0, 0, 2031631, 0, 0, 2031632, 0, 0, 2031633, 0, 0, 2031634, 0, 0, 2031635, 0, 0, 2031636, 0, 0, 2031637, 0, 0, 2031638, 0, 0, 2031639, 0, 0, 2031640, 0, 0, 2031641, 0, 0, 2031642, 0, 0, 2031643, 0, 0, 2031644, 0, 0, 2031645, 0, 0, 2031646, 0, 0, 2031647, 0, 0, 2031648, 0, 0, 2031649, 0, 0, 2031650, 0, 0, 2031651, 0, 0, 2031652, 0, 0, 2031653, 0, 0, 2031654, 0, 0, 2031655, 0, 0, 2031656, 0, 0, 2031657, 0, 0, 2031658, 0, 0, 2031659, 0, 0, 2031660, 0, 0, 2031661, 0, 0, 2031662, 0, 0, 2031663, 0, 0, 2031664, 0, 0, 2031665, 0, 0, 2031666, 0, 0, 2031667, 0, 0, 2031668, 0, 0, 2031669, 0, 0, 2031670, 0, 0, 2031671, 0, 0, 2031672, 0, 0, 2031673, 0, 0, 2031674, 0, 0, 2031675, 0, 0, 2031676, 0, 0, 2162687, 0, 0, 2097152, 0, 0, 2097153, 0, 0, 2097154, 0, 0, 2097155, 0, 0, 2097156, 0, 0, 2097157, 0, 0, 2097158, 0, 0, 2097159, 0, 0, 2097160, 0, 0, 2097161, 0, 0, 2097162, 0, 0, 2097163, 0, 0, 2097164, 0, 0, 2097165, 0, 0, 2097166, 0, 0, 2097167, 0, 0, 2097168, 0, 0, 2097169, 0, 0, 2097170, 0, 0, 2097171, 0, 0, 2097172, 0, 0, 2097173, 0, 0, 2097174, 0, 0, 2097175, 0, 0, 2097176, 0, 0, 2097177, 0, 0, 2097178, 0, 0, 2097179, 0, 0, 2097180, 0, 0, 2097181, 0, 0, 2097182, 0, 0, 2097183, 0, 0, 2097184, 0, 0, 2097185, 0, 0, 2097186, 0, 0, 2097187, 0, 0, 2097188, 0, 0, 2097189, 0, 0, 2097190, 0, 0, 2097191, 0, 0, 2097192, 0, 0, 2097193, 0, 0, 2097194, 0, 0, 2097195, 0, 0, 2097196, 0, 0, 2097197, 0, 0, 2097198, 0, 0, 2097199, 0, 0, 2097200, 0, 0, 2097201, 0, 0, 2097202, 0, 0, 2097203, 0, 0, 2097204, 0, 0, 2097205, 0, 0, 2097206, 0, 0, 2097207, 0, 0, 2097208, 0, 0, 2097209, 0, 0, 2097210, 0, 0, 2097211, 0, 0, 2097212, 0, 0, 2228223, 0, 0, 2162688, 0, 0, 2162689, 0, 0, 2162690, 0, 0, 2162691, 0, 0, 2162692, 0, 0, 2162693, 0, 0, 2162694, 0, 0, 2162695, 0, 0, 2162696, 0, 0, 2162697, 0, 0, 2162698, 0, 0, 2162699, 0, 0, 2162700, 0, 0, 2162701, 0, 0, 2162702, 0, 0, 2162703, 0, 0, 2162704, 0, 0, 2162705, 0, 0, 2162706, 0, 0, 2162707, 0, 0, 2162708, 0, 0, 2162709, 0, 0, 2162710, 0, 0, 2162711, 0, 0, 2162712, 0, 0, 2162713, 0, 0, 2162714, 0, 0, 2162715, 0, 0, 2162716, 0, 0, 2162717, 0, 0, 2162718, 0, 0, 2162719, 0, 0, 2162720, 0, 0, 2162721, 0, 0, 2162722, 0, 0, 2162723, 0, 0, 2162724, 0, 0, 2162725, 0, 0, 2162726, 0, 0, 2162727, 0, 0, 2162728, 0, 0, 2162729, 0, 0, 2162730, 0, 0, 2162731, 0, 0, 2162732, 0, 0, 2162733, 0, 0, 2162734, 0, 0, 2162735, 0, 0, 2162736, 0, 0, 2162737, 0, 0, 2162738, 0, 0, 2162739, 0, 0, 2162740, 0, 0, 2162741, 0, 0, 2162742, 0, 0, 2162743, 0, 0, 2162744, 0, 0, 2162745, 0, 0, 2162746, 0, 0, 2162747, 0, 0, 2162748, 0, 0, 2293759, 0, 0, 2228224, 0, 0, 2228225, 0, 0, 2228226, 0, 0, 2228227, 0, 0, 2228228, 0, 0, 2228229, 0, 0, 2228230, 0, 0, 2228231, 0, 0, 2228232, 0, 0, 2228233, 0, 0, 2228234, 0, 0, 2228235, 0, 0, 2228236, 0, 0, 2228237, 0, 0, 2228238, 0, 0, 2228239, 0, 0, 2228240, 0, 0, 2228241, 0, 0, 2228242, 0, 0, 2228243, 0, 0, 2228244, 0, 0, 2228245, 0, 0, 2228246, 0, 0, 2228247, 0, 0, 2228248, 0, 0, 2228249, 0, 0, 2228250, 0, 0, 2228251, 0, 0, 2228252, 0, 0, 2228253, 0, 0, 2228254, 0, 0, 2228255, 0, 0, 2228256, 0, 0, 2228257, 0, 0, 2228258, 0, 0, 2228259, 0, 0, 2228260, 0, 0, 2228261, 0, 0, 2228262, 0, 0, 2228263, 0, 0, 2228264, 0, 0, 2228265, 0, 0, 2228266, 0, 0, 2228267, 0, 0, 2228268, 0, 0, 2228269, 0, 0, 2228270, 0, 0, 2228271, 0, 0, 2228272, 0, 0, 2228273, 0, 0, 2228274, 0, 0, 2228275, 0, 0, 2228276, 0, 0, 2228277, 0, 0, 2228278, 0, 0, 2228279, 0, 0, 2228280, 0, 0, 2228281, 0, 0, 2228282, 0, 0, 2228283, 0, 0, 2228284, 0, 0 )
+
+[node name="RedActionTileMap" parent="ActionTileMaps" index="1"]
+modulate = Color( 1, 0.511765, 0.526471, 1 )
+tile_set = SubResource( 5 )
+
+[node name="YellowActionTileMap" parent="ActionTileMaps" index="2"]
+modulate = Color( 1, 0.844118, 0.420588, 1 )
+tile_set = SubResource( 5 )
+
+[node name="GreenActionTileMap" parent="ActionTileMaps" index="3"]
+modulate = Color( 0.655882, 0.841177, 0.361765, 1 )
+tile_set = SubResource( 5 )
+
+[node name="BlueActionTileMap" parent="ActionTileMaps" index="4"]
+modulate = Color( 0.323529, 0.632353, 0.826471, 1 )
+tile_set = SubResource( 5 )
+
+[node name="PurpleActionTileMap" parent="ActionTileMaps" index="5"]
+modulate = Color( 0.561765, 0.473529, 0.682353, 1 )
+tile_set = SubResource( 5 )
+
+[node name="Interactables" type="Node2D" parent="."]
+
+[node name="Circle" parent="Interactables" instance=ExtResource( 11 )]
+modulate = Color( 1, 0.34902, 0.368627, 1 )
+position = Vector2( 832, 480 )
+collision_layer = 3
+action = 1
+
+[node name="Circle4" parent="Interactables" instance=ExtResource( 11 )]
+modulate = Color( 1, 0.34902, 0.368627, 1 )
+position = Vector2( 1216, 480 )
+collision_layer = 3
+action = 1
+
+[node name="Circle3" parent="Interactables" instance=ExtResource( 11 )]
+modulate = Color( 1, 0.34902, 0.368627, 1 )
+position = Vector2( 1024, 480 )
+collision_layer = 3
+action = 1
+
+[node name="Interactors" type="Node2D" parent="."]
+
+[node name="Conveyor" parent="Interactors" instance=ExtResource( 6 )]
+position = Vector2( 960, 576 )
+rotation = -0.0872665
+action_b = 1
+conveyor_speed = 300
+conveyor_length = 15
+
+[node name="Hatches" type="Node2D" parent="."]
+script = ExtResource( 8 )
+
+[node name="Hatch" parent="Hatches" instance=ExtResource( 10 )]
+position = Vector2( 416, 768 )
+action_a = 1
+interactable_type = ExtResource( 11 )
+required_qty = 2
+
+[node name="Hatch2" parent="Hatches" instance=ExtResource( 10 )]
+position = Vector2( 1400.66, 504.436 )
+rotation = -0.0872665
+action_a = 1
+interactable_type = ExtResource( 11 )
+required_qty = 1
+rotation_val = 270
+
+[editable path="UICanvasLayer"]
+
+[editable path="ActionTileMaps"]

@@ -28,3 +28,7 @@ signal next_level_button_pressed
 signal open_scene
 signal reload_current_scene
 signal close_scene
+
+#audio signals
+signal volume_changed
+signal mute_changed

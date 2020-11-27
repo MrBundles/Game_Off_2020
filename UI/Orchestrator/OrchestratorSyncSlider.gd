@@ -32,7 +32,7 @@ func _on_SyncSlider_value_changed(new_val):
 
 func _on_SyncSlider_gui_input(event):
 	if event is InputEventMouseButton and GlobalSceneManager.physics_state != GlobalSceneManager.PHYSICS_STATES.running:
-		if event.is_pressed():
+		if event.is_pressed() and GlobalSyncManager.sync_subdiv_upper_limit_reached != 0:
 			GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.rewinding
 		else:
 			GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.stopped

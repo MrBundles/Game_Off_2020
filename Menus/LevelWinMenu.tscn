@@ -33,19 +33,16 @@ __meta__ = {
 }
 
 [node name="NextLevelButton" parent="VBoxContainer" instance=ExtResource( 1 )]
-self_modulate = Color( 0.0980392, 0.509804, 0.768627, 1 )
 button_label = "Next"
 transition_signal = "next_level_button_pressed"
 
 [node name="RetryButton" parent="VBoxContainer" instance=ExtResource( 1 )]
-self_modulate = Color( 0.0980392, 0.509804, 0.768627, 1 )
 margin_top = 84.0
 margin_bottom = 164.0
 button_label = "Retry"
 transition_signal = "restart_button_pressed"
 
 [node name="LevelSelectButton" parent="VBoxContainer" instance=ExtResource( 1 )]
-self_modulate = Color( 0.0980392, 0.509804, 0.768627, 1 )
 margin_top = 168.0
 margin_bottom = 248.0
 button_label = "Level Select"

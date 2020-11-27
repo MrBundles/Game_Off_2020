@@ -4,16 +4,13 @@
 [ext_resource path="res://Entities/Interactables/Interactable.gd" type="Script" id=2]
 
 [node name="Triangle" type="RigidBody2D"]
-pause_mode = 2
 modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
 mode = 3
-contacts_reported = 10
-contact_monitor = true
-can_sleep = false
 script = ExtResource( 2 )
+icon = ExtResource( 1 )
 
 [node name="Collider" type="CollisionPolygon2D" parent="."]
-polygon = PoolVector2Array( -0.615685, -34.0887, 36.6842, 29.5509, -37.562, 29.3741 )
+polygon = PoolVector2Array( -37.5619, 29.1975, -0.438789, -33.9119, 36.8611, 29.3743 )
 
-[node name="TriangleSprite" type="Sprite" parent="."]
+[node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
