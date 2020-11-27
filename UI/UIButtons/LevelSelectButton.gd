@@ -11,7 +11,8 @@ func _set_level_number(new_val):
 
 
 func _on_Button_pressed():
-	GlobalSignalManager.emit_signal("level_select_button_pressed", level_number)
+	if level_number < GlobalSceneManager.get_node("GameScenes").game_scene_array.size():
+		GlobalSignalManager.emit_signal("level_select_button_pressed", level_number)
 
 
 func _set_action(new_val):

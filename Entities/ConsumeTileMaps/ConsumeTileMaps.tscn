@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Entities/ConsumeTileMaps/ConsumeTilemap.png" type="Texture" id=2]
+[ext_resource path="res://Entities/ConsumeTileMaps/ConsumeTileMap.tscn" type="PackedScene" id=3]
+
+[sub_resource type="TileSet" id=1]
+resource_local_to_scene = true
+0/name = "ConsumeTilemap.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[node name="ConsumeTileMaps" type="Node2D"]
+
+[node name="DisabledConsumeTileMap" parent="." instance=ExtResource( 3 )]
+tile_set = SubResource( 1 )
+
+[node name="RedConsumeTileMap" parent="." instance=ExtResource( 3 )]
+modulate = Color( 1, 0.511765, 0.526471, 1 )
+tile_set = SubResource( 1 )
+collision_mask = 0
+action = 1
+
+[node name="YellowConsumeTileMap" parent="." instance=ExtResource( 3 )]
+modulate = Color( 1, 0.844118, 0.420588, 1 )
+tile_set = SubResource( 1 )
+collision_mask = 0
+action = 2
+
+[node name="GreenConsumeTileMap" parent="." instance=ExtResource( 3 )]
+modulate = Color( 0.655882, 0.841177, 0.361765, 1 )
+tile_set = SubResource( 1 )
+collision_mask = 0
+action = 3
+
+[node name="BlueConsumeTileMap" parent="." instance=ExtResource( 3 )]
+modulate = Color( 0.323529, 0.632353, 0.826471, 1 )
+tile_set = SubResource( 1 )
+collision_mask = 0
+action = 4
+
+[node name="PurpleConsumeTileMap" parent="." instance=ExtResource( 3 )]
+modulate = Color( 0.561765, 0.473529, 0.682353, 1 )
+tile_set = SubResource( 1 )
+collision_mask = 0
+action = 5

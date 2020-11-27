@@ -15,11 +15,17 @@ var single_conveyor_length = 64
 
 
 func _ready():
+	#connect signals
+	connect("load_sync_data", self, "_on_load_sync_data")
+	
 	initial_physics_mode = INTERACT_MODES.mode_kinematic
 	_conveyor_modulate_update()
 
 func _process(delta):
-	
+	sync_data = [global_position, rotation_degrees, linear_velocity, angular_velocity,
+	$ConveyorSpriteA.texture.region.position.x,
+	$ConveyorSpriteB.texture.region.position.x
+	]
 	if Engine.editor_hint:
 		_conveyor_modulate_update()
 	
@@ -35,6 +41,15 @@ func _process(delta):
 		
 	else:
 		linear_velocity = Vector2(0,0)
+
+
+func _on_load_sync_data(sync_subdiv):
+	global_position = sync_array[sync_subdiv][0]
+	rotation_degrees = sync_array[sync_subdiv][1]
+	linear_velocity = sync_array[sync_subdiv][2]
+	angular_velocity = sync_array[sync_subdiv][3]
+	$ConveyorSpriteA.texture.region.position.x = sync_array[sync_subdiv][4]
+	$ConveyorSpriteB.texture.region.position.x = sync_array[sync_subdiv][5]
 
 
 func _set_conveyor_length(new_val):

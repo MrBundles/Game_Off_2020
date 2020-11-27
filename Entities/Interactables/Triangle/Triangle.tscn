@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Entities/Interactables/Triangle/Triangle.png" type="Texture" id=1]
+[ext_resource path="res://Entities/Interactables/Interactable.gd" type="Script" id=2]
+
+[node name="Triangle" type="RigidBody2D"]
+pause_mode = 2
+modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
+mode = 3
+contacts_reported = 10
+contact_monitor = true
+can_sleep = false
+script = ExtResource( 2 )
+
+[node name="Collider" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -0.615685, -34.0887, 36.6842, 29.5509, -37.562, 29.3741 )
+
+[node name="TriangleSprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )

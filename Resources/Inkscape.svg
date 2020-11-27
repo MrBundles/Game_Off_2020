@@ -18,7 +18,59 @@
    inkscape:export-xdpi="48"
    inkscape:export-ydpi="48">
   <defs
-     id="defs2" />
+     id="defs2">
+    <marker
+       inkscape:stockid="Tail"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Tail"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <g
+         id="g3120"
+         transform="scale(-1.2)">
+        <path
+           id="path3108"
+           d="M -3.8048674,-3.9585227 L 0.54352094,0"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.8;stroke-linecap:round" />
+        <path
+           id="path3110"
+           d="M -1.2866832,-3.9585227 L 3.0617053,0"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.8;stroke-linecap:round" />
+        <path
+           id="path3112"
+           d="M 1.3053582,-3.9585227 L 5.6537466,0"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.8;stroke-linecap:round" />
+        <path
+           id="path3114"
+           d="M -3.8048674,4.1775838 L 0.54352094,0.21974226"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.8;stroke-linecap:round" />
+        <path
+           id="path3116"
+           d="M -1.2866832,4.1775838 L 3.0617053,0.21974226"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.8;stroke-linecap:round" />
+        <path
+           id="path3118"
+           d="M 1.3053582,4.1775838 L 5.6537466,0.21974226"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.8;stroke-linecap:round" />
+      </g>
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path3072"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,9 +78,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="656.96693"
-     inkscape:cy="150.61103"
+     inkscape:zoom="0.35"
+     inkscape:cx="795.18833"
+     inkscape:cy="-54.458674"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -96,22 +148,14 @@
     <rect
        inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Box\Box.png"
-       y="85.25721"
-       x="68.323875"
-       height="32.68557"
-       width="32.68557"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Box\Box.png"
+       y="85.989586"
+       x="424.65625"
+       height="31.220827"
+       width="31.220827"
        id="rect835-9"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.18109;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
-    <circle
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.1811;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path856"
-       cx="84.666656"
-       cy="101.59999"
-       r="8.5526247"
-       inkscape:export-filename="E:\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Box\Box.png"
-       inkscape:export-xdpi="48"
-       inkscape:export-ydpi="48" />
+       style="fill:#f2f2f2;fill-opacity:1;stroke:#f2f2f2;stroke-width:2.64583333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2.64583333,7.9375;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       ry="0" />
     <rect
        style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:0.905;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="rect858"
@@ -649,51 +693,69 @@
     <rect
        ry="0"
        y="-84.666664"
-       x="42.333332"
-       height="25.4"
-       width="25.4"
+       x="25.4"
+       height="16.933331"
+       width="16.933332"
        id="rect968"
-       style="fill:#8ac926;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square" />
+       style="fill:#8ac926;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ForegroundTilemap\ForegroundTilemap.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
     <rect
        style="fill:#1982c4;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square"
        id="rect970"
-       width="25.4"
-       height="25.4"
-       x="67.733337"
+       width="16.933332"
+       height="16.933331"
+       x="42.333336"
        y="-84.666664"
-       ry="0" />
+       ry="0"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ForegroundTilemap\ForegroundTilemap.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
     <rect
        ry="0"
        y="-84.666664"
-       x="93.133331"
-       height="25.4"
-       width="25.4"
+       x="59.266666"
+       height="16.933331"
+       width="16.933332"
        id="rect972"
-       style="fill:#6a4c93;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square" />
+       style="fill:#6a4c93;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ForegroundTilemap\ForegroundTilemap.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
     <rect
        style="fill:#ffca3a;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square"
        id="rect975"
-       width="25.4"
-       height="25.4"
-       x="16.933334"
+       width="16.933332"
+       height="16.933331"
+       x="8.4666672"
        y="-84.666664"
-       ry="0" />
+       ry="0"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ForegroundTilemap\ForegroundTilemap.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
     <rect
        ry="0"
        y="-84.666664"
        x="-8.4666672"
-       height="25.4"
-       width="25.4"
+       height="16.933331"
+       width="16.933332"
        id="rect977"
-       style="fill:#ff595e;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square" />
+       style="fill:#ff595e;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ForegroundTilemap\ForegroundTilemap.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
     <rect
        style="fill:#9b9b9b;fill-opacity:1;stroke-width:6.61459;stroke-linecap:square"
        id="rect978"
-       width="25.4"
-       height="25.4"
-       x="118.53333"
+       width="16.933332"
+       height="16.933331"
+       x="76.199997"
        y="-84.666664"
-       ry="0" />
+       ry="0"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ForegroundTilemap\ForegroundTilemap.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
     <g
        aria-label="PACK"
        id="text991"
@@ -956,5 +1018,469 @@
        cx="228.60001"
        id="ellipse947"
        style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+    <rect
+       style="fill:#8ac926;stroke-width:2.64583;stroke-linecap:square;fill-opacity:1"
+       id="rect947"
+       width="16.933332"
+       height="16.933332"
+       x="0"
+       y="135.46667"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\Orchestrator\CellHighlight.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <ellipse
+       style="fill:#9b9b9b;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path3028"
+       cx="1905"
+       cy="296.33334"
+       rx="211.66666"
+       ry="635" />
+    <path
+       id="path3033"
+       style="fill:#0000ff;fill-opacity:0.492837;stroke:none;stroke-width:3.02232;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:transform-center-x="2.6190213e-05"
+       inkscape:transform-center-y="-98.777847"
+       transform="matrix(0.46188021,1.616581,-0.79999999,0.93333345,397.36915,-2081.9528)"
+       d="m 1651,-719.66666 -91.6544,-158.74999 -91.6543,-158.74995 H 1651 l 183.3086,-10e-5 -45.8272,79.37498 -45.8272,79.37496 -45.8271,79.37509 z"
+       sodipodi:nodetypes="ccccccccc" />
+    <ellipse
+       ry="211.66669"
+       rx="211.66666"
+       cy="804.33331"
+       cx="2413"
+       id="ellipse3035"
+       style="fill:#9b9b9b;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Hatch\Hatch.png"
+       style="fill:#9b9b9b;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3052"
+       width="67.733322"
+       height="67.73336"
+       x="423.33334"
+       y="-2.1449951e-05" />
+    <ellipse
+       style="fill:#f2f2f2;fill-opacity:1;stroke:#f2f2f2;stroke-width:2.64583333;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:2.64583333, 7.93750000000000000;stroke-dashoffset:0;stroke-opacity:1;stroke-linejoin:round;paint-order:markers fill stroke"
+       id="ellipse3054"
+       cx="482.60001"
+       cy="101.6"
+       rx="15.623641"
+       ry="15.62365"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Circle\Circle.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       sodipodi:nodetypes="ccccccccc"
+       d="m 2993.2674,1225.5392 -164.638,44.9013 -164.638,44.9012 44.9013,-164.638 44.9012,-164.63789 59.8682,59.86839 59.8684,59.8684 59.8685,59.8683 z"
+       inkscape:transform-center-y="134.70375"
+       inkscape:transform-center-x="134.70395"
+       style="fill:#8ac926;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path3062" />
+    <path
+       id="path3066"
+       style="fill:#8ac926;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:transform-center-x="-134.70375"
+       inkscape:transform-center-y="134.70393"
+       d="m 3172.8725,986.06595 44.9013,164.63795 44.9012,164.638 -164.638,-44.9013 -164.6378,-44.9012 59.8683,-59.8682 59.8684,-59.8684 59.8683,-59.8685 z"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       id="path3058"
+       style="fill:#8ac926;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:transform-center-x="0.00014500145"
+       inkscape:transform-center-y="275.16665"
+       d="m 3132.6665,1143 -84.6666,148.1667 -84.6667,148.1666 -84.6666,-148.1667 -84.6667,-148.1665 84.6666,10e-5 h 84.6667 l 84.6667,-10e-5 z"
+       sodipodi:nodetypes="ccccccccc" />
+    <ellipse
+       style="fill:#9b9b9b;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="ellipse3056"
+       cx="-2963.3333"
+       cy="-1016"
+       rx="211.66666"
+       ry="211.66669"
+       transform="scale(-1)"
+       inkscape:transform-center-x="9.3048329e-05"
+       inkscape:transform-center-y="-4e-06" />
+    <ellipse
+       ry="126.99998"
+       rx="127.00001"
+       cy="1016"
+       cx="2963.3333"
+       id="ellipse3068"
+       style="fill:#1982c4;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="ccccccccc"
+       d="m 509.29332,117.2258 7.82002,-16.26099 7.82003,-16.261002 7.82002,16.261002 7.82003,16.26099 -7.82003,-1e-5 h -7.82002 l -7.82003,1e-5 z"
+       inkscape:transform-center-y="-5.4203407"
+       style="fill:#f2f2f2;fill-opacity:1;stroke:#f2f2f2;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:2.64583, 7.9375;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path3050"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactables\Triangle\Triangle.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48"
+       inkscape:transform-center-x="4.6662202e-06" />
+    <rect
+       y="211.66667"
+       x="635"
+       height="42.333328"
+       width="84.666664"
+       id="rect3070"
+       style="fill:#9b9b9b;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <g
+       id="g3594"
+       transform="translate(2.7904463e-6,-5.612105e-5)"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\ConsumeTileMaps\ConsumeTilemap.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48">
+      <ellipse
+         ry="1.0583327"
+         rx="1.0583333"
+         inkscape:export-ydpi="48"
+         inkscape:export-xdpi="48"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         cy="85.724998"
+         cx="144.99167"
+         id="ellipse3412"
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+      <ellipse
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+         id="ellipse3414"
+         cx="149.22501"
+         cy="85.724998"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48"
+         rx="1.0583333"
+         ry="1.0583327" />
+      <ellipse
+         ry="1.0583327"
+         rx="1.0583333"
+         inkscape:export-ydpi="48"
+         inkscape:export-xdpi="48"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         cy="87.841667"
+         cx="147.10834"
+         id="ellipse3416"
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+      <ellipse
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+         id="ellipse3418"
+         cx="144.99167"
+         cy="89.958336"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48"
+         rx="1.0583333"
+         ry="1.0583327" />
+      <ellipse
+         ry="1.0583327"
+         rx="1.0583333"
+         inkscape:export-ydpi="48"
+         inkscape:export-xdpi="48"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         cy="89.958336"
+         cx="149.22501"
+         id="ellipse3420"
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+      <ellipse
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+         id="ellipse3422"
+         cx="151.34167"
+         cy="87.841667"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48"
+         rx="1.0583333"
+         ry="1.0583327" />
+      <ellipse
+         ry="1.0583327"
+         rx="1.0583333"
+         inkscape:export-ydpi="48"
+         inkscape:export-xdpi="48"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         cy="92.074997"
+         cx="147.10834"
+         id="ellipse3424"
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+      <ellipse
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+         id="ellipse3426"
+         cx="151.34167"
+         cy="92.074997"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48"
+         rx="1.0583333"
+         ry="1.0583327" />
+      <ellipse
+         ry="1.0583327"
+         rx="1.0583333"
+         inkscape:export-ydpi="48"
+         inkscape:export-xdpi="48"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         cy="94.191666"
+         cx="153.45833"
+         id="ellipse3458"
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+      <ellipse
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+         id="ellipse3460"
+         cx="157.69167"
+         cy="94.191666"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48"
+         rx="1.0583333"
+         ry="1.0583327" />
+      <ellipse
+         ry="1.0583327"
+         rx="1.0583333"
+         inkscape:export-ydpi="48"
+         inkscape:export-xdpi="48"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         cy="96.308334"
+         cx="155.575"
+         id="ellipse3462"
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+      <ellipse
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+         id="ellipse3464"
+         cx="153.45833"
+         cy="98.425003"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48"
+         rx="1.0583333"
+         ry="1.0583327" />
+      <ellipse
+         ry="1.0583327"
+         rx="1.0583333"
+         inkscape:export-ydpi="48"
+         inkscape:export-xdpi="48"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         cy="98.425003"
+         cx="157.69167"
+         id="ellipse3466"
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+      <ellipse
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+         id="ellipse3468"
+         cx="159.80833"
+         cy="96.308334"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48"
+         rx="1.0583333"
+         ry="1.0583327" />
+      <ellipse
+         ry="1.0583327"
+         rx="1.0583333"
+         inkscape:export-ydpi="48"
+         inkscape:export-xdpi="48"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         cy="100.54166"
+         cx="155.575"
+         id="ellipse3470"
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+      <ellipse
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+         id="ellipse3472"
+         cx="159.80833"
+         cy="100.54166"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48"
+         rx="1.0583333"
+         ry="1.0583327" />
+      <ellipse
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+         id="ellipse3476"
+         cx="153.45833"
+         cy="85.724998"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48"
+         rx="1.0583333"
+         ry="1.0583327" />
+      <ellipse
+         ry="1.0583327"
+         rx="1.0583333"
+         inkscape:export-ydpi="48"
+         inkscape:export-xdpi="48"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         cy="85.724998"
+         cx="157.69167"
+         id="ellipse3478"
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+      <ellipse
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+         id="ellipse3480"
+         cx="155.575"
+         cy="87.841667"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48"
+         rx="1.0583333"
+         ry="1.0583327" />
+      <ellipse
+         ry="1.0583327"
+         rx="1.0583333"
+         inkscape:export-ydpi="48"
+         inkscape:export-xdpi="48"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         cy="89.958336"
+         cx="153.45833"
+         id="ellipse3482"
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+      <ellipse
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+         id="ellipse3484"
+         cx="157.69167"
+         cy="89.958336"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48"
+         rx="1.0583333"
+         ry="1.0583327" />
+      <ellipse
+         ry="1.0583327"
+         rx="1.0583333"
+         inkscape:export-ydpi="48"
+         inkscape:export-xdpi="48"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         cy="87.841667"
+         cx="159.80833"
+         id="ellipse3486"
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+      <ellipse
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+         id="ellipse3488"
+         cx="155.575"
+         cy="92.074997"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48"
+         rx="1.0583333"
+         ry="1.0583327" />
+      <ellipse
+         ry="1.0583327"
+         rx="1.0583333"
+         inkscape:export-ydpi="48"
+         inkscape:export-xdpi="48"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         cy="92.074997"
+         cx="159.80833"
+         id="ellipse3490"
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+      <ellipse
+         ry="1.0583327"
+         rx="1.0583333"
+         inkscape:export-ydpi="48"
+         inkscape:export-xdpi="48"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         cy="94.191666"
+         cx="144.99167"
+         id="ellipse3494"
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+      <ellipse
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+         id="ellipse3496"
+         cx="149.22501"
+         cy="94.191666"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48"
+         rx="1.0583333"
+         ry="1.0583327" />
+      <ellipse
+         ry="1.0583327"
+         rx="1.0583333"
+         inkscape:export-ydpi="48"
+         inkscape:export-xdpi="48"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         cy="96.308334"
+         cx="147.10834"
+         id="ellipse3498"
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+      <ellipse
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+         id="ellipse3500"
+         cx="144.99167"
+         cy="98.425003"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48"
+         rx="1.0583333"
+         ry="1.0583327" />
+      <ellipse
+         ry="1.0583327"
+         rx="1.0583333"
+         inkscape:export-ydpi="48"
+         inkscape:export-xdpi="48"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         cy="98.425003"
+         cx="149.22501"
+         id="ellipse3502"
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+      <ellipse
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+         id="ellipse3504"
+         cx="151.34167"
+         cy="96.308334"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48"
+         rx="1.0583333"
+         ry="1.0583327" />
+      <ellipse
+         ry="1.0583327"
+         rx="1.0583333"
+         inkscape:export-ydpi="48"
+         inkscape:export-xdpi="48"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         cy="100.54166"
+         cx="147.10834"
+         id="ellipse3506"
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square" />
+      <ellipse
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:square"
+         id="ellipse3508"
+         cx="151.34167"
+         cy="100.54166"
+         inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Arm\JointCenter.png"
+         inkscape:export-xdpi="48"
+         inkscape:export-ydpi="48"
+         rx="1.0583333"
+         ry="1.0583327" />
+    </g>
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Hatch\Hatch.png"
+       y="-8.4666662"
+       x="423.33334"
+       height="8.4666662"
+       width="8.4666586"
+       id="rect1032"
+       style="fill:#9b9b9b;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Hatch\Hatch.png"
+       style="fill:#9b9b9b;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1034"
+       width="8.4666586"
+       height="8.4666662"
+       x="482.60001"
+       y="-8.4666662" />
+    <rect
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Hatch\Hatch.png"
+       y="8.4666672"
+       x="431.79999"
+       height="50.799999"
+       width="50.800014"
+       id="rect1038"
+       style="fill:#c7c7c7;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
 </svg>

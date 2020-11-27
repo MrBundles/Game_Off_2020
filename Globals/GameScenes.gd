@@ -22,6 +22,7 @@ func _ready():
 	GlobalSignalManager.connect("next_level_button_pressed", self, "_on_next_level_button_pressed")
 	
 	add_child(game_scene_array[0].instance())
+	_reset_game_data()
 
 
 func _reset_game_data():
@@ -35,11 +36,11 @@ func _clear_children():
 
 func _on_level_select_menu_button_pressed():
 	get_tree().paused = false
-#	if not game_scene_array[0].instance() in get_children():
-#		_clear_children()
-#		add_child(game_scene_array[0].instance())
-#		current_level = 0
-#		_reset_game_data()
+	if get_child(0) != game_scene_array[0].instance():
+		_clear_children()
+		add_child(game_scene_array[0].instance())
+		current_level = 0
+		_reset_game_data()
 
 
 func _on_credits_button_pressed():
@@ -89,4 +90,6 @@ func _on_restart_button_pressed():
 
 
 func _on_next_level_button_pressed():
-	GlobalSceneManager.game_state = GlobalSceneManager.GAME_STATES.level_play
+	if current_level < game_scene_array.size():
+		_on_level_select_button_pressed(current_level+1)
+		GlobalSceneManager.game_state = GlobalSceneManager.GAME_STATES.level_play

@@ -2,6 +2,9 @@ tool
 extends RigidBody2D
 class_name Interacts
 
+#signals
+signal load_sync_data
+
 #enums
 enum INTERACT_MODES {mode_rigid, mode_static, mode_character, mode_kinematic}
 
@@ -9,6 +12,7 @@ enum INTERACT_MODES {mode_rigid, mode_static, mode_character, mode_kinematic}
 #variables
 var initial_physics_mode = INTERACT_MODES.mode_kinematic
 var sync_array = []
+var sync_data = []
 var physics_state_array = []
 
 
@@ -20,7 +24,7 @@ func _ready():
 	GlobalSignalManager.connect("new_sync_cell_reached", self, "_on_new_sync_cell_reached")
 	
 	for i in range(GlobalSyncManager.sync_subdiv_count):
-		sync_array.append([global_position, rotation_degrees, linear_velocity, angular_velocity])
+		sync_array.append(sync_data)
 	
 	for j in range(GlobalSyncManager.sync_cell_count):
 		physics_state_array.append(Physics2DServer.body_get_state(get_rid(), Physics2DServer.BODY_STATE_TRANSFORM))
@@ -34,7 +38,7 @@ func _on_physics_state_changed(new_physics_state):
 			Physics2DServer.body_set_state(get_rid(), Physics2DServer.BODY_STATE_TRANSFORM, physics_state_array[GlobalSyncManager.sync_cell_current+1])
 
 		_reset_sync_array(GlobalSyncManager.sync_subdiv_current)
-		_update_interacts_state(GlobalSyncManager.sync_subdiv_current)
+		emit_signal("load_sync_data", GlobalSyncManager.sync_subdiv_current)
 		GlobalSyncManager.sync_subdiv_upper_limit_reached = GlobalSyncManager.sync_subdiv_current
 		
 		mode = initial_physics_mode
@@ -49,20 +53,12 @@ func _on_new_sync_cell_reached(cell_index):
 
 func _reset_sync_array(current_subdiv):
 	for i in range(current_subdiv, sync_array.size()):
-		sync_array[i] = [global_position, rotation_degrees, linear_velocity, angular_velocity]
-
-
-func _update_interacts_state(sync_subdiv):
-	global_position = sync_array[sync_subdiv][0]
-	rotation_degrees = sync_array[sync_subdiv][1]
-	linear_velocity = sync_array[sync_subdiv][2]
-	angular_velocity = sync_array[sync_subdiv][3]
+		sync_array[i] = sync_data
 
 
 func _on_sync_timer_timeout():
-	var interacts_data = [global_position, rotation_degrees, linear_velocity, angular_velocity]
-	sync_array[GlobalSyncManager.sync_subdiv_current] = interacts_data
+	sync_array[GlobalSyncManager.sync_subdiv_current] = sync_data
 
 
 func _on_sync_slider_moved(value):
-	_update_interacts_state(value)
+	emit_signal("load_sync_data", GlobalSyncManager.sync_subdiv_current)

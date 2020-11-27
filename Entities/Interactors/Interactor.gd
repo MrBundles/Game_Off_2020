@@ -16,9 +16,3 @@ var interactor_tooltip_instance : Node
 func _process(delta):
 	action_a_enable = GlobalSyncManager.sync_action_enables[action_a]
 	action_b_enable = GlobalSyncManager.sync_action_enables[action_b]
-	
-#	if GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.running and initial_physics_mode == INTERACT_MODES.mode_rigid:
-#		if (action_a_enable and not action_b_enable) or (action_b_enable and not action_a_enable):
-#			mode = initial_physics_mode
-#		else:
-#			mode = RigidBody2D.MODE_KINEMATIC

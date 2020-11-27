@@ -32,6 +32,7 @@ var rotation_previous : float = global_rotation_degrees
 func _ready():
 	#connect signals
 	$PID_Controller/IterationTimer.connect("timeout", self, "_on_iteration_timer_timeout")
+	connect("load_sync_data", self, "_on_load_sync_data")
 	
 	$PID_Controller._on_start_timer()
 	
@@ -41,6 +42,8 @@ func _ready():
 
 
 func _process(delta):
+	sync_data = [global_position, rotation_degrees, linear_velocity, angular_velocity]
+	
 	if Engine.editor_hint:
 		_arm_length_update()
 		_arm_type_update()
@@ -73,6 +76,13 @@ func _on_iteration_timer_timeout():
 #		print("deg per sec: " + str(deg_per_sec) + "     sp: " + str(pid_sp) + "     pv: " + str(pid_pv) + "     out: " + str(pid_out))
 	pid_out = clamp($PID_Controller.calculate(pid_sp, pid_pv), -5000000, 5000000)
 	$PID_Controller._on_start_timer()
+
+
+func _on_load_sync_data(sync_subdiv):
+	global_position = sync_array[sync_subdiv][0]
+	rotation_degrees = sync_array[sync_subdiv][1]
+	linear_velocity = sync_array[sync_subdiv][2]
+	angular_velocity = sync_array[sync_subdiv][3]
 
 
 func _arm_length_update():
