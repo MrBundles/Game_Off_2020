@@ -86,7 +86,6 @@ func _on_physics_reset_button_pressed():
 	
 
 func _on_physics_rewind_to_cell(cell_index):
-	print(cell_index)
 	var initial_physics_state = GlobalSceneManager.physics_state
 	GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.rewinding
 	var subdiv_per_cell = sync_subdiv_count / sync_cell_count

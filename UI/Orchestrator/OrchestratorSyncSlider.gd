@@ -19,7 +19,7 @@ func _set_sync_subdiv_count(new_val):
 
 
 func _on_SyncSlider_value_changed(new_val):
-	if GlobalSceneManager.physics_state != GlobalSceneManager.PHYSICS_STATES.running:
+	if GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.rewinding:
 		if new_val > GlobalSyncManager.sync_subdiv_upper_limit_reached:
 			value = GlobalSyncManager.sync_subdiv_upper_limit_reached
 		

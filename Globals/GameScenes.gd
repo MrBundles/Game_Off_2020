@@ -36,11 +36,11 @@ func _clear_children():
 
 func _on_level_select_menu_button_pressed():
 	get_tree().paused = false
-	if get_child(0) != game_scene_array[0].instance():
+	if GlobalSceneManager.previous_game_state in [GlobalSceneManager.GAME_STATES.level_pause_menu, GlobalSceneManager.GAME_STATES.level_win_menu, GlobalSceneManager.GAME_STATES.level_lose_menu]:
 		_clear_children()
+		_reset_game_data()
 		add_child(game_scene_array[0].instance())
 		current_level = 0
-		_reset_game_data()
 
 
 func _on_credits_button_pressed():

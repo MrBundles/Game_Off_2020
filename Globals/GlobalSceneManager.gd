@@ -11,6 +11,7 @@ var physics_state_array = ["Running", "Stopped", "Rewinding"]
 var game_state_array = ["Main Menu", "Settings Menu", "Credits Menu", "Level Select Menu",
 	"Level Play", "Level Pause Menu", "Level Lose Menu", "Level Win Menu"]
 var game_state = GAME_STATES.main_menu setget _set_game_state
+var previous_game_state = game_state
 var physics_state = PHYSICS_STATES.stopped setget _set_physics_state
 
 
@@ -44,6 +45,7 @@ func _set_physics_state(new_val):
 
 
 func _set_game_state(new_val):
+	previous_game_state = game_state
 	game_state = new_val
 	print("Game state changed: " + game_state_array[game_state])
 
