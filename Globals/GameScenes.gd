@@ -1,11 +1,12 @@
 extends CanvasLayer
 
 #exports
+export(PackedScene) var end_scene
 export(Array, PackedScene) var game_scene_array
 
 #variables
 var current_level = 0
-var highest_unlocked_level = 12
+var highest_unlocked_level = 1
 
 
 func _ready():
@@ -23,10 +24,6 @@ func _ready():
 	GlobalSignalManager.connect("next_level_button_pressed", self, "_on_next_level_button_pressed")
 	
 	add_child(game_scene_array[0].instance())
-	_reset_game_data()
-
-
-func _reset_game_data():
 	GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.stopped
 
 
@@ -62,7 +59,7 @@ func _on_level_select_button_pressed(level_number):
 	_clear_children()
 	add_child(game_scene_array[level_number].instance())
 	current_level = level_number
-	_reset_game_data()
+	GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.stopped
 	GlobalSceneManager.game_state = GlobalSceneManager.GAME_STATES.level_play
 	GlobalSignalManager.emit_signal("restart_button_pressed")
 
@@ -89,11 +86,16 @@ func _on_restart_button_pressed():
 	get_tree().paused = false
 	_clear_children()
 	add_child(game_scene_array[current_level].instance())
-	_reset_game_data()
+	GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.stopped
 	GlobalSceneManager.game_state = GlobalSceneManager.GAME_STATES.level_play
 
 
 func _on_next_level_button_pressed():
-	if current_level < game_scene_array.size():
+	if current_level < game_scene_array.size()-1:
 		_on_level_select_button_pressed(current_level+1)
+	else:
+		_clear_children()
+		add_child(end_scene.instance())
+		current_level += 1
+		GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.stopped
 		GlobalSceneManager.game_state = GlobalSceneManager.GAME_STATES.level_play

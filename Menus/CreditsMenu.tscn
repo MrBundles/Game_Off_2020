@@ -40,7 +40,7 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="VBoxContainer"]
-margin_right = 992.0
+margin_right = 1008.0
 margin_bottom = 74.0
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0.415686, 0.298039, 0.576471, 1 )
@@ -49,14 +49,14 @@ align = 1
 
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
 margin_top = 78.0
-margin_right = 992.0
+margin_right = 1008.0
 margin_bottom = 344.0
 size_flags_vertical = 3
 scroll_horizontal_enabled = false
 
 [node name="Label" type="Label" parent="VBoxContainer/ScrollContainer"]
-margin_right = 963.0
-margin_bottom = 557.0
+margin_right = 970.0
+margin_bottom = 677.0
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.415686, 0.298039, 0.576471, 1 )
@@ -70,6 +70,9 @@ Graphics: Done with Inkscape
      -Font: Berlin Sans FB Demi Bold from dafontfree.net
 
 Music:
+     -Lightless Dawn by Kevin MacLeod
+     -Link: https://incompetech.filmmusic.io/song/3982-lightless-dawn
+     -License:      http://creativecommons.org/licenses/by/4.0/
 
 SFX:
 
@@ -77,14 +80,14 @@ SFX:
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 348.0
-margin_right = 992.0
+margin_right = 1008.0
 margin_bottom = 428.0
 alignment = 1
 
 [node name="BackButton" parent="VBoxContainer/HBoxContainer" instance=ExtResource( 1 )]
 self_modulate = Color( 0.415686, 0.298039, 0.576471, 1 )
-margin_left = 312.0
-margin_right = 680.0
+margin_left = 320.0
+margin_right = 688.0
 button_label = "Back"
 transition_signal = "back_button_pressed"
 action = 5

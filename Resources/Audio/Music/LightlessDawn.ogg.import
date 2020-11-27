@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/LightlessDawn.ogg-b6079bd7bc4b8972f909e4dc34334bed.oggstr"
+
+[deps]
+
+source_file="res://Resources/Audio/Music/LightlessDawn.ogg"
+dest_files=[ "res://.import/LightlessDawn.ogg-b6079bd7bc4b8972f909e4dc34334bed.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
