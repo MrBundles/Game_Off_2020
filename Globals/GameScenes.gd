@@ -6,7 +6,7 @@ export(Array, PackedScene) var game_scene_array
 
 #variables
 var current_level = 0
-var highest_unlocked_level = 1
+var highest_unlocked_level = 100
 
 
 func _ready():

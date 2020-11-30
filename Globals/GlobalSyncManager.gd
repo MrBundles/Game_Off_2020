@@ -3,12 +3,12 @@ extends Node
 
 #exports
 enum ACTIONS {disabled, red, yellow, green, blue, purple}
-export var sync_time_total_duration = 10.0 setget _set_sync_time_total_duration
-export var sync_subdiv_count = 500 setget _set_sync_subdiv_count
+export var sync_time_total_duration = 5.0 setget _set_sync_time_total_duration
 export var sync_cell_count = 5 setget _set_sync_cell_count
 export var rewind_speed = 25
 
 #variables
+var sync_subdiv_count = sync_time_total_duration * 60 setget _set_sync_subdiv_count
 var subdiv_per_cell = sync_subdiv_count / sync_cell_count
 var sync_action_enables = [false, false, false, false, false, false]
 var sync_subdiv_current = 0 setget _set_sync_subdiv_current
@@ -16,7 +16,7 @@ var sync_cell_enables = []  #for retaining orchestrator cell states between rese
 
 var sync_subdiv_upper_limit_reached = 0 	#furthest subdiv reached by timer, not by dragging
 var sync_cell_current = 0	#automatically calculated
-
+var initial_physics_state = 0
 
 func _ready():
 	#connect signals
@@ -54,6 +54,7 @@ func _update_subdiv_per_cell():
 func _set_sync_time_total_duration(new_val):
 	sync_time_total_duration = new_val
 	_update_timer_wait_time(sync_time_total_duration, sync_subdiv_count)
+	_set_sync_subdiv_count(sync_time_total_duration * 60)
 
 
 func _set_sync_subdiv_count(new_val):
@@ -86,7 +87,7 @@ func _on_physics_reset_button_pressed():
 	
 
 func _on_physics_rewind_to_cell(cell_index):
-	var initial_physics_state = GlobalSceneManager.physics_state
+	initial_physics_state = GlobalSceneManager.physics_state
 	GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.rewinding
 	var subdiv_per_cell = sync_subdiv_count / sync_cell_count
 	
@@ -104,6 +105,7 @@ func _on_physics_rewind_to_cell(cell_index):
 func _on_restart_button_pressed():
 	sync_subdiv_upper_limit_reached = 0
 	self.sync_subdiv_current = 0
+	initial_physics_state = GlobalSceneManager.PHYSICS_STATES.stopped
 
 
 func _on_SyncTimer_timeout():

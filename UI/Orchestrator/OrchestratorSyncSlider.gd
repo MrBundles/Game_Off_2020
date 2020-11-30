@@ -3,7 +3,7 @@ extends HSlider
 
 #variables
 var sync_subdiv_count = GlobalSyncManager.sync_subdiv_count setget _set_sync_subdiv_count
-var subdiv_per_cell = GlobalSyncManager.sync_subdiv_count / GlobalSyncManager.sync_cell_count
+var subdiv_per_cell = GlobalSyncManager.subdiv_per_cell
 
 func _ready():
 	_set_sync_subdiv_count(sync_subdiv_count)

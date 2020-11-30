@@ -76,11 +76,11 @@
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="795.18833"
-     inkscape:cy="-54.458674"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="802.90504"
+     inkscape:cy="1083.7808"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -104,6 +104,8 @@
      inkscape:snap-center="false"
      showborder="false">
     <inkscape:grid
+       opacity="0.24313725"
+       color="#3f3fff"
        type="xygrid"
        id="grid833"
        spacingx="8.4666667"
@@ -117,7 +119,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -536,7 +538,7 @@
     <rect
        inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\Orchestrator\CellNormal.png"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\VolumeSlider\VolumeSliderGrabber.png"
        y="101.6"
        x="16.933334"
        height="16.933332"
@@ -1056,10 +1058,10 @@
        inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Hatch\Hatch.png"
        style="fill:#9b9b9b;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect3052"
-       width="67.733322"
-       height="67.73336"
+       width="84.666656"
+       height="76.199997"
        x="423.33334"
-       y="-2.1449951e-05" />
+       y="8.4666662" />
     <ellipse
        style="fill:#f2f2f2;fill-opacity:1;stroke:#f2f2f2;stroke-width:2.64583333;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:2.64583333, 7.93750000000000000;stroke-dashoffset:0;stroke-opacity:1;stroke-linejoin:round;paint-order:markers fill stroke"
        id="ellipse3054"
@@ -1456,7 +1458,7 @@
        inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
        inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Hatch\Hatch.png"
-       y="-8.4666662"
+       y="0"
        x="423.33334"
        height="8.4666662"
        width="8.4666586"
@@ -1470,17 +1472,64 @@
        id="rect1034"
        width="8.4666586"
        height="8.4666662"
-       x="482.60001"
-       y="-8.4666662" />
+       x="499.53336"
+       y="4.7838137e-07" />
     <rect
+       style="fill:#ffca3a;stroke-width:2.64583;stroke-linecap:square;fill-opacity:1"
+       id="rect1040"
+       width="16.933332"
+       height="16.933332"
+       x="33.866669"
+       y="101.6"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\VolumeSlider\VolumeSliderGrabber.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
        inkscape:export-ydpi="48"
        inkscape:export-xdpi="48"
-       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\Interactors\Hatch\Hatch.png"
-       y="8.4666672"
-       x="431.79999"
-       height="50.799999"
-       width="50.800014"
-       id="rect1038"
-       style="fill:#c7c7c7;fill-opacity:1;stroke:none;stroke-width:3.96875;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ForegroundTilemap\UITilemap.png"
+       id="path1042"
+       d="M 1.322915,297.65625 H 165.24846"
+       style="fill:none;stroke:#f2f2f2;stroke-width:2.64583333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:2.64583333, 10.58333333000000032;stroke-dashoffset:0;stroke-opacity:1" />
+    <ellipse
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ForegroundTilemap\UITilemap.png"
+       ry="15.759866"
+       rx="15.860275"
+       style="fill:none;fill-opacity:1;stroke:#f2f2f2;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:2.64583, 7.9375;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle1052"
+       cx="16.85158"
+       cy="330.34943" />
+    <ellipse
+       ry="32.785934"
+       rx="32.506065"
+       style="fill:none;fill-opacity:1;stroke:#f2f2f2;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:2.64583, 7.93749;stroke-dashoffset:0;stroke-opacity:1"
+       id="ellipse1058"
+       cx="67.53714"
+       cy="347.23297"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ForegroundTilemap\UITilemap.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <ellipse
+       inkscape:export-ydpi="48"
+       inkscape:export-xdpi="48"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\UI\ForegroundTilemap\UITilemap.png"
+       cy="398.0282"
+       cx="152.38467"
+       id="ellipse1060"
+       style="fill:none;fill-opacity:1;stroke:#f2f2f2;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:2.64583, 7.93749;stroke-dashoffset:0;stroke-opacity:1"
+       rx="49.553089"
+       ry="49.571857" />
+    <rect
+       style="fill:#ffffff;stroke-width:2.64583;stroke-linecap:square"
+       id="rect1062"
+       width="16.933332"
+       height="16.933332"
+       x="16.933334"
+       y="203.2"
+       inkscape:export-filename="D:\Kevin\_Godot\Projects\Jam_Games\Game_Off\Game_Off_MoonShot\Entities\ActionTileMaps\WhiteTile.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
   </g>
 </svg>
