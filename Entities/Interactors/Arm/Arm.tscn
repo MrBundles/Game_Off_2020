@@ -90,6 +90,7 @@ position = Vector2( 1, -0.5 )
 texture = ExtResource( 6 )
 
 [node name="SPLabel" type="Label" parent="."]
+visible = false
 margin_left = 24.0
 margin_top = -32.0
 margin_right = 64.0
@@ -100,6 +101,7 @@ __meta__ = {
 }
 
 [node name="PVLabel" type="Label" parent="."]
+visible = false
 margin_left = 24.0
 margin_top = 24.0
 margin_right = 64.0

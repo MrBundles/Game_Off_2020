@@ -6,5 +6,5 @@ var game_state_array = ["Main Menu", "Settings Menu", "Credits Menu", "Level Sel
 	"Level Play", "Level Pause Menu", "Level Lose Menu", "Level Win Menu"]
 
 func _process(delta):
-	if has_node("UICanvasLayer/UILabelX"):
-		$UICanvasLayer/UILabelX.text = str(GlobalSyncManager.sync_time_total_duration)
+	if has_node("UICanvasLayer/UILabel2"):
+		get_node("UICanvasLayer/UILabel2").text = "Global Sync Cell Count: " + str(GlobalSyncManager.sync_cell_count)

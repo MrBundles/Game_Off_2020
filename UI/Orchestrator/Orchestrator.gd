@@ -9,7 +9,7 @@ const CELL_QUANTITY_MAX = 100
 
 #exports
 export var group_quantity = 0 setget _set_group_quantity
-export var cell_quantity = 5 setget _set_cell_quantity
+export var cell_quantity = 6 setget _set_cell_quantity
 export var time_total_duration = 5
 export(Array, GlobalSyncManager.ACTIONS) var action_array = [
 	GlobalSyncManager.ACTIONS.disabled,

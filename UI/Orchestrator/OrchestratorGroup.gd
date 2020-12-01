@@ -12,7 +12,7 @@ func _ready():
 	_set_action(action)
 
 
-func _process(delta):
+func _process(delta):	
 	var enable_count = 0
 	for i in range(get_child_count()):
 		if GlobalSyncManager.sync_cell_current == i and get_child(i).enable:

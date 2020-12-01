@@ -4,7 +4,7 @@ extends Node
 #exports
 enum ACTIONS {disabled, red, yellow, green, blue, purple, white}
 export var sync_time_total_duration = 5.0 setget _set_sync_time_total_duration
-export var sync_cell_count = 5 setget _set_sync_cell_count
+export var sync_cell_count = 10 setget _set_sync_cell_count
 export var rewind_speed = 25
 
 #variables
