@@ -7,6 +7,7 @@ enum AUDIO_BUSES {bus_master, bus_music, bus_effects}
 #exports
 export(AUDIO_BUSES) var audio_bus
 export var label = "Volume: "
+export var volume_test_enable = false
 
 
 func _ready():
@@ -23,6 +24,9 @@ func _process(delta):
 
 
 func _on_VolumeHSlider_value_changed(value):
+	if volume_test_enable and not $VolumeTestASP.playing:
+		$VolumeTestASP.play()
+	
 	GlobalSignalManager.emit_signal("volume_changed", audio_bus, value)
 
 

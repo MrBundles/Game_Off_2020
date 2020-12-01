@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/WoodenCollision.wav-1777dfbf6669dbe37bd6a82d3211592b.sample"
+
+[deps]
+
+source_file="res://Resources/Audio/SFX/WoodenCollision.wav"
+dest_files=[ "res://.import/WoodenCollision.wav-1777dfbf6669dbe37bd6a82d3211592b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

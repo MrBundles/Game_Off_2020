@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Globals/GlobalSyncManager.gd" type="Script" id=1]
+[ext_resource path="res://Resources/Audio/SFX/RewindSound.wav" type="AudioStream" id=2]
 
 [node name="GlobalSyncManager" type="Node"]
 pause_mode = 2
@@ -10,5 +11,9 @@ rewind_speed = 3
 
 [node name="SyncTimer" type="Timer" parent="."]
 pause_mode = 1
-wait_time = 0.02
+wait_time = 0.0166667
+
+[node name="RewindSoundASP" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+bus = "Effects"
 [connection signal="timeout" from="SyncTimer" to="." method="_on_SyncTimer_timeout"]

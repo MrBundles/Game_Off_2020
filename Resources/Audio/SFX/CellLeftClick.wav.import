@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/CellLeftClick.wav-2f221f5e4126967dc3eb8e6f831372ad.sample"
+
+[deps]
+
+source_file="res://Resources/Audio/SFX/CellLeftClick.wav"
+dest_files=[ "res://.import/CellLeftClick.wav-2f221f5e4126967dc3eb8e6f831372ad.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

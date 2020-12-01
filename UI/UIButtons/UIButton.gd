@@ -13,6 +13,8 @@ func _set_button_label(new_val):
 
 
 func _on_Button_pressed():
+	GlobalSignalManager.emit_signal("sfx_ui_button_press")
+	
 	if GlobalSignalManager.has_signal(transition_signal):
 		GlobalSignalManager.emit_signal(transition_signal)
 	else:
@@ -22,3 +24,7 @@ func _on_Button_pressed():
 func _set_action(new_val):
 	action = new_val
 	self_modulate = GlobalColorManager.action_color_array[action]
+
+
+func _on_UIButton_mouse_entered():
+	$UIButtonHoverASP.play()

@@ -14,9 +14,9 @@
 [ext_resource path="res://Entities/Environment/Block/EnvironmentBlock.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Entities/Interactables/Circle/Circle.tscn" type="PackedScene" id=13]
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=6]
 resource_local_to_scene = true
-size = 40
+size = 64
 font_data = ExtResource( 1 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
@@ -101,11 +101,11 @@ time_total_duration = 9
 action_array = [ 4, 2, 3, 4, 5 ]
 
 [node name="UILabel10" parent="UICanvasLayer" instance=ExtResource( 4 )]
-margin_left = 672.0
-margin_top = 768.0
-margin_right = 1286.0
-margin_bottom = 863.0
-custom_fonts/font = SubResource( 1 )
+margin_left = 800.0
+margin_top = 128.0
+margin_right = 1779.0
+margin_bottom = 279.0
+custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 1, 0.792157, 0.227451, 1 )
 text = "You won't always need all cells
 Un-Highlight cells with Right Click"
@@ -149,21 +149,17 @@ tile_set = SubResource( 5 )
 
 [node name="Triangle" parent="Interactables" instance=ExtResource( 10 )]
 modulate = Color( 0.0980392, 0.509804, 0.768627, 1 )
-position = Vector2( 768, 352 )
-collision_layer = 3
-collision_mask = 3
+position = Vector2( 832, 512 )
 action = 4
 
 [node name="Triangle2" parent="Interactables" instance=ExtResource( 10 )]
 modulate = Color( 0.0980392, 0.509804, 0.768627, 1 )
-position = Vector2( 672, 352 )
-collision_layer = 3
-collision_mask = 3
+position = Vector2( 736, 512 )
 action = 4
 
 [node name="Circle" parent="Interactables" instance=ExtResource( 13 )]
 modulate = Color( 0.0980392, 0.509804, 0.768627, 1 )
-position = Vector2( 288, 128 )
+position = Vector2( 352, 288 )
 collision_layer = 3
 collision_mask = 3
 action = 4
@@ -171,14 +167,14 @@ action = 4
 [node name="Interactors" type="Node2D" parent="."]
 
 [node name="Conveyor2" parent="Interactors" instance=ExtResource( 6 )]
-position = Vector2( 928, 416 )
+position = Vector2( 992, 576 )
 rotation = -0.0872665
 action_b = 4
 conveyor_speed = 150
 conveyor_length = 10
 
 [node name="EnvironmentBlock" parent="Interactors" instance=ExtResource( 12 )]
-position = Vector2( 448, 224 )
+position = Vector2( 512, 384 )
 rotation = 0.174533
 width = 12
 
@@ -186,7 +182,7 @@ width = 12
 script = ExtResource( 7 )
 
 [node name="Hatch" parent="Hatches" instance=ExtResource( 9 )]
-position = Vector2( 1376, 608 )
+position = Vector2( 1440, 768 )
 action_a = 4
 interactable_type = ExtResource( 13 )
 required_qty = 1

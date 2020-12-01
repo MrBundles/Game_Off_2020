@@ -87,9 +87,12 @@ __meta__ = {
 
 [node name="UICanvasLayer" parent="." instance=ExtResource( 4 )]
 
+[node name="CurrentLevelLabel" parent="UICanvasLayer" index="0"]
+visible = false
+
 [node name="Orchestrator" parent="UICanvasLayer/MarginContainer" index="0"]
-margin_bottom = 196.0
-group_quantity = 2
+margin_bottom = 164.0
+group_quantity = 0
 cell_quantity = 3
 time_total_duration = 11
 action_array = [ 2, 4, 3, 4, 5 ]

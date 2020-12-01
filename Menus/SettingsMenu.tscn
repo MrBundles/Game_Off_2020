@@ -60,6 +60,7 @@ margin_right = 816.0
 margin_bottom = 168.0
 audio_bus = 2
 label = "Effects Volume"
+volume_test_enable = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 172.0

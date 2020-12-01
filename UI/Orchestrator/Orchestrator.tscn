@@ -41,28 +41,52 @@ action_array = [ 1, 2, 3, 4, 5 ]
 [node name="SyncControls" parent="." instance=ExtResource( 4 )]
 anchor_top = 0.0
 anchor_bottom = 0.0
-margin_left = 0.0
 margin_top = 0.0
 margin_right = 1920.0
-margin_bottom = 64.0
+margin_bottom = 128.0
 
 [node name="SyncSlider" type="HSlider" parent="."]
-margin_top = 72.0
+margin_top = 136.0
 margin_right = 1920.0
-margin_bottom = 120.0
+margin_bottom = 184.0
 rect_min_size = Vector2( 0, 48 )
 focus_mode = 0
 custom_icons/grabber_highlight = ExtResource( 3 )
 custom_icons/grabber = ExtResource( 5 )
 custom_styles/grabber_area_highlight = SubResource( 1 )
 custom_styles/grabber_area = SubResource( 2 )
-max_value = 500.0
+max_value = 300.0
 script = ExtResource( 2 )
 
 [node name="OrchestratorGroups" type="VBoxContainer" parent="."]
-margin_top = 128.0
+margin_top = 192.0
 margin_right = 1920.0
-margin_bottom = 304.0
+margin_bottom = 368.0
 custom_constants/separation = 4
 [connection signal="gui_input" from="SyncSlider" to="SyncSlider" method="_on_SyncSlider_gui_input"]
 [connection signal="value_changed" from="SyncSlider" to="SyncSlider" method="_on_SyncSlider_value_changed"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup/OrchestratorCell" to="OrchestratorGroups/OrchestratorGroup/OrchestratorCell" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup/OrchestratorCell2" to="OrchestratorGroups/OrchestratorGroup/OrchestratorCell2" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup/OrchestratorCell3" to="OrchestratorGroups/OrchestratorGroup/OrchestratorCell3" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup/OrchestratorCell4" to="OrchestratorGroups/OrchestratorGroup/OrchestratorCell4" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup/OrchestratorCell5" to="OrchestratorGroups/OrchestratorGroup/OrchestratorCell5" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup2/OrchestratorCell" to="OrchestratorGroups/OrchestratorGroup2/OrchestratorCell" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup2/OrchestratorCell2" to="OrchestratorGroups/OrchestratorGroup2/OrchestratorCell2" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup2/OrchestratorCell3" to="OrchestratorGroups/OrchestratorGroup2/OrchestratorCell3" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup2/OrchestratorCell4" to="OrchestratorGroups/OrchestratorGroup2/OrchestratorCell4" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup2/OrchestratorCell5" to="OrchestratorGroups/OrchestratorGroup2/OrchestratorCell5" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup3/OrchestratorCell" to="OrchestratorGroups/OrchestratorGroup3/OrchestratorCell" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup3/OrchestratorCell2" to="OrchestratorGroups/OrchestratorGroup3/OrchestratorCell2" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup3/OrchestratorCell3" to="OrchestratorGroups/OrchestratorGroup3/OrchestratorCell3" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup3/OrchestratorCell4" to="OrchestratorGroups/OrchestratorGroup3/OrchestratorCell4" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup3/OrchestratorCell5" to="OrchestratorGroups/OrchestratorGroup3/OrchestratorCell5" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup4/OrchestratorCell" to="OrchestratorGroups/OrchestratorGroup4/OrchestratorCell" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup4/OrchestratorCell2" to="OrchestratorGroups/OrchestratorGroup4/OrchestratorCell2" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup4/OrchestratorCell3" to="OrchestratorGroups/OrchestratorGroup4/OrchestratorCell3" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup4/OrchestratorCell4" to="OrchestratorGroups/OrchestratorGroup4/OrchestratorCell4" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup4/OrchestratorCell5" to="OrchestratorGroups/OrchestratorGroup4/OrchestratorCell5" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup5/OrchestratorCell" to="OrchestratorGroups/OrchestratorGroup5/OrchestratorCell" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup5/OrchestratorCell2" to="OrchestratorGroups/OrchestratorGroup5/OrchestratorCell2" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup5/OrchestratorCell3" to="OrchestratorGroups/OrchestratorGroup5/OrchestratorCell3" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup5/OrchestratorCell4" to="OrchestratorGroups/OrchestratorGroup5/OrchestratorCell4" method="_on_OrchestratorCell_mouse_entered"]
+[connection signal="mouse_entered" from="OrchestratorGroups/OrchestratorGroup5/OrchestratorCell5" to="OrchestratorGroups/OrchestratorGroup5/OrchestratorCell5" method="_on_OrchestratorCell_mouse_entered"]

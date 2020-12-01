@@ -1,16 +1,17 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Resources/Fonts/VolumeSlider.tres" type="DynamicFont" id=1]
 [ext_resource path="res://UI/VolumeSlider/VolumeSliderGrabber.png" type="Texture" id=2]
 [ext_resource path="res://UI/VolumeSlider/VolumeSliderGrabberHighlight.png" type="Texture" id=3]
 [ext_resource path="res://UI/VolumeSlider/VolumeSlider.gd" type="Script" id=4]
+[ext_resource path="res://Resources/Audio/SFX/LevelSelectHover.wav" type="AudioStream" id=5]
 
-[sub_resource type="StyleBoxFlat" id=2]
+[sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 1, 0.792157, 0.227451, 1 )
 expand_margin_top = 8.0
 expand_margin_bottom = 8.0
 
-[sub_resource type="StyleBoxFlat" id=3]
+[sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 1, 0.792157, 0.227451, 1 )
 expand_margin_top = 8.0
 expand_margin_bottom = 8.0
@@ -31,7 +32,7 @@ margin_bottom = 40.0
 rect_min_size = Vector2( 224, 0 )
 custom_fonts/font = ExtResource( 1 )
 custom_colors/font_color = Color( 1, 0.792157, 0.227451, 1 )
-text = "Music Volume: "
+text = "Volume: "
 valign = 1
 
 [node name="VolumeHSlider" type="HSlider" parent="."]
@@ -43,8 +44,8 @@ size_flags_horizontal = 3
 size_flags_vertical = 1
 custom_icons/grabber_highlight = ExtResource( 2 )
 custom_icons/grabber = ExtResource( 3 )
-custom_styles/grabber_area_highlight = SubResource( 2 )
-custom_styles/grabber_area = SubResource( 3 )
+custom_styles/grabber_area_highlight = SubResource( 1 )
+custom_styles/grabber_area = SubResource( 2 )
 min_value = -60.0
 max_value = 0.0
 
@@ -60,5 +61,9 @@ custom_colors/font_color_hover = Color( 1, 0.792157, 0.227451, 1 )
 custom_colors/font_color_pressed = Color( 1, 0.792157, 0.227451, 1 )
 toggle_mode = true
 text = "Mute"
+
+[node name="VolumeTestASP" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+bus = "Effects"
 [connection signal="value_changed" from="VolumeHSlider" to="." method="_on_VolumeHSlider_value_changed"]
 [connection signal="pressed" from="MuteButton" to="." method="_on_MuteButton_pressed"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/DeliberateThought.ogg-868213d4e491779a352b2bf0078fd7c5.oggstr"
+
+[deps]
+
+source_file="res://Resources/Audio/Music/DeliberateThought/DeliberateThought.ogg"
+dest_files=[ "res://.import/DeliberateThought.ogg-868213d4e491779a352b2bf0078fd7c5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

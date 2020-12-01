@@ -32,3 +32,24 @@ signal close_scene
 #audio signals
 signal volume_changed
 signal mute_changed
+
+
+#sfx signals
+signal sfx_level_select_press
+signal sfx_rewind_sound
+signal sfx_ui_button_press
+signal sfx_win_sound
+
+
+
+
+
+
+
+
+
+
+
+
+
+

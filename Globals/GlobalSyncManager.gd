@@ -2,7 +2,7 @@ tool
 extends Node
 
 #exports
-enum ACTIONS {disabled, red, yellow, green, blue, purple}
+enum ACTIONS {disabled, red, yellow, green, blue, purple, white}
 export var sync_time_total_duration = 5.0 setget _set_sync_time_total_duration
 export var sync_cell_count = 5 setget _set_sync_cell_count
 export var rewind_speed = 25
@@ -10,7 +10,7 @@ export var rewind_speed = 25
 #variables
 var sync_subdiv_count = sync_time_total_duration * 60 setget _set_sync_subdiv_count
 var subdiv_per_cell = sync_subdiv_count / sync_cell_count
-var sync_action_enables = [false, false, false, false, false, false]
+var sync_action_enables = [false, false, false, false, false, false, false]
 var sync_subdiv_current = 0 setget _set_sync_subdiv_current
 var sync_cell_enables = []  #for retaining orchestrator cell states between resets
 
@@ -26,15 +26,16 @@ func _ready():
 	GlobalSignalManager.connect("physics_rewind_to_cell", self, "_on_physics_rewind_to_cell")
 	
 	_update_timer_wait_time(sync_time_total_duration, sync_subdiv_count)
+	
+	$RewindSoundASP.stream.loop_mode = AudioStreamSample.LOOP_PING_PONG
  
 
 func _process(delta):
-	#handle pause/play inputs
-	if Input.is_action_just_pressed("physics_start_stop"):
-		if GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.running:
-			GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.stopped
-		elif GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.stopped:
-			GlobalSceneManager.physics_state = GlobalSceneManager.PHYSICS_STATES.running
+	if GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.rewinding and sync_subdiv_current != 0:
+		if not $RewindSoundASP.playing:
+			$RewindSoundASP.playing = true
+	else:
+		$RewindSoundASP.playing = false
 
 
 func _update_timer_wait_time(time_total_duration, subdiv_count):

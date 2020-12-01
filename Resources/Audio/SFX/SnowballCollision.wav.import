@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SnowballCollision.wav-c3154574a68c89e92d222b3512e8a14b.sample"
+
+[deps]
+
+source_file="res://Resources/Audio/SFX/SnowballCollision.wav"
+dest_files=[ "res://.import/SnowballCollision.wav-c3154574a68c89e92d222b3512e8a14b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=false
+edit/loop=false
+compress/mode=0

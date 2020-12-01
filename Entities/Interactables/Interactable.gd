@@ -28,11 +28,6 @@ func _process(delta):
 		]
 
 
-func _on_body_entered(body):
-	if "ConsumeTileMap" in body.name:
-		queue_free()
-
-
 func _on_load_sync_data(sync_subdiv):
 	global_position = sync_array[sync_subdiv][0]
 	rotation_degrees = sync_array[sync_subdiv][1]

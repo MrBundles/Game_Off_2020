@@ -19,10 +19,12 @@ func _process(delta):
 		if Input.is_action_pressed("left_click") and not enable:
 			_set_enable(true)
 			_emit_signal_physics_rewind_to_cell()
+			$CellLeftClickASP.play()
 		
 		if Input.is_action_pressed("right_click") and enable:
 			_set_enable(false)
 			_emit_signal_physics_rewind_to_cell()
+			$CellRightClickASP.play()
 		
 	#if mouse is in cell or cell index is active
 	if (get_global_rect().has_point(get_global_mouse_position()) or GlobalSyncManager.sync_cell_current == cell_index):
@@ -49,3 +51,7 @@ func _set_enable(new_val):
 
 func _set_action(new_val):
 	action = new_val
+
+
+func _on_OrchestratorCell_mouse_entered():
+	$CellHoverASP.play()

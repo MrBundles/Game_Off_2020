@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/StoneGrassCollision1.wav-97d42854324c9c38b9b9e44a9f8a08ef.sample"
+
+[deps]
+
+source_file="res://Resources/Audio/SFX/StoneGrassCollision1.wav"
+dest_files=[ "res://.import/StoneGrassCollision1.wav-97d42854324c9c38b9b9e44a9f8a08ef.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

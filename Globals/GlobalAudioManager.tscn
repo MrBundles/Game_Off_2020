@@ -1,11 +1,40 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Resources/Audio/Music/LightlessDawn.ogg" type="AudioStream" id=1]
+[ext_resource path="res://Resources/Audio/Music/DeliberateThought/DeliberateThought.ogg" type="AudioStream" id=1]
 [ext_resource path="res://Globals/GlobalAudioManager.gd" type="Script" id=2]
+[ext_resource path="res://Resources/Audio/SFX/UIButtonPress.wav" type="AudioStream" id=4]
+[ext_resource path="res://Resources/Audio/SFX/StartStopPhysicsButton.wav" type="AudioStream" id=8]
+[ext_resource path="res://Resources/Audio/SFX/LevelSelectPress.wav" type="AudioStream" id=9]
+[ext_resource path="res://Resources/Audio/SFX/WinSound.wav" type="AudioStream" id=15]
+[ext_resource path="res://Resources/Audio/SFX/RewindSound.wav" type="AudioStream" id=16]
 
 [node name="GlobalAudioManager" type="Node"]
 script = ExtResource( 2 )
 
 [node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
 stream = ExtResource( 1 )
+autoplay = true
 bus = "Music"
+
+[node name="LevelSelectPressASP" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+bus = "Effects"
+
+[node name="RewindSoundASP" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+bus = "Effects"
+
+[node name="StartStopPhysicsButtonASP" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+bus = "Effects"
+
+[node name="UIButtonPressASP" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -10.0
+bus = "Effects"
+
+[node name="WinSoundASP" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 15 )
+volume_db = -5.0
+bus = "Effects"

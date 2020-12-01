@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/StartStopPhysicsButton.wav-e547a20709396b4815b39d81a04d058f.sample"
+
+[deps]
+
+source_file="res://Resources/Audio/SFX/StartStopPhysicsButton.wav"
+dest_files=[ "res://.import/StartStopPhysicsButton.wav-e547a20709396b4815b39d81a04d058f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=false
+edit/loop=false
+compress/mode=0

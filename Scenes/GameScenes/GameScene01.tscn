@@ -119,7 +119,7 @@ margin_top = 96.0
 margin_right = 1279.0
 margin_bottom = 191.0
 custom_fonts/font = SubResource( 2 )
-text = "The rocket is scheduled to launch in 5 days
+text = "The rocket is scheduled to launch in 4 days
 						And YOU have the most important job of all"
 align = 1
 script = ExtResource( 11 )
@@ -192,8 +192,6 @@ pause_mode = 2
 modulate = Color( 1, 0.792157, 0.227451, 1 )
 position = Vector2( 1120, 289.927 )
 rotation = 0.115192
-collision_layer = 3
-collision_mask = 3
 action = 2
 
 [node name="Circle" parent="Interactables" instance=ExtResource( 10 )]
@@ -214,23 +212,17 @@ action = 2
 modulate = Color( 1, 0.792157, 0.227451, 1 )
 position = Vector2( 1502.22, 224 )
 rotation = 0.443314
-collision_layer = 3
-collision_mask = 3
 action = 2
 
 [node name="Triangle2" parent="Interactables" instance=ExtResource( 9 )]
 modulate = Color( 1, 0.792157, 0.227451, 1 )
 position = Vector2( 1464.73, 309.743 )
-collision_layer = 3
-collision_mask = 3
 action = 2
 
 [node name="Triangle3" parent="Interactables" instance=ExtResource( 9 )]
 modulate = Color( 1, 0.792157, 0.227451, 1 )
 position = Vector2( 1550.4, 284.943 )
 rotation = -0.143117
-collision_layer = 3
-collision_mask = 3
 action = 2
 
 [node name="Interactors" type="Node2D" parent="."]

@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Resources/Fonts/BRLNSDB.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://UI/UIButtons/LevelSelectButton.png" type="Texture" id=2]
 [ext_resource path="res://UI/UIButtons/LevelSelectButton.gd" type="Script" id=3]
 [ext_resource path="res://UI/UIButtons/LevelSelectButtonHover.png" type="Texture" id=4]
+[ext_resource path="res://Resources/Audio/SFX/LevelSelectHover.wav" type="AudioStream" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
@@ -39,4 +40,10 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="LevelSelectHoverASP" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -15.0
+bus = "Effects"
+[connection signal="mouse_entered" from="." to="." method="_on_LevelSelectButton_mouse_entered"]
 [connection signal="pressed" from="." to="." method="_on_Button_pressed"]

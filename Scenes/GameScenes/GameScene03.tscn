@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Resources/Fonts/BRLNSDB.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://Entities/ActionTileMaps/WhiteTile.png" type="Texture" id=2]
@@ -15,6 +15,11 @@
 [sub_resource type="DynamicFont" id=1]
 resource_local_to_scene = true
 size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+resource_local_to_scene = true
+size = 52
 font_data = ExtResource( 1 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
@@ -109,11 +114,11 @@ text = "Timeline Slider"
 align = 1
 
 [node name="UILabel10" parent="UICanvasLayer" instance=ExtResource( 4 )]
-margin_left = 800.0
-margin_top = 448.0
-margin_right = 1652.0
-margin_bottom = 592.0
-custom_fonts/font = SubResource( 1 )
+margin_left = 320.0
+margin_top = 96.0
+margin_right = 1577.0
+margin_bottom = 401.0
+custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 1, 0.792157, 0.227451, 1 )
 text = "There can be more than one cell
 
@@ -159,15 +164,13 @@ tile_set = SubResource( 5 )
 
 [node name="Triangle" parent="Interactables" instance=ExtResource( 10 )]
 modulate = Color( 0.541176, 0.788235, 0.14902, 1 )
-position = Vector2( 1408, 256 )
-collision_layer = 3
-collision_mask = 3
+position = Vector2( 1376, 512 )
 action = 3
 
 [node name="Interactors" type="Node2D" parent="."]
 
 [node name="Conveyor" parent="Interactors" instance=ExtResource( 6 )]
-position = Vector2( 1088, 288 )
+position = Vector2( 1056, 544 )
 rotation = 0.174533
 action_a = 3
 conveyor_speed = 100
@@ -177,7 +180,7 @@ conveyor_length = 12
 script = ExtResource( 7 )
 
 [node name="Hatch" parent="Hatches" instance=ExtResource( 9 )]
-position = Vector2( 576, 448 )
+position = Vector2( 544, 704 )
 action_a = 3
 interactable_type = ExtResource( 10 )
 required_qty = 1

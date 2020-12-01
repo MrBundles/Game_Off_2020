@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/RewindSound.ogg-2c9ff9a8f6602cabf3e87fa35a187e40.oggstr"
+
+[deps]
+
+source_file="res://Resources/Audio/SFX/RewindSound.ogg"
+dest_files=[ "res://.import/RewindSound.ogg-2c9ff9a8f6602cabf3e87fa35a187e40.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
