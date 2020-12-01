@@ -97,7 +97,7 @@ __meta__ = {
 margin_bottom = 260.0
 group_quantity = 2
 cell_quantity = 4
-time_total_duration = 10
+time_total_duration = 11
 action_array = [ 4, 2, 3, 4, 5 ]
 
 [node name="UILabel" parent="UICanvasLayer" instance=ExtResource( 3 )]
@@ -192,6 +192,7 @@ rotation = -1.5708
 action_a = 4
 action_b = 2
 arm_length = 5
+arm_speed = 65
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Interactors"]
 position = Vector2( 100, 0 )

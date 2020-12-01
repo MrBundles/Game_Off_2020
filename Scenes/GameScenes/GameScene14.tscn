@@ -101,13 +101,13 @@ time_total_duration = 20
 action_array = [ 4, 3, 1, 4, 5 ]
 
 [node name="UILabel" parent="UICanvasLayer" instance=ExtResource( 4 )]
-margin_left = 384.0
-margin_top = 32.0
-margin_right = 576.0
-margin_bottom = 114.0
+margin_left = 256.0
+margin_top = 288.0
+margin_right = 864.0
+margin_bottom = 370.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 1, 0.792157, 0.227451, 1 )
-text = "Fore!"
+text = "Double Jointed"
 align = 1
 autowrap = true
 
