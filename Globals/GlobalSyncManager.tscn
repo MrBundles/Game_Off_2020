@@ -15,5 +15,6 @@ wait_time = 0.0166667
 
 [node name="RewindSoundASP" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
+volume_db = -15.0
 bus = "Effects"
 [connection signal="timeout" from="SyncTimer" to="." method="_on_SyncTimer_timeout"]

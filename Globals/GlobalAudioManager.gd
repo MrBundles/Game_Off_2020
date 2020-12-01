@@ -12,6 +12,8 @@ func _ready():
 	GlobalSignalManager.connect("sfx_ui_button_press", self, "_on_sfx_ui_button_press")
 	GlobalSignalManager.connect("level_win", self, "_on_sfx_win_sound")
 
+	_on_mute_changed(1, true)
+	_on_mute_changed(2, true)
 
 func _on_volume_changed(audio_bus, new_val):
 	AudioServer.set_bus_volume_db(audio_bus, new_val)

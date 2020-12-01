@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Resources/Audio/Music/DeliberateThought/DeliberateThought.ogg" type="AudioStream" id=1]
 [ext_resource path="res://Globals/GlobalAudioManager.gd" type="Script" id=2]
+[ext_resource path="res://Resources/Audio/Music/AmbiantNoise/AmbiantNoise1.ogg" type="AudioStream" id=3]
 [ext_resource path="res://Resources/Audio/SFX/UIButtonPress.wav" type="AudioStream" id=4]
 [ext_resource path="res://Resources/Audio/SFX/StartStopPhysicsButton.wav" type="AudioStream" id=8]
 [ext_resource path="res://Resources/Audio/SFX/LevelSelectPress.wav" type="AudioStream" id=9]
@@ -14,6 +15,13 @@ script = ExtResource( 2 )
 [node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 pause_mode = 2
 stream = ExtResource( 1 )
+autoplay = true
+bus = "Music"
+
+[node name="AmbiantNoiseAudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 3 )
+volume_db = -25.0
 autoplay = true
 bus = "Music"
 

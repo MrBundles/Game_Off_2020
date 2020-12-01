@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Entities/Interactors/Hatch/InteractorHatch.gd" type="Script" id=1]
 [ext_resource path="res://Entities/Interactors/Hatch/Hatch.png" type="Texture" id=2]
 [ext_resource path="res://Entities/Interactables/Box/Box.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Entities/Interactables/Box/Box.png" type="Texture" id=4]
 [ext_resource path="res://Resources/Fonts/BRLNSDB.TTF" type="DynamicFontData" id=5]
+[ext_resource path="res://Resources/Audio/SFX/SnowballCollision.wav" type="AudioStream" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 48
@@ -18,6 +19,9 @@ z_index = 3
 collision_layer = 3
 collision_mask = 3
 mode = 3
+contacts_reported = 1
+contact_monitor = true
+can_sleep = false
 script = ExtResource( 1 )
 interactor_parent = null
 interactable_type = ExtResource( 3 )
@@ -52,4 +56,10 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 0, 40 )
 shape = SubResource( 2 )
+
+[node name="CollisionASP" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -15.0
+bus = "Effects"
+[connection signal="body_entered" from="." to="." method="_on_Hatch_body_entered"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

@@ -45,6 +45,7 @@ func _on_load_sync_data(sync_subdiv):
 
 
 func _on_Area2D_body_entered(body):
+	_play_collision_sound()
 	if not "Hatch" in body.name and body is Interactable and not body in consumed_interactable_array:
 		body.hide()
 		body.collision_mask = 0b0
@@ -64,3 +65,12 @@ func _decrement_required_qty(body):
 		required_qty -= 1
 	if not body in consumed_interactable_array:
 		consumed_interactable_array.append(body)
+
+
+func _on_Hatch_body_entered(body):
+	_play_collision_sound()
+
+
+func _play_collision_sound():
+	if GlobalSceneManager.physics_state != GlobalSceneManager.PHYSICS_STATES.rewinding:
+		$CollisionASP.play()

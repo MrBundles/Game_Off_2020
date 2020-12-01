@@ -31,7 +31,7 @@ func _ready():
  
 
 func _process(delta):
-	if GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.rewinding and sync_subdiv_current != 0:
+	if GlobalSceneManager.physics_state == GlobalSceneManager.PHYSICS_STATES.rewinding and sync_subdiv_current != 0 and not Input.is_action_pressed("left_click"):
 		if not $RewindSoundASP.playing:
 			$RewindSoundASP.playing = true
 	else:

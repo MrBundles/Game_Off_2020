@@ -1,6 +1,15 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://UI/UIButtons/UIButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Resources/Fonts/BRLNSDB.TTF" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = ExtResource( 2 )
 
 [node name="MainMenu" type="Control"]
 anchor_left = 0.5
@@ -19,6 +28,7 @@ __meta__ = {
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_bottom = 104.0
 color = Color( 1, 1, 1, 0.243137 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -67,3 +77,24 @@ margin_bottom = 332.0
 button_label = "Quit"
 transition_signal = "quit_button_pressed"
 action = 1
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_top = 336.0
+margin_right = 368.0
+margin_bottom = 413.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "MrBundles Studios
+Game Off 2020"
+align = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+margin_top = 417.0
+margin_right = 368.0
+margin_bottom = 445.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Revision: 3.2.0"
+align = 1

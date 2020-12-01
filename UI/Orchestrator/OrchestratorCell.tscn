@@ -21,12 +21,15 @@ __meta__ = {
 [node name="CellHoverASP" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
 volume_db = -10.0
+bus = "Effects"
 
 [node name="CellLeftClickASP" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 volume_db = -10.0
+bus = "Effects"
 
 [node name="CellRightClickASP" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
 volume_db = -10.0
+bus = "Effects"
 [connection signal="mouse_entered" from="." to="." method="_on_OrchestratorCell_mouse_entered"]

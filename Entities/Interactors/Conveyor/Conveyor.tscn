@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Entities/Interactors/Conveyor/InteractorConveyor.gd" type="Script" id=1]
 [ext_resource path="res://Entities/Interactors/Conveyor/ConveyorA.png" type="Texture" id=2]
 [ext_resource path="res://Entities/Interactors/Conveyor/ConveyorB.png" type="Texture" id=3]
 [ext_resource path="res://Entities/Interactors/Conveyor/ActionBIndicator.png" type="Texture" id=4]
 [ext_resource path="res://Entities/Interactors/Conveyor/ActionAIndicator.png" type="Texture" id=5]
+[ext_resource path="res://Resources/Audio/SFX/SnowballCollision.wav" type="AudioStream" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 resource_local_to_scene = true
@@ -58,6 +59,11 @@ texture = SubResource( 2 )
 modulate = Color( 0.607843, 0.607843, 0.607843, 1 )
 position = Vector2( 0, 16 )
 texture = SubResource( 3 )
+
+[node name="CollisionASP" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -15.0
+[connection signal="body_entered" from="." to="." method="_on_Conveyor_body_entered"]
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

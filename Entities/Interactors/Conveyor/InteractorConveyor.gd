@@ -67,3 +67,7 @@ func _conveyor_modulate_update():
 		$ActionBIndicator.modulate = GlobalColorManager.action_color_array[action_b]
 
 
+
+
+func _on_Conveyor_body_entered(body):
+	$CollisionASP.play()
