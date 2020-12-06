@@ -121,7 +121,7 @@ margin_right = 1147.0
 margin_bottom = 343.0
 custom_fonts/font = SubResource( 8 )
 custom_colors/font_color = Color( 1, 0.792157, 0.227451, 1 )
-text = "It will grip any nearbye items when active"
+text = "It will grip any nearby items when active"
 align = 1
 
 [node name="ForegroundTileMap" type="TileMap" parent="."]
